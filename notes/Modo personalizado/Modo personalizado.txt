@@ -1,0 +1,31 @@
+Dar a opição o quão dificil vai ser a gameplay do modo survaivo
+
+Alguns modos deixarão de dar score, e outros aumentaram o score
+
+uma sugestão é criar um script que execute esses seguintes comandos separadamente: 
+
+1 - fazer grid para os inimgos : dar a opção do player descidir a dificuldade dos
+inimigos(aumentar a dificuldade 50*mais dificil)
+2 - fazer com que o player escolha qual arma vai spawnar : criar um ds_list com as armas que vao 
+spawnar (10*para cada arma(total:10))
+3 - o player sempre vai atirar e sempre vai aparecer alguma arna pra ele (110)
+4 - o player não pode toma hit (500)
+5 - o player pode colocar efeitos de morte para os inimigos (25)
+6 - o player não pode ficar parado (50)
+7 - o rage é desligado (250)
+8 - o numero de inimigos é severamente aumentado (25)
+9 - o numero de armas diminui (50)
+10 - aparecem 2 bosses em vez de um (200)
+11 - o jogo ficar um pouco mais escuro (150)
+12 - não aparece itens de cura (100)
+13 - metade da munição total (50)
+14 - desliga o limite de inimigos (90)
+15 - gera um projetil aleatorio que tenta acerta o player (100)
+16 - aumenta a velocidade de tudo ao se mexer (125)
+17 - retira os blocos do mapa (25)
+18 - deixa as armas ritmicas MUITO mais rapidas (50)
+19 - os inimigos so morrem para o efeito da arma(100)
+
+total 2000
+
+conquista (o player chegou a 1.000.000 de pontos com todos os ativos)

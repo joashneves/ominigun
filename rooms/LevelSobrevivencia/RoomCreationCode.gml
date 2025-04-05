@@ -1,0 +1,1 @@
+audio_play_sound(sndSurvavelMusicLevel0	,3,true);

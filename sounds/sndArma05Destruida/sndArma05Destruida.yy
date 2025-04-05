@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sndArma05Destruida",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.880812,
+  "name":"sndArma05Destruida",
+  "parent":{
+    "name":"armaDestruida",
+    "path":"folders/Sounds/armaDestruida.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sndArma05Destruida.mp3",
+  "type":0,
+  "volume":1.0,
+}

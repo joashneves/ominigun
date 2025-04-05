@@ -1,0 +1,19 @@
+// Armas para Adicionar
+
+Tier Musical : 3 armas musicais, que ao atirar no ritmo ativam efeitos especiais.
+Descrição Extra: Todas as armas são ritmicas, então enquanto estiverem com ela ela criar um tipo 
+de musica que acompanha o ritmo, mas cria tambem uma barra musical embaixo.
+arma 1 = uma guitarra que ao atirar no ritmo cria uma onda ao redor dela
+
+Tier Futurista: 3 armas que possuiem um desing futurista.
+Descrição Extra: Essas armas tem cada uma uma mecanica diferente.
+Arma 1 = Uma arma que não atira, mas cria projeteis que ficam parado no ar, no momento
+que a arma é lançada ela seguem o mouse.
+Arma 2 = uma pistola normal, que vem com 4 drones que amplificam as balas.
+Arma 3 = uma espingarda que segue os inimigos depois de um tempo
+
+Tier Armas lendarias: 
+Descrição Extra: 
+Martelo do Thor:
+lança da Kalista:
+Espada: Espada.

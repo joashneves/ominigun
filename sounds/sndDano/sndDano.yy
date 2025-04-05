@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sndDano",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.183492,
+  "name":"sndDano",
+  "parent":{
+    "name":"sndGame",
+    "path":"folders/Sounds/sndGame.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sndDano.wav",
+  "type":0,
+  "volume":1.0,
+}

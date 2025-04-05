@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sndMiguel",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":9.874286,
+  "name":"sndMiguel",
+  "parent":{
+    "name":"temp",
+    "path":"folders/Sounds/temp.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sndMiguel.mp3",
+  "type":0,
+  "volume":0.11,
+}

@@ -1,0 +1,8 @@
+Criar uma arma ===>
+{
+	SPRITE
+	CODIGO NAS VARIAVEIS
+	CODIGO DA ARMA EM SI
+	CRIAR UM JEITO DE PEGAR A ARMA
+	Testar
+}

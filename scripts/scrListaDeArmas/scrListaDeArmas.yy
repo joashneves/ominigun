@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrListaDeArmas",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrListaDeArmas",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
