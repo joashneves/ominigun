@@ -21,6 +21,7 @@ hspd = 0;
 vspd = 0;
 spd = 3;
 
+global.dir = 0
 
 // arma e balas
 

@@ -1,7 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if keyboard_check_pressed(ord("E")) && !oBoss01.vuneravel{
+var _Controller = gamepad_button_check(0, gp_face1) || gamepad_button_check(0, gp_face2)  || gamepad_button_check(0, gp_face3)  || gamepad_button_check(0, gp_face4)  ;
+var _E =  keyboard_check(ord("E")) ||  _Controller
+
+
+if _E && !oBoss01.vuneravel{
 	oBoss01.vuneravel = true;
 	image_index = 1;
 	image_alpha = 0.2;

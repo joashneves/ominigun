@@ -8,11 +8,11 @@ draw_set_colour(c_white);
 		
 if(debug_mode){
 		var tirosNaTela = instance_number(oBalaInimigo);
-		draw_text(32, 64+28,"Tempo de Recarga: " + string(recarga) );
-		draw_text(32, 64+52,"Tempo Total de Recarga: " + string(recargaTotal) );
-		draw_text(32, 64+68,"Tempo Tiros na tela: " + string(tirosNaTela) );
-		draw_text(32, 64+(68*2),"moeda: " + string(moeda) );
-		
+		draw_text(32, 64+28,"Tempo de Recarga: " + string(recarga));
+		draw_text(32, 64+52,"Tempo Total de Recarga: " + string(recargaTotal));
+		draw_text(32, 64+68,"Tempo Tiros na tela: " + string(tirosNaTela));
+		draw_text(32, 64+(68*2),"Moeda: " + string(moeda));
+		draw_text(12 , 120*4,"Mouse: " + string(global.dir));
 		draw_text(1052,64, "Rage : " + string(rage));
 }
 draw_text(600,48, "Fps : " + string(fps));

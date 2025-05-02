@@ -4,19 +4,49 @@ if(fim_de_jogo) room_goto(fim_de_jogo_room);
 if(pause) return;
 
 #region // Teclas
-up_press = keyboard_check(ord("W")) ||keyboard_check(vk_up);
-down_press = keyboard_check(ord("S"))||keyboard_check(vk_down);
-right_press = keyboard_check(ord("A"))||keyboard_check(vk_left);
-left_press = keyboard_check(ord("D"))||keyboard_check(vk_right);
-click_do_mouse_left = mouse_check_button(mb_left);
-click_do_mouse_right = mouse_check_button(mb_right);
+up_press = keyboard_check(ord("W")) ||keyboard_check(vk_up) || gamepad_button_check(0, gp_padu);
+down_press = keyboard_check(ord("S"))||keyboard_check(vk_down) ||  gamepad_button_check(0, gp_padd);
+right_press = keyboard_check(ord("A"))||keyboard_check(vk_left) ||  gamepad_button_check(0, gp_padl);
+left_press = keyboard_check(ord("D"))||keyboard_check(vk_right) ||  gamepad_button_check(0, gp_padr);
+click_do_mouse_left = mouse_check_button(mb_left) ||  gamepad_button_check(0, gp_shoulderrb);
+click_do_mouse_right = mouse_check_button(mb_right) ||  gamepad_button_check(0, gp_shoulderlb);
+
+
+if gamepad_is_connected(0){
+	gamepad_set_axis_deadzone(0, 0.15);
+	axiosLH = gamepad_axis_value(0, gp_axislh)
+	axiosLV = gamepad_axis_value(0, gp_axislv)
+	axiosRH = gamepad_axis_value(0, gp_axisrh)
+	axiosRV = gamepad_axis_value(0, gp_axisrv)
+
+}
+
 #endregion
 
 if(!player_morto){
 #region // movimentação
 // 0         =           1       -             0          *       3
+
 vspd = ( left_press - right_press)*spd;
 hspd = (down_press - up_press)*spd;
+
+if (axiosLH != 0 || axiosLV != 0 ){
+	hspd = axiosLV * spd;
+	vspd = axiosLH * spd;	
+}
+if( axiosRH != 0 || axiosRV != 0){
+	//axiosRH = -axiosRH;
+	//axiosRV = -axiosRV;
+	global.dir = (point_direction(x,y, x + axiosRH, y + axiosRV))
+	
+cursor_sprite = -1;
+	
+}else {
+	global.dir = floor(point_direction(x,y, mouse_x, mouse_y))
+	
+	cursor_sprite = sMouse;
+	
+}
 
 move_and_collide(vspd, hspd, oBloco);
 
@@ -33,13 +63,6 @@ multiplicadorDeRecarga= 0.5 + rage/rageMax ;
 if(rage > rageMax){
 	rage = rageMax;
 }
-
-#region // mecanica de Drone
-if(arma == oArma10){
-
-}
-#endregion
-
 #endregion
 
 #region // mecanica da arma
@@ -85,6 +108,8 @@ if(place_meeting(x,y,oBalaInimigo)){
 		rage = 1;
 		levou_dano = true
 		audio_play_sound(sndDano,1,0);
+		gamepad_set_vibration(0, 0.5, 0.5);
+
 }
 // leva dano do kamikaze
 if(place_meeting(x,y,oInimigo04)){
@@ -93,6 +118,10 @@ if(place_meeting(x,y,oInimigo04)){
 		rage = 1;
 		levou_dano = true
 		audio_play_sound(sndDano,1,0);
+		gamepad_set_vibration(0, 0.5, 0.5);
+}
+if(levou_dano){
+	if (!alarm[0]) alarm[0] = room_speed / 2;
 }
 if(vida > 4 ){
 	vida = 5;
@@ -108,7 +137,6 @@ if (vida <= 0){
 	sprite_index = sPlayerMorte;
 }
 
-#endregion
 }else {
 		for (var i = 0; i < ds_list_size(slotArma); i++) {
 		    show_debug_message("apagando = " +string(ds_list_find_value(slotArma, i)));
@@ -125,4 +153,7 @@ if (vida <= 0){
 	
 
 }
+
+
+#endregion
 

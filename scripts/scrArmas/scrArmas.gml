@@ -5,8 +5,8 @@
 function scrJogaArma(arma){
 	
 	var atirarArma = instance_create_depth(x,y,0,arma);
-	atirarArma.image_angle =point_direction(x,y, mouse_x, mouse_y);
-	atirarArma.direction = point_direction(x,y, mouse_x, mouse_y);
+	atirarArma.image_angle = global.dir;
+	atirarArma.direction = global.dir;
 	atirarArma.speed = 13;
 	
 }
@@ -15,8 +15,8 @@ function scrArmas00(){
 	
 	audio_play_sound(sndTiroArma00,4,false)
 	var bala = instance_create_depth(x,y,0,oBala00);
-	bala.image_angle = point_direction(x,y, mouse_x, mouse_y);
-	bala.direction = point_direction(x,y, mouse_x, mouse_y);
+	bala.image_angle = global.dir;
+	bala.direction = global.dir;
 	bala.speed = 7;
 }
 // 12
@@ -24,8 +24,8 @@ function scrArmas01(){
 	
 	for(var i = 0 ; i < 3; i += 1;) {
 	var bala = instance_create_depth(x,y,0,oBala01);
-	bala.image_angle = point_direction(x,y, random_range(mouse_x-32, mouse_x+32), mouse_y);
-	bala.direction = point_direction(x,y, mouse_x+23*i, mouse_y+23*i);
+	bala.image_angle = global.dir;
+	bala.direction = global.dir+(4*i);
 	bala.speed = 5;
 	}
 	
@@ -34,20 +34,20 @@ function scrArmas01(){
 function scrArmas02(){
 	audio_play_sound(sndTiroArma02,4,false)
 	var bala = instance_create_depth(x,y,0,oBala02);
-	bala.image_angle = point_direction(x,y, mouse_x, mouse_y);
-	bala.direction = point_direction(x,y, mouse_x, mouse_y);
+	bala.image_angle = global.dir;
+	bala.direction = global.dir;
 	bala.speed = 18;
 		var bala = instance_create_depth(x,y,0,oBala02);
-	bala.image_angle = point_direction(x,y, mouse_x, mouse_y);
-	bala.direction = point_direction(x,y, mouse_x, mouse_y);
+	bala.image_angle = global.dir;
+	bala.direction = global.dir;
 	bala.speed = 18;
 		var bala = instance_create_depth(x,y,0,oBala02);
-	bala.image_angle = point_direction(x,y, mouse_x, mouse_y);
-	bala.direction = point_direction(x,y, mouse_x, mouse_y);
+	bala.image_angle = global.dir;
+	bala.direction = global.dir;
 	bala.speed = 18;
 		var bala = instance_create_depth(x,y,0,oBala02);
-	bala.image_angle = point_direction(x,y, mouse_x, mouse_y);
-	bala.direction = point_direction(x,y, mouse_x, mouse_y);
+	bala.image_angle = global.dir;
+	bala.direction = global.dir;
 	bala.speed = 18;
 }
 #endregion
@@ -57,24 +57,24 @@ function scrArmas02(){
 function scrArmas03(){
 	audio_play_sound(sndTiroArma03,4,false)
 	var bala = instance_create_depth(x,y,0,oBala03);
-	bala.image_angle = point_direction(x,y, mouse_x, mouse_y);
-	bala.direction = point_direction(x,y, mouse_x, mouse_y);
+	bala.image_angle = global.dir;
+	bala.direction = global.dir;
 	bala.speed = 12;
 }
 // Metralhadora
 function scrArmas04(){
 	audio_play_sound(sndTiroArma04,4,false)
 	var bala = instance_create_depth(x,y,0,oBala03);
-	bala.image_angle = point_direction(x,y, mouse_x, mouse_y);
-	bala.direction = point_direction(x,y, mouse_x, mouse_y);
+	bala.image_angle = global.dir;
+	bala.direction = global.dir;
 	bala.speed = 8;
 }
 //RPg
 function scrArmas05(){
 	audio_play_sound(sndTiroArma05,4,false)
 	var bala = instance_create_depth(x,y,0,oBala05);
-	bala.image_angle = point_direction(x,y, mouse_x, mouse_y);
-	bala.direction = point_direction(x,y, mouse_x, mouse_y);
+	bala.image_angle = global.dir;
+	bala.direction = global.dir;
 	bala.speed = 6;
 }
 #endregion
@@ -84,7 +84,7 @@ function scrArmas05(){
 function scrArmas06(){
 	audio_play_sound(sndTiroArma06,4,false)
 	var bala = instance_create_depth(mouse_x, mouse_y,0,oBala06);
-	bala.image_angle = point_direction(x,y, mouse_x, mouse_y);
+	bala.image_angle = global.dir;
 	bala.direction = point_direction(mouse_x, mouse_y,oPlayer.x,oPlayer.y);
 	bala.speed = 12;
 }
@@ -99,8 +99,8 @@ function scrArmas07(){
 function scrArmas08(){
 	audio_play_sound(sndTiroArma08,4,false)
 	var bala = instance_create_depth(x,y,0,oBala08);
-	bala.image_angle = point_direction(x,y, mouse_x, mouse_y);
-	bala.direction = point_direction(x,y, mouse_x, mouse_y);
+	bala.image_angle = global.dir;
+	bala.direction = global.dir;
 	bala.speed = 8;
 }
 #endregion	
@@ -108,8 +108,8 @@ function scrArmas08(){
 #region // Armas cyberpunk
 function scrArmas09(){
 	var bala = instance_create_depth(x,y,0,oBala09);
-	bala.image_angle = point_direction(x,y, mouse_x, mouse_y);
-	bala.direction = point_direction(x,y, mouse_x, mouse_y);
+	bala.image_angle = global.dir;
+	bala.direction = global.dir;
 	bala.speed =0.5;	
 }
 
@@ -117,8 +117,8 @@ function scrArmas09(){
 //Pistola cyberpunk
 function scrArmas10(){
 	var bala = instance_create_depth(x,y,0,oBala10);
-	bala.image_angle = point_direction(x,y, mouse_x, mouse_y);
-	bala.direction = point_direction(x,y, mouse_x, mouse_y);
+	bala.image_angle = global.dir;
+	bala.direction = global.dir;
 	bala.speed =18;	
 	
 }
@@ -127,8 +127,8 @@ function scrArmas10(){
 // boomerang
 function scrArmas11(){
 	var bala = instance_create_depth(x,y,0,oBala11);
-	bala.image_angle = point_direction(x,y, mouse_x, mouse_y);
-	bala.direction = point_direction(x,y, mouse_x, mouse_y);
+	bala.image_angle = global.dir;
+	bala.direction = global.dir;
 	bala.speed = 12;	
 	
 }
@@ -137,8 +137,8 @@ function scrArmas11(){
 
 function scrArmas12(){
 	var bala = instance_create_depth(x,y,0,oBala12);
-	bala.image_angle = point_direction(x,y, mouse_x, mouse_y);
-	bala.direction = point_direction(x,y, mouse_x, mouse_y);
+	bala.image_angle = global.dir;
+	bala.direction = global.dir;
 	bala.speed = 12;	
 }
 
@@ -149,7 +149,7 @@ function scrArmas12(){
 function scrArmas13(){
 	
 		var bala = instance_create_depth(x,y,0,oBala13);
-		bala.image_angle = point_direction(x,y, mouse_x, mouse_y);
+		bala.image_angle = global.dir;
 		bala.direction = point_direction(x,y, random_range(mouse_x-32, mouse_x+32),  random_range(mouse_y-32, mouse_y+32));
 		bala.speed = 1;	
 
@@ -181,8 +181,8 @@ function scrArmas15(){
 function scrArmas16(){
 	
 	var bala = instance_create_depth(x,y,0,oBala16);
-	bala.image_angle = point_direction(x,y, mouse_x, mouse_y);
-	bala.direction = point_direction(x,y, mouse_x, mouse_y);
+	bala.image_angle = global.dir;
+	bala.direction = global.dir;
 	bala.speed = 7;
 	
 }
@@ -194,8 +194,8 @@ function scrArmas16(){
 function scrArmas17(){
 	
 	var bala = instance_create_depth(x,y,0,oBala17);
-	bala.image_angle = point_direction(x,y, mouse_x, mouse_y);
-	bala.direction = point_direction(x,y, mouse_x, mouse_y);
+	bala.image_angle = global.dir;
+	bala.direction = global.dir;
 	bala.speed = 7;
 	
 }
