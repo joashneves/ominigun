@@ -33,6 +33,8 @@ hspd = (down_press - up_press)*spd;
 if (axiosLH != 0 || axiosLV != 0 ){
 	hspd = axiosLV * spd;
 	vspd = axiosLH * spd;	
+	
+	cursor_sprite = -1;
 }
 if( axiosRH != 0 || axiosRV != 0){
 	//axiosRH = -axiosRH;
@@ -150,7 +152,8 @@ if (vida <= 0){
 	room_goto(GameOver)
 	}
 	score = 0;
-	
+//Buff
+
 
 }
 

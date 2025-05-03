@@ -5,4 +5,4 @@ arma = choose( oTrocaDeArma00, oTrocaDeArma01,oTrocaDeArma02,
 	oTrocaDeArma13, oTrocaDeArma14, oTrocaDeArma16);
 
 
-	
+sprite_index = -1;

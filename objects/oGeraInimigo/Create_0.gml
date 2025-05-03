@@ -6,5 +6,8 @@ if(room == LevelTutorial){
 }else if(room == Level1){
 enemY = choose(oInimigo00, oInimigo01,oInimigo02,oInimigo03);
 }else{
-enemY = choose(oInimigo00, oInimigo01,oInimigo02,oInimigo03,oInimigo04, oInimigo05);
+enemY = choose(oInimigo00, oInimigo01,oInimigo02,oInimigo03,oInimigo04, oInimigo05, oInimigoRun);
 }
+
+
+sprite_index = -1;
