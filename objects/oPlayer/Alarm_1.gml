@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description  Tempo dos buffs com tempo, aqueles buffs que são de x e x minutos
 
 if (instance_exists(IDenemy)){
 
@@ -14,4 +13,4 @@ if (instance_exists(IDenemy)){
 	
 }
 
-alarm[1] = 180;
+alarm[1] = 180 + (rageMax - rage);

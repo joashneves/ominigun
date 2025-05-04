@@ -1,3 +1,2 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Cancela a vibração do controle, la ele
 gamepad_set_vibration(0, 0, 0);

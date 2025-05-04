@@ -41,12 +41,18 @@ global.pause = true
 	_script : scrBuffsTempoCriaPortal,
 	_tipo : "tempo"
 	}
+	var buffTempoBazuca = {
+	_id : 22,
+	_sprite : sBuffs02,
+	_script : scrBuffsTempoCriaBazuca,
+	_tipo : "tempo"
+	}
 	
 buffefeito = array_create(2);
 
 for(var _i = -1; _i <= 1; _i++;){
 	buffefeito[_i+1] = choose(buffDanoMetralhador, buffDanoFogo, buffDanoPortal,
-	buffTempoPortal, buffTempoRobo);
+	buffTempoPortal, buffTempoRobo, buffTempoBazuca);
 	
 	var Buffs = oBuffs;
 	show_debug_message("degub : view port : " + string(view_hport[0]) + "view Y : " + string(view_wport[0])

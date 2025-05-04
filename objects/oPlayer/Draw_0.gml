@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Mostra tempo para carregar da arma para o jogador
 depth = 0;
 var carregar = (recarga/recargaTotal) * 100;
 
