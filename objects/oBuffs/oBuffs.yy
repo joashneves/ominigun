@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"oLevelEntrada",
+  "%Name":"oBuffs",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oLevelEntrada",
+  "name":"oBuffs",
   "overriddenProperties":[],
   "parent":{
-    "name":"Porta e camera",
-    "path":"folders/Objects/Misc/Porta e camera.yy",
+    "name":"Buffs",
+    "path":"folders/Objects/buffsOustatus/Buffs.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sGenerico01",
-    "path":"sprites/sGenerico01/sGenerico01.yy",
+    "name":"sBuffs",
+    "path":"sprites/sBuffs/sBuffs.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

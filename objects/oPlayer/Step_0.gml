@@ -1,7 +1,7 @@
 /// @description movimento a ação
 
 if(fim_de_jogo) room_goto(fim_de_jogo_room);
-if(pause) return;
+if(global.pause) return;
 
 #region // Teclas
 up_press = keyboard_check(ord("W")) ||keyboard_check(vk_up) || gamepad_button_check(0, gp_padu);
@@ -10,7 +10,6 @@ right_press = keyboard_check(ord("A"))||keyboard_check(vk_left) ||  gamepad_butt
 left_press = keyboard_check(ord("D"))||keyboard_check(vk_right) ||  gamepad_button_check(0, gp_padr);
 click_do_mouse_left = mouse_check_button(mb_left) ||  gamepad_button_check(0, gp_shoulderrb);
 click_do_mouse_right = mouse_check_button(mb_right) ||  gamepad_button_check(0, gp_shoulderlb);
-
 
 if gamepad_is_connected(0){
 	gamepad_set_axis_deadzone(0, 0.15);
@@ -111,6 +110,14 @@ if(place_meeting(x,y,oBalaInimigo)){
 		levou_dano = true
 		audio_play_sound(sndDano,1,0);
 		gamepad_set_vibration(0, 0.5, 0.5);
+		for (var i = 0; i < ds_list_size(global.buffsAtivosDano); i++) {
+			var executarScript = ds_list_find_value(global.buffsAtivosDano,i);
+			show_debug_message("mensagem do console : " + (string(ds_list_find_value(global.buffsAtivosDano, i)))
+			+ "\n Tamanho da lista " + string(ds_list_size(global.buffsAtivosDano)) +
+			"\n String objetos : " + string(global.buffsAtivosDano));
+			script_execute(executarScript);
+			
+		}
 
 }
 // leva dano do kamikaze

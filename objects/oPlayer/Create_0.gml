@@ -1,5 +1,5 @@
 /// @description criação do player
-gc_collect();
+
 // valores
 
 vida = 5; 
@@ -7,7 +7,7 @@ if(debug_mode){
 	vida = 100;
 }
 
-pause = false;
+global.pause = false;
 score = 1;
 fim_de_jogo = false;
 player_morto = false;
@@ -41,7 +41,6 @@ ds_list_add(slotArma,armaAtual);
 
 instance_create_depth(x,y,-1,oImageArma);
 
-
 	globalvar listaSprites;
 	listaSprites = ds_list_create();
 	ds_list_add(listaSprites,sArma00)
@@ -61,4 +60,18 @@ if(!audio_play_sound(sndMusicFloresta,3,true)){
 	(audio_play_sound(sndMusicFloresta,3,true))
 }
 gc_enable(true);
+
+// receber dano
+global.buffsAtivosDano = ds_list_create();
+global.buffsAtivosTiro = ds_list_create();
+global.buffsAtivosTempo = ds_list_create();
+
+
+
+// Var controller
+
+axiosLH = 0
+axiosLV = 0
+axiosRH = 0
+axiosRV = 0
 
