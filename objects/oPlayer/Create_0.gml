@@ -66,7 +66,7 @@ global.buffsAtivosDano = ds_list_create();
 global.buffsAtivosTiro = ds_list_create();
 global.buffsAtivosTempo = ds_list_create();
 
-
+alarm[1] = 180;
 
 // Var controller
 

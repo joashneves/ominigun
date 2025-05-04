@@ -7,6 +7,9 @@ switch _tipo{
 	case "dano":
 		ds_list_add(global.buffsAtivosDano, _script)		
 	break
+	case "tempo":
+		ds_list_add(global.buffsAtivosTempo, _script)
+	break
 	default:
 	
 }

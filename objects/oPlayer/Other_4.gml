@@ -23,7 +23,10 @@ if(instance_exists(oDataCarrie)){
 	
 	slotArma = oDataCarrie.slotArma;
 	listaSprites = oDataCarrie.listaSprites;
-	
+	global.buffsAtivosDano = oDataCarrie.buffsAtivosDano;
+	global.buffsAtivosTiro = oDataCarrie.buffsAtivosDano;
+	global.buffsAtivosTempo = oDataCarrie.buffsAtivosTempo;
+
 	levelAntigo = oDataCarrie.levelAntigo;
 	
 	instance_destroy(oDataCarrie);

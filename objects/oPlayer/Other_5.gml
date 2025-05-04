@@ -33,8 +33,13 @@ oDataCarrie.armaAtual = armaAtual;
 oDataCarrie.slotArma = slotArma;
 oDataCarrie.listaSprites = listaSprites;
 
+oDataCarrie.buffsAtivosDano = global.buffsAtivosDano;
+oDataCarrie.buffsAtivosDano = global.buffsAtivosTiro;
+oDataCarrie.buffsAtivosTempo = global.buffsAtivosTempo;
+
+
 oDataCarrie.levelAntigo = (room);
 
-	show_debug_message(levelAntigo);
-	show_debug_message("Apagado")
+show_debug_message(levelAntigo);
+show_debug_message("Apagado")
 

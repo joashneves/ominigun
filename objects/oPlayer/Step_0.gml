@@ -128,6 +128,13 @@ if(place_meeting(x,y,oInimigo04)){
 		levou_dano = true
 		audio_play_sound(sndDano,1,0);
 		gamepad_set_vibration(0, 0.5, 0.5);
+	for (var i = 0; i < ds_list_size(global.buffsAtivosDano); i++) {
+		var executarScript = ds_list_find_value(global.buffsAtivosDano,i);
+		show_debug_message("mensagem do console : " + (string(ds_list_find_value(global.buffsAtivosDano, i)))
+		+ "\n Tamanho da lista " + string(ds_list_size(global.buffsAtivosDano)) +
+		"\n String objetos : " + string(global.buffsAtivosDano));
+		script_execute(executarScript);
+	}
 }
 if(levou_dano){
 	if (!alarm[0]) alarm[0] = room_speed / 2;
