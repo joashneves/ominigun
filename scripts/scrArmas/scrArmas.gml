@@ -13,7 +13,7 @@ function scrJogaArma(arma){
 // PistolaBasica
 function scrArmas00(){
 	var crsr = instance_exists(oCursor)
-	show_debug_message("texto serio: " +string(crsr) + " ocurso.x "+string(oCursor.x)+ " oCursor.y " + string(oCursor.y))
+	show_debug_message("texto serio: " + " ocurso.x "+string(oCursor.x)+ " oCursor.y " + string(oCursor.y))
 	audio_play_sound(sndTiroArma00,4,false)
 	var bala = instance_create_depth(x,y,0,oBala00);
 	bala.image_angle = global.dir;

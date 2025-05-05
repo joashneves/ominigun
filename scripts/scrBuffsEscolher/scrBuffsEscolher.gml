@@ -28,6 +28,12 @@ global.pause = true
 	_script : scrBuffTomarDanoExpansao,
 	_tipo : "dano"
 	}
+	var	buffDanoArpa = {
+	_id : 14,
+	_sprite : sBuffs,
+	_script : scrBuffTomarDanoArpa,
+	_tipo : "dano"
+	}
 	// escolha por tempo
 	var buffTempoRobo = {
 	_id : 20,
@@ -47,12 +53,56 @@ global.pause = true
 	_script : scrBuffsTempoCriaBazuca,
 	_tipo : "tempo"
 	}
+	var buffTempoArpa = {
+	_id : 22,
+	_sprite : sBuffs02,
+	_script : scrBuffsTempoCriaArpa,
+	_tipo : "tempo"
+	}
+	// REcursos
+	var buffTempoMoeda = {
+	_id : 30,
+	_sprite : sBuffs03,
+	_script : scrBuffsRecursosMoedas,
+	_tipo : "recurso"
+	}
+	var buffTempoLife = {
+	_id : 31,
+	_sprite : sBuffs03,
+	_script : scrBuffsRecursosLife,
+	_tipo : "recurso"
+	}
+	var buffTempoArma00 = {
+	_id : 32,
+	_sprite : sBuffs03,
+	_script : scrBuffsRecursosArma00,
+	_tipo : "recurso"
+	}
+	var buffTempoArma01 = {
+	_id : 33,
+	_sprite : sBuffs03,
+	_script : scrBuffsRecursosArma01,
+	_tipo : "recurso"
+	}
+	var buffTempoArma02 = {
+	_id : 34,
+	_sprite : sBuffs03,
+	_script : scrBuffsRecursosArma02,
+	_tipo : "recurso"
+	}
+	var buffTempoArma03 = {
+	_id : 35,
+	_sprite : sBuffs03,
+	_script : scrBuffsRecursosArma03,
+	_tipo : "recurso"
+	}
 	
 buffefeito = array_create(2);
 
 for(var _i = -1; _i <= 1; _i++;){
-	buffefeito[_i+1] = choose(buffDanoMetralhador, buffDanoFogo, buffDanoPortal,
-	buffTempoPortal, buffTempoRobo, buffTempoBazuca);
+	buffefeito[_i+1] = choose(buffDanoMetralhador, buffDanoFogo, buffDanoPortal, buffDanoArpa, buffTempoPortal,
+	buffTempoRobo, buffTempoBazuca,buffTempoArpa, buffTempoLife, buffTempoMoeda,
+	buffTempoArma00, buffTempoArma01, buffTempoArma02, buffTempoArma03);
 	
 	var Buffs = oBuffs;
 	show_debug_message("degub : view port : " + string(view_hport[0]) + "view Y : " + string(view_wport[0])

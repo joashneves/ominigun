@@ -26,6 +26,7 @@ if(instance_exists(oDataCarrie)){
 	global.buffsAtivosDano = oDataCarrie.buffsAtivosDano;
 	global.buffsAtivosTiro = oDataCarrie.buffsAtivosDano;
 	global.buffsAtivosTempo = oDataCarrie.buffsAtivosTempo;
+	global.buffsAtivosRecurso = oDataCarrie.buffsAtivosRecurso;
 
 	levelAntigo = oDataCarrie.levelAntigo;
 	

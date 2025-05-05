@@ -68,8 +68,11 @@ gc_enable(true);
 global.buffsAtivosDano = ds_list_create();
 global.buffsAtivosTiro = ds_list_create();
 global.buffsAtivosTempo = ds_list_create();
+global.buffsAtivosRecurso = ds_list_create();
 
 alarm[1] = 180 + (rageMax);
+
+alarm[2] = 380+(rageMax);
 
 // Var controller
 
