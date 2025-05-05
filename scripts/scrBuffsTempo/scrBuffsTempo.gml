@@ -23,7 +23,7 @@ function scrBuffsTempoCriaBazuca(nv = 1){
 	}
 }
 function scrBuffsTempoCriaArpa(){
-	for (var i = 0; i <= 16; i++;){
+	for (var i = 0; i <= 2; i++;){
 	var bala = instance_create_depth(x,y,0,oBala07);
 	bala.image_angle = global.dir;
 	bala.direction = global.dir;

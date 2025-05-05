@@ -4,7 +4,7 @@
 	score=score+oPlayer.rage;
 	var chance = random_range(0, 100);
 	var item = oMoeda
-	if (chance <= 25){
+	if (chance <= 5){
 		 item = choose(oTrocaDeArma00, oTrocaDeArma01, oTrocaDeArma02, oTrocaDeArma03, oTrocaDeArma04
 		, oTrocaDeArma05, oTrocaDeArma06, oTrocaDeArma07, oTrocaDeArma08, oTrocaDeArma09, oTrocaDeArma10,
 		oTrocaDeArma11, oTrocaDeArma12, oTrocaDeArma13, oTrocaDeArma14, oTrocaDeArma16)
