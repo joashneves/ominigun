@@ -53,7 +53,10 @@ targetEntrada = oLevelEntrada
 
 // Bussola
 if(!instance_exists(oBussola)) instance_create_depth(x,y,oPlayer.depth-2,oBussola);
-
+// Bussola
+if(!instance_exists(oCursor)) {
+ cursor = instance_create_depth(x,y,oPlayer.depth-2,oCursor);
+}
 levelAntigo = room_get_name(room)
 
 if(!audio_play_sound(sndMusicFloresta,3,true)){

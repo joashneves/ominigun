@@ -5,7 +5,7 @@
 
 audio_play_sound(sndMenuMusic,3,true)
 
-
+cursor_sprite = sMouse
 
 
 

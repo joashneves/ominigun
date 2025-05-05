@@ -3,4 +3,4 @@
 
 instance_destroy();
 
-audio_play_sound(sndTIroCinza,5,false)
+//audio_play_sound(sndTIroCinza,5,false)

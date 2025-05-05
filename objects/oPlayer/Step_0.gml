@@ -33,20 +33,21 @@ if (axiosLH != 0 || axiosLV != 0 ){
 	hspd = axiosLV * spd;
 	vspd = axiosLH * spd;	
 	
-	cursor_sprite = -1;
 }
 if( axiosRH != 0 || axiosRV != 0){
 	//axiosRH = -axiosRH;
 	//axiosRV = -axiosRV;
+	
 	global.dir = (point_direction(x,y, x + axiosRH, y + axiosRV))
+	cursor.direction = global.dir;
+	cursor.sprite_index = sMouse;
+	cursor.speed = 100;
 	
-cursor_sprite = -1;
-	
-}else {
-	global.dir = floor(point_direction(x,y, mouse_x, mouse_y))
-	
-	cursor_sprite = sMouse;
-	
+}
+if !gamepad_is_connected(0){
+	global.dir = (point_direction(x,y, mouse_x, mouse_y))
+	cursor.x = mouse_x;
+	cursor.y = mouse_y;
 }
 
 move_and_collide(vspd, hspd, oBloco);

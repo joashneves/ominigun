@@ -1,5 +1,5 @@
 /// @description
-
+if (global.pause) return;
 	var _xx = choose(-64,0,64);
 	var _yy = choose(-64,0,64);
 	var _tipoAtaque = choose(1,2,3);

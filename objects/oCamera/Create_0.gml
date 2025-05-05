@@ -8,5 +8,4 @@ height_ = camera_get_view_height(view_camera[0]);
 
 screenfull = false;
 
-cursor_sprite = sMouse;
 window_set_cursor(cr_none);

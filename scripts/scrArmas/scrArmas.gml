@@ -6,17 +6,18 @@ function scrJogaArma(arma){
 	
 	var atirarArma = instance_create_depth(x,y,0,arma);
 	atirarArma.image_angle = global.dir;
-	atirarArma.direction = global.dir;
+	atirarArma.direction = point_direction(x,y, oCursor.x, oCursor.y);
 	atirarArma.speed = 13;
 	
 }
 // PistolaBasica
 function scrArmas00(){
-	
+	var crsr = instance_exists(oCursor)
+	show_debug_message("texto serio: " +string(crsr) + " ocurso.x "+string(oCursor.x)+ " oCursor.y " + string(oCursor.y))
 	audio_play_sound(sndTiroArma00,4,false)
 	var bala = instance_create_depth(x,y,0,oBala00);
 	bala.image_angle = global.dir;
-	bala.direction = global.dir;
+	bala.direction =point_direction(x,y, oCursor.x, oCursor.y );
 	bala.speed = 7;
 }
 // 12
@@ -83,16 +84,16 @@ function scrArmas05(){
 //Mouse
 function scrArmas06(){
 	audio_play_sound(sndTiroArma06,4,false)
-	var bala = instance_create_depth(mouse_x, mouse_y,0,oBala06);
+	var bala = instance_create_depth(oCursor.x, oCursor.y,0,oBala06);
 	bala.image_angle = global.dir;
-	bala.direction = point_direction(mouse_x, mouse_y,oPlayer.x,oPlayer.y);
+	bala.direction = point_direction(oCursor.x, oCursor.y,oPlayer.x,oPlayer.y);
 	bala.speed = 12;
 }
 //Arpa
 function scrArmas07(){
 	var bala = instance_create_depth(x,y,0,oBala07);
-	bala.image_angle = point_direction(x,y, mouse_x, mouse_y);
-	bala.direction = point_direction(x,y, irandom_range(mouse_x-64,mouse_x+64), irandom_range(mouse_y-64,mouse_y+64));
+	bala.image_angle = point_direction(x,y, oCursor.x, oCursor.y);
+	bala.direction = point_direction(x,y, irandom_range(oCursor.x-64,oCursor.x+64), irandom_range(oCursor.y-64,oCursor.y+64));
 	bala.speed = 4;
 }
 // Inimigo
@@ -150,7 +151,7 @@ function scrArmas13(){
 	
 		var bala = instance_create_depth(x,y,0,oBala13);
 		bala.image_angle = global.dir;
-		bala.direction = point_direction(x,y, random_range(mouse_x-32, mouse_x+32),  random_range(mouse_y-32, mouse_y+32));
+		bala.direction = point_direction(x,y, random_range(oCursor.x-32, oCursor.x+32),  random_range(oCursor.y-32, oCursor.y+32));
 		bala.speed = 1;	
 
 }
@@ -160,7 +161,7 @@ function scrArmas13(){
 #region // Armas magia de gelo
 
 function scrArmas14(){
-	var bala = instance_create_depth(mouse_x,mouse_y,0,oBala14);
+	var bala = instance_create_depth(oCursor.x,oCursor.y,0,oBala14);
 	bala.image_angle = point_direction(mouse_x,mouse_y, x, y);
 	
 }

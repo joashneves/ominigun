@@ -117,6 +117,7 @@
     {"name":"oBotaoWave","order":1,"path":"objects/oBotaoWave/oBotaoWave.yy",},
     {"name":"oBussola","order":5,"path":"objects/oBussola/oBussola.yy",},
     {"name":"oCuraLife","order":2,"path":"objects/oCuraLife/oCuraLife.yy",},
+    {"name":"oCursor","order":6,"path":"objects/oCursor/oCursor.yy",},
     {"name":"oDataCarrie","order":3,"path":"objects/oDataCarrie/oDataCarrie.yy",},
     {"name":"oDataConfig","order":6,"path":"objects/oDataConfig/oDataConfig.yy",},
     {"name":"oEnemyOlhoBoss01","order":2,"path":"objects/oEnemyOlhoBoss01/oEnemyOlhoBoss01.yy",},

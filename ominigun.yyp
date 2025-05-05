@@ -151,6 +151,7 @@
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
     {"id":{"name":"oCaneca","path":"objects/oCaneca/oCaneca.yy",},},
     {"id":{"name":"oCuraLife","path":"objects/oCuraLife/oCuraLife.yy",},},
+    {"id":{"name":"oCursor","path":"objects/oCursor/oCursor.yy",},},
     {"id":{"name":"oDataCarrie","path":"objects/oDataCarrie/oDataCarrie.yy",},},
     {"id":{"name":"oDataConfig","path":"objects/oDataConfig/oDataConfig.yy",},},
     {"id":{"name":"oEnemyOlhoBoss01","path":"objects/oEnemyOlhoBoss01/oEnemyOlhoBoss01.yy",},},

@@ -4,3 +4,6 @@
 _id = 1;
 _script = scrBuffTomarDanoFogo
 _tipo = "dano"
+
+
+cursor_sprite = sMouse;

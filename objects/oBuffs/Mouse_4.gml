@@ -14,4 +14,6 @@ switch _tipo{
 	
 }
 
+
+cursor_sprite = -1;
 instance_destroy(oBuffs)
