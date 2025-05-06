@@ -34,6 +34,12 @@ global.pause = true
 	_script : scrBuffTomarDanoArpa,
 	_tipo : "dano"
 	}
+	var buffDanoSpike = {
+	_id : 15,
+	_sprite : sBuffs,
+	_script : scrBuffTomarDanoSpikes,
+	_tipo : "dano"
+	}
 	// escolha por tempo
 	var buffTempoRobo = {
 	_id : 20,
@@ -127,7 +133,7 @@ buffefeito = array_create(2);
 for(var _i = -1; _i <= 1; _i++;){
 	buffefeito[_i+1] = choose(buffDanoMetralhador, buffDanoFogo, buffDanoPortal, buffDanoArpa, buffTempoPortal,
 	buffTempoRobo, buffTempoBazuca,buffTempoArpa, buffTempoLife, buffTempoMoeda, buffTempoArma00, buffTempoArma01,
-	buffTempoArma02, buffTiroArma00, buffTiroArma01, buffTiroArma02, buffTiroArma);
+	buffTempoArma02, buffTiroArma00, buffTiroArma01, buffTiroArma02, buffTiroArma, buffDanoSpike);
 	
 	var Buffs = oBuffs;
 	show_debug_message("degub : view port : " + string(view_hport[0]) + "view Y : " + string(view_wport[0])

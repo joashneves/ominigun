@@ -201,4 +201,14 @@ function scrArmas17(){
 	
 }
 
+function scrArmas18(){
+	
+	var bala = instance_create_depth(x,y,0,oBala18);
+	bala.image_angle = global.dir;
+	bala.direction = global.dir;
+	bala.speed = 9;
+	
+}
+
+
 #endregion

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-life = 100;
+life = 100*global.dificuldade;
 
 hspd = 0;
 vspd = 0;

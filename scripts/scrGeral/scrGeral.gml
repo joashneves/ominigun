@@ -29,3 +29,14 @@ function mouseCordenada(_Player, _mouse){
 }
 
 
+function scrspikes(){
+
+for (var i = 0; i < 8; i++) {
+    var angulo = i * 45; // Começa em 0, vai até 315
+    var bala = instance_create_depth(x, y, -1, oBala18filho);
+    bala.direction = angulo;
+    bala.image_angle = angulo;
+    bala.speed = 6;
+}
+
+}

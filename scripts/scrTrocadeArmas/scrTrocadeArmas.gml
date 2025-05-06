@@ -1,4 +1,26 @@
 // Troca de armas e variaveis do personagem
+function scrTrocaDeArma18(){
+		var arma18 = {
+	aparencia: sArma18,
+	recarga: 0,
+	recargaTotal: 90,
+	arma: oArma18,
+	bala: scrArmas18,
+	municaoTotal: 40
+
+}
+
+oPlayer.aparencia = arma18.aparencia;
+oPlayer.arma = arma18.arma;
+oPlayer.recarga = arma18.recarga;
+oPlayer.recargaTotal = arma18.recargaTotal;
+oPlayer.bala= arma18.bala;
+oPlayer.municaoTotal = arma18.municaoTotal;
+oPlayer.municao = arma18.municaoTotal;
+
+}
+
+
 function scrTrocaDeArma17(){
 		var arma17 = {
 	aparencia: sArma17,

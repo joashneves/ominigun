@@ -6,7 +6,8 @@ vida = 5;
 if(debug_mode){
 	vida = 100;
 }
-
+// Especiais
+global.dificuldade = 1;
 global.pause = false;
 score = 1;
 fim_de_jogo = false;

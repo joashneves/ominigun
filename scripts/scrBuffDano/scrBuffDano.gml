@@ -41,6 +41,10 @@ for(var _i = 0; _i < 36; _i++){
 }
 
 
+function scrBuffTomarDanoSpikes(){
+	scrspikes()
+}
+
 function scrBuffTomarDanoMetralhadora(){
 radius = 0
 repeat(120){
