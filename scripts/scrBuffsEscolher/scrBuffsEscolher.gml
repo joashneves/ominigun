@@ -96,13 +96,38 @@ global.pause = true
 	_script : scrBuffsRecursosArma03,
 	_tipo : "recurso"
 	}
+	// Tiro 
+	var buffTiroArma = {
+	_id : 40,
+	_sprite : sBuffs04,
+	_script : scrBuffArma,
+	_tipo : "arma"
+	}
+	var buffTiroArma00 = {
+	_id : 41,
+	_sprite : sBuffs04,
+	_script : scrBuffArma00,
+	_tipo : "arma"
+	}
+	var buffTiroArma01 = {
+	_id : 42,
+	_sprite : sBuffs04,
+	_script : scrBuffArma01,
+	_tipo : "arma"
+	}
+	var buffTiroArma02 = {
+	_id : 43,
+	_sprite : sBuffs04,
+	_script : scrBuffArma02,
+	_tipo : "arma"
+	}
 	
 buffefeito = array_create(2);
 
 for(var _i = -1; _i <= 1; _i++;){
 	buffefeito[_i+1] = choose(buffDanoMetralhador, buffDanoFogo, buffDanoPortal, buffDanoArpa, buffTempoPortal,
-	buffTempoRobo, buffTempoBazuca,buffTempoArpa, buffTempoLife, buffTempoMoeda,
-	buffTempoArma00, buffTempoArma01, buffTempoArma02, buffTempoArma03);
+	buffTempoRobo, buffTempoBazuca,buffTempoArpa, buffTempoLife, buffTempoMoeda, buffTempoArma00, buffTempoArma01,
+	buffTempoArma02, buffTiroArma00, buffTiroArma01, buffTiroArma02, buffTiroArma);
 	
 	var Buffs = oBuffs;
 	show_debug_message("degub : view port : " + string(view_hport[0]) + "view Y : " + string(view_wport[0])

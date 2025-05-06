@@ -39,9 +39,6 @@ if( axiosRH != 0 || axiosRV != 0){
 	//axiosRV = -axiosRV;
 	
 	global.dir = (point_direction(x,y, x + axiosRH, y + axiosRV))
-	cursor.direction = global.dir;
-	cursor.sprite_index = sMouse;
-	cursor.speed = 100;
 	
 }
 if !gamepad_is_connected(0){
@@ -91,12 +88,26 @@ if(municao <= 0 && posLista > 0 && !click_do_mouse_right){
 	posLista--;
 	var armaSparaTroca = ds_list_find_value(slotArma, posLista);
 	script_execute(armaSparaTroca)
-	if(ds_list_empty(slotArma)) {
-		scrTrocadeArmaPistolaBasica();
-	} else{
-		ds_list_delete(slotArma,posLista+1);
-		ds_list_delete(listaSprites,posLista+1);
-	}
+		if(ds_list_empty(slotArma)) {
+			scrTrocadeArmaPistolaBasica();
+		} else{
+			ds_list_delete(slotArma,posLista+1);
+			ds_list_delete(listaSprites,posLista+1);
+		}
+		
+		if (ds_list_size(global.buffsAtivosDano) != 0){
+			var num_itens = ds_list_size(global.buffsAtivosDano)
+			var num_choose = choose(0, (num_itens-1));
+			show_debug_message("Itens de recurso : " + string(global.buffsAtivosDano) + "\n tamanho " + string(ds_list_size(global.buffsAtivosDano))
+			+ "\n Num intens : " + string(num_itens) + " Num_choose "+ string(num_choose) )
+				if (num_itens != 0){
+				var executarScript = ds_list_find_value(global.buffsAtivosDano, num_choose);
+				show_debug_message("Itens de recurso Script: " + string(executarScript) )
+				if(executarScript != undefined){
+					script_execute(executarScript);
+				}
+				}
+}	
 }
 
 #endregion

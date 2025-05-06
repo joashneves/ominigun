@@ -13,6 +13,9 @@ switch _tipo{
 	case "recurso":
 		ds_list_add(global.buffsAtivosRecurso, _script)
 	break
+	case "arma":
+		ds_list_add(global.buffsAtivosTiro, _script)
+	break
 	default:
 	
 }
