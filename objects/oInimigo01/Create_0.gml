@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-life = random_range(50,150);
+life = random_range(50,150) *global.dificuldade;
 
 hspd = 0;
 vspd = 0;

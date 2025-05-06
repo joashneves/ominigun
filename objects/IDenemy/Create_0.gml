@@ -1,5 +1,5 @@
 /// @description atributos
 
-life = 100;
+life = 100*global.dificuldade;
 
 lanca = 0;

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-life = choose(25,50);
+life = choose(25,50)*global.dificuldade;
 
 hspd = oPlayer.x;
 vspd = oPlayer.y;

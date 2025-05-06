@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-life = 125;
+life = 125*global.dificuldade;
 
 hspd = oPlayer.x;
 vspd = oPlayer.y;
