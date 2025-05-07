@@ -10,3 +10,5 @@ vuneravel = false;
 
 if(!alarm[11]) alarm[11]= 60;
 
+
+oPlayer.BossMorto = false

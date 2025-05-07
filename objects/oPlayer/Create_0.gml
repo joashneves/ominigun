@@ -76,6 +76,7 @@ alarm[1] = 180 + (rageMax);
 alarm[2] = 380+(rageMax);
 
 // Var controller
+BossMorto = true;
 
 axiosLH = 0
 axiosLV = 0

@@ -70,7 +70,7 @@ function scrTrocaDeArmaControle(){
 	recargaTotal: 100,
 	arma: oArma15,
 	bala: scrArmas15,
-	municaoTotal: 16
+	municaoTotal: 6
 
 }
 
@@ -278,7 +278,7 @@ var RPG ={
 	
 	aparencia: sArma05,
 	recarga: 0,
-	recargaTotal: 60,
+	recargaTotal: 160,
 	arma: oArma05,
 	bala: scrArmas05,
 	municaoTotal: 6

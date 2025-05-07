@@ -42,7 +42,14 @@ for(var _i = 0; _i < 36; _i++){
 
 
 function scrBuffTomarDanoSpikes(){
-	scrspikes()
+for (var i = 0; i < 8; i++) {
+    var angulo = i * 45; // Começa em 0, vai até 315
+    var bala = instance_create_depth(x, y, -1, oBala18);
+    bala.direction = angulo;
+    bala.image_angle = angulo;
+    bala.speed = 6;
+}
+
 }
 
 function scrBuffTomarDanoMetralhadora(){

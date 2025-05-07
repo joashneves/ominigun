@@ -316,6 +316,7 @@
     {"name":"sMouseSeleck","order":3,"path":"sprites/sMouseSeleck/sMouseSeleck.yy",},
     {"name":"sOlho","order":2,"path":"sprites/sOlho/sOlho.yy",},
     {"name":"sPlayerMorte","order":4,"path":"sprites/sPlayerMorte/sPlayerMorte.yy",},
+    {"name":"sPortal","order":4,"path":"sprites/sPortal/sPortal.yy",},
     {"name":"sStart","order":1,"path":"sprites/sStart/sStart.yy",},
     {"name":"sStore","order":3,"path":"sprites/sStore/sStore.yy",},
     {"name":"sThornAtack00","order":11,"path":"sprites/sThornAtack00/sThornAtack00.yy",},

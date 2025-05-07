@@ -34,10 +34,10 @@ oDataCarrie.slotArma = slotArma;
 oDataCarrie.listaSprites = listaSprites;
 
 oDataCarrie.buffsAtivosDano = global.buffsAtivosDano;
-oDataCarrie.buffsAtivosDano = global.buffsAtivosTiro;
+oDataCarrie.buffsAtivosTiro = global.buffsAtivosTiro;
 oDataCarrie.buffsAtivosTempo = global.buffsAtivosTempo;
 oDataCarrie.buffsAtivosRecurso = global.buffsAtivosRecurso;
-oDataCarrie.dificuldade = global.dificuldade+1;
+oDataCarrie.dificuldade = global.dificuldade+0.5;
 
 
 oDataCarrie.levelAntigo = (room);

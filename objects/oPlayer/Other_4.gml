@@ -24,7 +24,7 @@ if(instance_exists(oDataCarrie)){
 	slotArma = oDataCarrie.slotArma;
 	listaSprites = oDataCarrie.listaSprites;
 	global.buffsAtivosDano = oDataCarrie.buffsAtivosDano;
-	global.buffsAtivosTiro = oDataCarrie.buffsAtivosDano;
+	global.buffsAtivosTiro = oDataCarrie.buffsAtivosTiro;
 	global.buffsAtivosTempo = oDataCarrie.buffsAtivosTempo;
 	global.buffsAtivosRecurso = oDataCarrie.buffsAtivosRecurso;
 	global.dificuldade = oDataCarrie.dificuldade;

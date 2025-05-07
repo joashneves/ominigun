@@ -375,6 +375,7 @@
     {"id":{"name":"sOlho","path":"sprites/sOlho/sOlho.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
     {"id":{"name":"sPlayerMorte","path":"sprites/sPlayerMorte/sPlayerMorte.yy",},},
+    {"id":{"name":"sPortal","path":"sprites/sPortal/sPortal.yy",},},
     {"id":{"name":"sRetry","path":"sprites/sRetry/sRetry.yy",},},
     {"id":{"name":"sStart","path":"sprites/sStart/sStart.yy",},},
     {"id":{"name":"sStore","path":"sprites/sStore/sStore.yy",},},

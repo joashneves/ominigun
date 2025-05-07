@@ -14,6 +14,8 @@ if(debug_mode){
 		draw_text(32, 64+(68*2),"Moeda: " + string(moeda));
 		draw_text(12 , 120*4,"Mouse: " + string(global.dir));
 		draw_text(1052,64, "Rage : " + string(rage));
+		draw_text(32,64+(68*3), "Level : " + string(global.dificuldade));
+		draw_text(32,64+(68*4), "Boss : " + string(BossMorto));
 }
 draw_text(600,48, "Fps : " + string(fps));
 
@@ -35,11 +37,8 @@ if(!fim_de_jogo){
 if(aparencia != sArma00){
 draw_text(64, 78,"Munição: " + string(municao) );
 }
-	
 	// Lista das sprites da arma que trocou
-
 	// Compila tudo na tela
-
 	var tamanho = ds_list_size(listaSprites); 
 
 	for (lista = tamanho - 1; lista >= 0; lista--) {

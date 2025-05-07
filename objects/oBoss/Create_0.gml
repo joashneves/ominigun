@@ -20,3 +20,6 @@ timeInvocar = 120;
 if (!alarm[0]) alarm[0] = timeInvocar;
 
 lanca = 0;
+
+oPlayer.BossMorto = false
+

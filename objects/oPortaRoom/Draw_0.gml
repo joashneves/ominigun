@@ -1,4 +1,6 @@
 /// @description 
+if(!oPlayer.BossMorto) return;
+
 depth = 5;
 draw_self();
 

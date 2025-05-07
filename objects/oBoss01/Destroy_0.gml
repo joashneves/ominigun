@@ -10,3 +10,5 @@ instance_create_depth(x+64,y,0,oCuraLife);
 
 
 
+oPlayer.BossMorto = true
+

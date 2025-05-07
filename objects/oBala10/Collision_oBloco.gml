@@ -3,4 +3,5 @@
 
 
 direction = point_direction(x,y, oCursor.x, oCursor.y);
-audio_play_sound(choose(sndTiroArma10_0, sndTiroArma10_1, sndTiroArma10_2),5,false);
+
+//audio_play_sound(choose(sndTiroArma10_0, sndTiroArma10_1, sndTiroArma10_2),5,false);

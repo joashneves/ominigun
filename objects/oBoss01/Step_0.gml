@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 if (global.pause) return;
+oPlayer.BossMorto = false
 if(vuneravel){
 	image_alpha = 0.8; 
 	speed = 0.6;
