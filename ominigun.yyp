@@ -169,6 +169,7 @@
     {"id":{"name":"oEye03","path":"objects/oEye03/oEye03.yy",},},
     {"id":{"name":"oEye04","path":"objects/oEye04/oEye04.yy",},},
     {"id":{"name":"oEye05","path":"objects/oEye05/oEye05.yy",},},
+    {"id":{"name":"oFade","path":"objects/oFade/oFade.yy",},},
     {"id":{"name":"oFogo","path":"objects/oFogo/oFogo.yy",},},
     {"id":{"name":"oFullscreen","path":"objects/oFullscreen/oFullscreen.yy",},},
     {"id":{"name":"oGeraArma","path":"objects/oGeraArma/oGeraArma.yy",},},

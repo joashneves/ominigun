@@ -13,6 +13,15 @@ function fim_animacao(){
     return _image + _spd >= sprite_get_number(_sprite);
 
 }
+function FadeToRoom(_room , _dur, _color){
+	show_debug_message("Debug : OFade criado")
+var _inst = instance_create_depth(0,0,0,oFade)
+with(_inst){
+	targetRoom = _room
+	duration = _dur
+	color = _color
+}
+}
 
 
 function mouseCordenada(_Player, _mouse){
@@ -29,6 +38,8 @@ function mouseCordenada(_Player, _mouse){
 }
 
 
+
+// atakes
 function scrspikes(){
 
 for (var i = 0; i < 8; i++) {

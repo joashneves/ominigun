@@ -136,6 +136,7 @@
     {"name":"oEye03","order":8,"path":"objects/oEye03/oEye03.yy",},
     {"name":"oEye04","order":9,"path":"objects/oEye04/oEye04.yy",},
     {"name":"oEye05","order":10,"path":"objects/oEye05/oEye05.yy",},
+    {"name":"oFade","order":7,"path":"objects/oFade/oFade.yy",},
     {"name":"oFullscreen","order":6,"path":"objects/oFullscreen/oFullscreen.yy",},
     {"name":"oGeraArma","order":3,"path":"objects/oGeraArma/oGeraArma.yy",},
     {"name":"oGeraInimigo","order":2,"path":"objects/oGeraInimigo/oGeraInimigo.yy",},
