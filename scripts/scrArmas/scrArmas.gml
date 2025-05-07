@@ -210,5 +210,15 @@ function scrArmas18(){
 	
 }
 
+// Espada
+function scrArmas19(){
+	
+	var bala = instance_create_depth(x,y,0,oBala19);
+	bala.image_angle = global.dir;
+	bala.direction = global.dir;
+	bala.speed = 9;
+	
+}
+
 
 #endregion

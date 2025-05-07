@@ -40,3 +40,12 @@ for (var i = 0; i < 8; i++) {
 }
 
 }
+function scrEspadaAtacks(){
+	for (var i = 0; i < 12; i++) {
+	    var angulo = i * 20; // Começa em 0, vai até 315
+	    var bala = instance_create_depth(x, y, -1, oBala19);
+	    bala.direction = angulo;
+	    bala.image_angle = angulo;
+	    bala.speed = 9;
+	}
+}

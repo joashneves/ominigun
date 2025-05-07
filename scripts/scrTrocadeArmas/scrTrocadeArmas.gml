@@ -1,4 +1,25 @@
 // Troca de armas e variaveis do personagem
+function scrTrocaDeArmaEspada(){
+	var arma19 = {
+	aparencia: sArma19,
+	recarga: 0, // Tempo cooldown
+	recargaTotal: 12, // Maximo tempo
+	arma: oArma19, // Arma jogada
+	bala: scrArmas19,
+	municaoTotal: 36
+
+}
+
+oPlayer.aparencia = arma19.aparencia;
+oPlayer.arma = arma19.arma;
+oPlayer.recarga = arma19.recarga;
+oPlayer.recargaTotal = arma19.recargaTotal;
+oPlayer.bala= arma19.bala;
+oPlayer.municaoTotal = arma19.municaoTotal;
+oPlayer.municao = arma19.municaoTotal;
+
+
+}
 function scrTrocaDeArma18(){
 		var arma18 = {
 	aparencia: sArma18,

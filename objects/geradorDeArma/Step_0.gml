@@ -5,8 +5,7 @@ if (timer++ >=( interval) )
     var y_pos = irandom(room_height);
 
     // Cria um novo objeto inimigo na posição aleatória escolhida
-	var obj = choose( oTrocaDeArma01,
-	oTrocaDeArma03, oTrocaDeArma05,
+	var obj = choose( oTrocaDeArma01, oTrocaDeArma18, oTrocaDeArma03, oTrocaDeArma05,
 	oTrocaDeArma06, oTrocaDeArma07,oTrocaDeArma08, oTrocaDeArma09, oTrocaDeArma10,
 	oTrocaDeArma11, oTrocaDeArma12, oTrocaDeArma13, oTrocaDeArma14, oTrocaDeArma16);
 

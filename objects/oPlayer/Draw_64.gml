@@ -73,7 +73,6 @@ if(player_morto){
 	draw_rectangle(0,0,camera_x,camera_y,false);
 	draw_sprite(sprite_index, image_index,camera_x/2,camera_y/2);
 }
-
 // wave
 if(instance_exists(geradorDeWave)){
 	var _wave = geradorDeWave.wave;

@@ -13,7 +13,6 @@ if(place_meeting(x,y,IDarmas)){
 }
 
 if (life <= 0) {
-	
 	instance_destroy();
 
 }
