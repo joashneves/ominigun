@@ -69,6 +69,7 @@ if(rage > rageMax){
 recarga+=multiplicadorDeRecarga;
 if (click_do_mouse_left && (recarga >= recargaTotal)){
 		script_execute(bala);
+		oImageArma.recuo_timer = 3; // frames de recuo
 		recarga=0;
 		municao--;
 	 
