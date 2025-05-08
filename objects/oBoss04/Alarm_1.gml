@@ -1,5 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-instance_create_depth(x,y,0,oMoeda);
-
-	oPlayer.BossMorto = true;
+dir = get_random_player_direction(45);
+speed = vel

@@ -22,6 +22,10 @@ with(_inst){
 	color = _color
 }
 }
+/// Verifica se um retângulo está dentro de outro
+function rectangle_in_rectangle(left1, top1, right1, bottom1, left2, top2, right2, bottom2) {
+    return !(right1 < left2 || left1 > right2 || bottom1 < top2 || top1 > bottom2);
+}
 
 
 function mouseCordenada(_Player, _mouse){

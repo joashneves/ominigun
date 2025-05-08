@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-instance_create_depth(x,y,0,oMoeda);
 
-	oPlayer.BossMorto = true;
+oPlayer.vida --;
+
+instance_destroy()
