@@ -139,7 +139,7 @@ for(var _i = -1; _i <= 1; _i++;){
 	show_debug_message("degub : view port : " + string(view_hport[0]) + "view Y : " + string(view_wport[0])
 	+ "imagem" + string(Buffs));
 	
-	var buff = instance_create_depth((view_wport[0]/2)+(64*_i), view_hport[0]/2 , -100, oBuffs);
+	var buff = instance_create_depth((view_wport[0]/2)+(128*_i), view_hport[0]/2 , -100, oBuffs);
 	buff._id = buffefeito[_i+1]._id;
 	buff._script = buffefeito[_i+1]._script
 	buff._tipo = buffefeito[_i+1]._tipo
