@@ -4,12 +4,12 @@
 
 
 if(municao++ >= municaoMax){
-			var bala = instance_create_depth(x,y,0,oBalaBoss);
-			bala.image_angle = point_direction(x,y,oPlayer.x, oPlayer.y);
-			bala.direction = point_direction(x,y,oPlayer.x, oPlayer.y);
-			bala.speed = 1;
+	var bala = instance_create_depth(x,y,0,oBalaBoss);
+	bala.image_angle = point_direction(x,y,oPlayer.x, oPlayer.y);
+	bala.direction = point_direction(x,y,oPlayer.x, oPlayer.y);
+	bala.speed = 1;
 	
-			municao=0;
+	municao=0;
 	
 }
 
