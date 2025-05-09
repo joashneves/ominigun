@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-
+	camera_shake(3, 10);
 	for(var i = 0 ; i < 3; i += 1;) {
 	var bala = instance_create_depth(x,y,0,oBala08);
 	bala.image_angle = point_direction(x,y, random_range(mouse_x-32, mouse_x+32), mouse_y);

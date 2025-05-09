@@ -1,3 +1,5 @@
+
+camera_shake(13, 10);
 for(var i = 60; i < 160; i++){
 	var bala = instance_create_depth(x,y,0,oBala00);
 	bala.image_angle = point_direction(x,y, mouse_x, mouse_y);

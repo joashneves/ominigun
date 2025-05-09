@@ -121,6 +121,7 @@ if(place_meeting(x,y,oBalaInimigo)){
 		vida--;
 		rage = 1;
 		levou_dano = true
+		camera_shake(6, 20);
 		audio_play_sound(sndDano,1,0);
 		gamepad_set_vibration(0, 0.5, 0.5);
 		for (var i = 0; i < ds_list_size(global.buffsAtivosDano); i++) {
@@ -140,6 +141,7 @@ if(place_meeting(x,y,oInimigo04)){
 		rage = 1;
 		levou_dano = true
 		audio_play_sound(sndDano,1,0);
+		camera_shake(6, 20);
 		gamepad_set_vibration(0, 0.5, 0.5);
 	for (var i = 0; i < ds_list_size(global.buffsAtivosDano); i++) {
 		var executarScript = ds_list_find_value(global.buffsAtivosDano,i);
