@@ -1,0 +1,1 @@
+oDataSuperCarrie.TremorTela = oDataSuperCarrie.TremorTela

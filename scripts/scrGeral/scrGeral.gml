@@ -34,7 +34,13 @@ function  camera_shake(magnitude, duration){
 	}
 	
 }
-
+//Salva jogo
+function salvaJogo(){
+if(file_exists("save.sav")) file_delete("save.sav");
+ini_open("save.sav");
+ini_close()	
+	
+}
 function mouseCordenada(_Player, _mouse){
 	var _Binario = 0;
 	

@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 if (global.pause) return;
+
 angle_offset += orbital_speed;
 angle_offset = angle_offset mod 360; // mantém o ângulo entre 0~359
 

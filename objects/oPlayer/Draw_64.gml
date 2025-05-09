@@ -42,7 +42,7 @@ draw_text(64, 78,"Munição: " + string(municao) );
 	var tamanho = ds_list_size(listaSprites); 
 
 	for (lista = tamanho - 1; lista >= 0; lista--) {
-	    draw_sprite(listaSprites[|lista], 0, 64, 64+((tamanho - lista) * 16));
+	    draw_sprite(listaSprites[|lista], 0, 12, 64+((tamanho - lista) * 16));
 	}
 	 draw_sprite(sMoeda,0,125,52);
 	 draw_text(155,54,  string(moeda)+"X");
