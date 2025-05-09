@@ -12,3 +12,6 @@ if(!alarm[11]) alarm[11]= 60;
 
 
 oPlayer.BossMorto = false
+
+	 image_xscale = 2;
+	 image_yscale = 2;

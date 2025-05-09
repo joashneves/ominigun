@@ -1,5 +1,12 @@
 	/// @description IA 
 
+
+if (oPlayer.x > x){
+	image_xscale = 3;
+}else if (oPlayer.x < x){
+image_xscale = -3;	
+}
+
 // Atribui o valor gerado às variáveis de movimento horizontal e vertical
 vspd = random_valueV * spd;
 hspd = random_valueH * spd;

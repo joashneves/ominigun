@@ -15,4 +15,7 @@ municaoTotal = random_range(120,290);
 
 lanca = 0;
 
+image_xscale = 2;
+image_yscale = 2;
+
 if(!alarm[0]) alarm[0] = 60;

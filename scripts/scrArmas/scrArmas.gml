@@ -23,7 +23,7 @@ function scrArmas00(){
 }
 // 12
 function scrArmas01(){
-	camera_shake(12, 20);
+	camera_shake(12, 10);
 	for(var i = 0 ; i < 3; i += 1;) {
 	var bala = instance_create_depth(x,y,0,oBala01);
 	bala.image_angle = global.dir;
@@ -34,7 +34,7 @@ function scrArmas01(){
 }
 // Sniper
 function scrArmas02(){
-	camera_shake(10, 20);
+	camera_shake(10, 10);
 	audio_play_sound(sndTiroArma02,4,false)
 	var bala = instance_create_depth(x,y,0,oBala02);
 	bala.image_angle = global.dir;
@@ -67,7 +67,7 @@ function scrArmas03(){
 }
 // Metralhadora
 function scrArmas04(){
-	camera_shake(3, 10);
+	camera_shake(1, 5);
 	audio_play_sound(sndTiroArma04,4,false)
 	var bala = instance_create_depth(x,y,0,oBala03);
 	bala.image_angle = global.dir;
@@ -76,7 +76,7 @@ function scrArmas04(){
 }
 //RPg
 function scrArmas05(){
-	camera_shake(12, 20);
+	camera_shake(12, 10);
 	audio_play_sound(sndTiroArma05,4,false)
 	var bala = instance_create_depth(x,y,0,oBala05);
 	bala.image_angle = global.dir;
@@ -88,7 +88,7 @@ function scrArmas05(){
 #region // Tier 3 de armas, armas zuadas
 //Mouse
 function scrArmas06(){
-	camera_shake(3, 10);
+	camera_shake(1, 5);
 	audio_play_sound(sndTiroArma06,4,false)
 	var bala = instance_create_depth(oCursor.x, oCursor.y,0,oBala06);
 	bala.image_angle = global.dir;
@@ -97,7 +97,7 @@ function scrArmas06(){
 }
 //Arpa
 function scrArmas07(){
-	camera_shake(3, 10);
+	camera_shake(1, 5);
 	var bala = instance_create_depth(x,y,0,oBala07);
 	bala.image_angle = point_direction(x,y, oCursor.x, oCursor.y);
 	bala.direction = point_direction(x,y, irandom_range(oCursor.x-64,oCursor.x+64), irandom_range(oCursor.y-64,oCursor.y+64));
@@ -105,7 +105,7 @@ function scrArmas07(){
 }
 // Inimigo
 function scrArmas08(){
-	camera_shake(6, 20);
+	camera_shake(6, 10);
 	audio_play_sound(sndTiroArma08,4,false)
 	var bala = instance_create_depth(x,y,0,oBala08);
 	bala.image_angle = global.dir;
@@ -116,7 +116,7 @@ function scrArmas08(){
 
 #region // Armas cyberpunk
 function scrArmas09(){
-	camera_shake(3, 10);
+	camera_shake(1, 5);
 	var bala = instance_create_depth(x,y,0,oBala09);
 	bala.image_angle = global.dir;
 	bala.direction = global.dir;
@@ -126,7 +126,7 @@ function scrArmas09(){
 
 //Pistola cyberpunk
 function scrArmas10(){
-	camera_shake(3, 10);
+	camera_shake(3, 5);
 	var bala = instance_create_depth(x,y,0,oBala10);
 	bala.image_angle = global.dir;
 	bala.direction = global.dir;
@@ -137,7 +137,7 @@ function scrArmas10(){
 
 // boomerang
 function scrArmas11(){
-	camera_shake(6, 20);
+	camera_shake(6, 10);
 	var bala = instance_create_depth(x,y,0,oBala11);
 	bala.image_angle = global.dir;
 	bala.direction = global.dir;
@@ -148,7 +148,7 @@ function scrArmas11(){
 #region // armas especiais
 
 function scrArmas12(){
-	camera_shake(6, 20);
+	camera_shake(6, 10);
 	var bala = instance_create_depth(x,y,0,oBala12);
 	bala.image_angle = global.dir;
 	bala.direction = global.dir;
@@ -173,7 +173,7 @@ function scrArmas13(){
 #region // Armas magia de gelo
 
 function scrArmas14(){
-	camera_shake(6, 20);
+	camera_shake(6, 10);
 	var bala = instance_create_depth(oCursor.x,oCursor.y,0,oBala14);
 	bala.image_angle = point_direction(mouse_x,mouse_y, x, y);
 	
@@ -215,7 +215,7 @@ function scrArmas17(){
 }
 
 function scrArmas18(){
-	camera_shake(6, 20);
+	camera_shake(6, 10);
 	var bala = instance_create_depth(x,y,0,oBala18);
 	bala.image_angle = global.dir;
 	bala.direction = global.dir;
@@ -225,7 +225,7 @@ function scrArmas18(){
 
 // Espada
 function scrArmas19(){
-	camera_shake(3, 10);
+	camera_shake(3, 5);
 	var bala = instance_create_depth(x,y,0,oBala19);
 	bala.image_angle = global.dir;
 	bala.direction = global.dir;

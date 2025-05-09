@@ -11,6 +11,8 @@ random_valueH = random_range(-3,3);
 random_valueV = random_range(-3,3);
 
 lanca = 0;
+image_xscale = 2;
+image_yscale = 2;
 
 municao = random_range(1,60);
 municaoTotal = random_range(160,190);

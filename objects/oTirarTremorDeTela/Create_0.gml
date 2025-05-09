@@ -5,4 +5,4 @@ oDataSuperCarrie.TremorTela = true
 
 
 
-
+cursor_sprite = sMouse

@@ -2,6 +2,13 @@
 // You can write your code in this editor
 
 
+if (oPlayer.x > x){
+	image_xscale = 2;
+}else if (oPlayer.x < x){
+image_xscale = -2;	
+}
+
+
 if(place_meeting(x,y,IDbalas)){
 	life=life-25;
 	if(oBala12)lanca+=1;

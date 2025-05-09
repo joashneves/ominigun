@@ -1,9 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 if (global.pause) return;
-x = oBoss02.x-264;
-y = oBoss02.y+216;
+angle_offset += orbital_speed;
+angle_offset = angle_offset mod 360; // mantém o ângulo entre 0~359
 
+x = oBoss02.x + lengthdir_x(radius, angle_offset);
+y = oBoss02.y + lengthdir_y(radius, angle_offset);
 #region // Ataque
 
 if(carregando++ >= carregandoMax){

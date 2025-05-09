@@ -7,3 +7,5 @@ audio_stop_all()
 
 
 
+
+cursor_sprite = sMouse

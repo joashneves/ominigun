@@ -18,6 +18,8 @@ if(vuneravel){
 	
 	if(!alarm[0]) alarm[0] = random_range(90,210);
 	 sprite_index = sBoss01Atack;
+	 image_xscale = 2;
+	 image_yscale = 2;
 
 }else if (!vuneravel){ // antes de ativar de ativar
 

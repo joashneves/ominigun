@@ -6,6 +6,13 @@ if(distance_to_object(oPlayer) > 160) {
 mp_potential_step_object(oPlayer.x,oPlayer.y,spd,oPlayer);
 }
 */
+
+if (oPlayer.x > x){
+	image_xscale = 2;
+}else if (oPlayer.x < x){
+image_xscale = -2;	
+}
+
 if( municao++ >= municaoTotal){
 		
 		

@@ -3,5 +3,5 @@
 draw_self();
 draw_set_font(fnt_menu);
 
-draw_text(x+64, y+16,"Tremor de ela");
+draw_text(x+64, y+16,"Tremor de TELA");
 

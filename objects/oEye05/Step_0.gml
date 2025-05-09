@@ -1,9 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 if (global.pause) return;
-x = oBoss02.x-364;
-y = oBoss02.y;
+angle_offset += orbital_speed;
+angle_offset = angle_offset mod 360; // mantém o ângulo entre 0~359
 
+x = oBoss02.x + lengthdir_x(radius, angle_offset);
+y = oBoss02.y + lengthdir_y(radius, angle_offset);
 if(place_meeting(x,y,IDbalas)){
 	life=life-25;
 

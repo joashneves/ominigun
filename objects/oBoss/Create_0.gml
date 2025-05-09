@@ -22,4 +22,5 @@ if (!alarm[0]) alarm[0] = timeInvocar;
 lanca = 0;
 
 oPlayer.BossMorto = false
-
+image_xscale = 2;
+image_yscale = 2;

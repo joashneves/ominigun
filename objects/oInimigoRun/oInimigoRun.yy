@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sInimigo03",
-    "path":"sprites/sInimigo03/sInimigo03.yy",
+    "name":"sInimigo05",
+    "path":"sprites/sInimigo05/sInimigo05.yy",
   },
   "spriteMaskId":null,
   "visible":true,

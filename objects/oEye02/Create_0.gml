@@ -11,3 +11,6 @@ carregandoMax = random_range(1000,2000);
 
 
 alarm[1] = 60;
+
+// Inherit the parent event
+event_inherited();
