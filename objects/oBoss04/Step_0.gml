@@ -1,4 +1,5 @@
 // Mudar sprites conforme posição na "minhoca"
+if(global.pause) return;
 if (!instance_exists(baixo)) {
     sprite_index = sBoss04Cauda;
 	corpo = "cauda"
