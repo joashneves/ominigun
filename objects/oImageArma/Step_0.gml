@@ -6,16 +6,16 @@ var recuo_y = lengthdir_y(-offset, global.dir);
 
 x = oPlayer.x + recuo_x;
 y = oPlayer.y + recuo_y;
-
+var dir = point_direction(x,y,oCursor.x, oCursor.y)
 // Direção e escala
-if (global.dir <= 90 || global.dir >= 270) {
+if (dir<= 90 || dir >= 270) {
     image_yscale = 1;
 } else {
     image_yscale = -1;
 }
 
 sprite_index = oPlayer.aparencia;
-image_angle = global.dir;
+image_angle = dir;
 image_alpha = oPlayer.player_morto ? 0 : 1;
 
 // Contador de recuo

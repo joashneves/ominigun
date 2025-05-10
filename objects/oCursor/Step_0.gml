@@ -1,14 +1,27 @@
-if global.pause return;
+if (global.pause) return;
 
-if gamepad_is_connected(0) {
-var haxis = gamepad_axis_value(0, gp_axisrh);
-var vaxis = gamepad_axis_value(0, gp_axisrv);
-direction = point_direction(0,0,haxis, vaxis);
-speed = point_distance(0 ,0, haxis, vaxis) * 50;
-//show_debug_message("mensagem : " + string(oPlayer.x) + "," + string(oPlayer.y) + " : " + string(haxis) + "," + string(vaxis) + " = " + string(oPlayer.x + haxis) + "," + string(oPlayer.y + vaxis))
-gamepad_set_axis_deadzone(0, 0.20); 
-}
-else{
-x = mouse_x;
-y = mouse_y;
+var mira_distancia = 100;
+var deadzone = 0.2;
+
+// Detectar movimento do mouse
+var mouse_moved = (mouse_x != last_mouse_x) || (mouse_y != last_mouse_y);
+last_mouse_x = mouse_x;
+last_mouse_y = mouse_y;
+
+var use_mouse = mouse_moved;
+
+if (gamepad_is_connected(0) && !use_mouse) {
+    var haxis = gamepad_axis_value(0, gp_axisrh);
+    var vaxis = gamepad_axis_value(0, gp_axisrv);
+    var dist = point_distance(0, 0, haxis, vaxis);
+
+    if (dist > deadzone) {
+        var ang = point_direction(0, 0, haxis, vaxis);
+        x = oPlayer.x + lengthdir_x(mira_distancia, ang);
+        y = oPlayer.y + lengthdir_y(mira_distancia, ang);
+    }
+} else {
+    // Mouse tem prioridade
+    x = mouse_x;
+    y = mouse_y;
 }

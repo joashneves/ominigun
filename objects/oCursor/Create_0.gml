@@ -1,4 +1,2 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-alarm[0] = 10
+last_mouse_x = mouse_x;
+last_mouse_y = mouse_y;
