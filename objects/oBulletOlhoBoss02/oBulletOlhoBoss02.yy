@@ -1,18 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"oBalaDanoBoss",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oBulletOlhoBoss02",
+  "eventList":[],
   "managed":true,
-  "name":"oBalaDanoBoss",
+  "name":"oBulletOlhoBoss02",
   "overriddenProperties":[],
   "parent":{
-    "name":"player",
-    "path":"folders/Objects/player.yy",
+    "name":"Boss01",
+    "path":"folders/Objects/Inimigos/BOSS/Boss01.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oBalaInimigo",
+    "path":"objects/oBalaInimigo/oBalaInimigo.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sBalaDanoBoss",
-    "path":"sprites/sBalaDanoBoss/sBalaDanoBoss.yy",
+    "name":"sBala04",
+    "path":"sprites/sBala04/sBala04.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -162,6 +162,8 @@
     {"id":{"name":"oBot","path":"objects/oBot/oBot.yy",},},
     {"id":{"name":"oBotaoWave","path":"objects/oBotaoWave/oBotaoWave.yy",},},
     {"id":{"name":"oBuffs","path":"objects/oBuffs/oBuffs.yy",},},
+    {"id":{"name":"oBulletOlhoBoss02","path":"objects/oBulletOlhoBoss02/oBulletOlhoBoss02.yy",},},
+    {"id":{"name":"oBullletBoss00","path":"objects/oBullletBoss00/oBullletBoss00.yy",},},
     {"id":{"name":"oBussola","path":"objects/oBussola/oBussola.yy",},},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
     {"id":{"name":"oCaneca","path":"objects/oCaneca/oCaneca.yy",},},

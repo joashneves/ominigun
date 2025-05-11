@@ -16,8 +16,8 @@
     "path":"folders/Objects/Inimigos/BOSS/Boss01.yy",
   },
   "parentObjectId":{
-    "name":"IDenemy",
-    "path":"objects/IDenemy/IDenemy.yy",
+    "name":"oInimigo04",
+    "path":"objects/oInimigo04/oInimigo04.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sEnemyOlhoBoss02",
-    "path":"sprites/sEnemyOlhoBoss02/sEnemyOlhoBoss02.yy",
+    "name":"sEnemyOlhoBoss01",
+    "path":"sprites/sEnemyOlhoBoss01/sEnemyOlhoBoss01.yy",
   },
   "spriteMaskId":null,
   "visible":true,

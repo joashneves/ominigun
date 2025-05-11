@@ -8,7 +8,14 @@ spd = 0.3;
 
 vuneravel = false;
 
+
+// ataque
+lasers = false;
+// Ativa o switch de fases/comportamentos
+fase = choose(0, 1, 2);
+
 if(!alarm[11]) alarm[11]= 60;
+if(!alarm[2]) alarm[2]= 20;
 
 
 oPlayer.BossMorto = false
