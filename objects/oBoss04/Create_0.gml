@@ -6,7 +6,7 @@ lifeMax = life;
 lanca = 0;
 
 municao = 0;
-municaoMax = random_range(90, 200);
+municaoMax = random_range(10, 60);
 tempo = 2.5
 
 vel = 2
