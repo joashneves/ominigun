@@ -1,18 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"oBalaBoss",
+  "%Name":"oBalaInimigoEspiral",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oBloco","path":"objects/oBloco/oBloco.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oBalaBoss",
+  "name":"oBalaInimigoEspiral",
   "overriddenProperties":[],
   "parent":{
-    "name":"Boss00",
-    "path":"folders/Objects/Inimigos/BOSS/Boss00.yy",
+    "name":"Projeteis",
+    "path":"folders/Objects/Inimigos/Projeteis.yy",
   },
   "parentObjectId":{
     "name":"oBalaInimigo",
@@ -36,12 +38,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sEnemyOlhoBoss02",
-    "path":"sprites/sEnemyOlhoBoss02/sEnemyOlhoBoss02.yy",
+    "name":"sInimigoBala",
+    "path":"sprites/sInimigoBala/sInimigoBala.yy",
   },
-  "spriteMaskId":{
-    "name":"sBalas",
-    "path":"sprites/sBalas/sBalas.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }

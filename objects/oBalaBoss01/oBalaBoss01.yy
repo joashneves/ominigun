@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sBalas",
-    "path":"sprites/sBalas/sBalas.yy",
+    "name":"sInimigoBala",
+    "path":"sprites/sInimigoBala/sInimigoBala.yy",
   },
   "spriteMaskId":null,
   "visible":true,

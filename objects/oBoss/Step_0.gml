@@ -1,6 +1,20 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// Verifica se perdeu 30 ou mais de vida desde o último disparo
+if (vida_trigger - life >= 260) {
+    // Dispara em 8 direções
+    for (var i = 0; i < 8; i++) {
+        var angulo = i * 45;
+        var bala = instance_create_depth(x, y, -1, oBalaInimigo);
+        bala.direction = angulo;
+        bala.image_angle = angulo;
+        bala.speed = 4;
+    }
+
+    // Atualiza o próximo limite de disparo
+    vida_trigger = vida_trigger - 30;
+}
 
 
 if(municao++ >= municaoMax){
@@ -12,8 +26,24 @@ if(municao++ >= municaoMax){
 	municao=0;
 	
 }
+// Atualiza a velocidade de acordo com a vida do boss
+var vida_proporcao = life / lifeMax;
+orbital_speed = lerp(1.4, 0.2, vida_proporcao); // Começa em 0.2 e vai até 1.4 conforme perde vida
 
-if(instance_number(oOlho) <= 2)vuneravel = true;
+// Atualiza o ângulo e posição do olho
+angle_offset += orbital_speed;
+angle_offset = angle_offset mod 360;
+
+if instance_exists(oPortaRoom){
+	x = oPortaRoom.x + lengthdir_x(radius, angle_offset);
+	y = oPortaRoom.y + lengthdir_y(radius, angle_offset);
+}
+else if instance_exists(oPlayer){
+	x = oPlayer.x + lengthdir_x(radius, angle_offset);
+	y = oPlayer.y + lengthdir_y(radius, angle_offset);
+}
+
+if(instance_number(oOlho) <= 3)vuneravel = true;
 if(instance_number(oOlho) > 2)vuneravel = false;
 
 if(vuneravel){
