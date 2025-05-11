@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"sBoss04Corpo",
   "bboxMode":0,
-  "bbox_bottom":63,
+  "bbox_bottom":61,
   "bbox_left":0,
   "bbox_right":63,
   "bbox_top":0,

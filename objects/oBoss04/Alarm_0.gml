@@ -1,4 +1,5 @@
 
+//show_debug_message("Tempo tempo : " + string(corpo));
 
 var vx = camera_get_view_x(view_camera[0]);
 var vy = camera_get_view_y(view_camera[0]);
@@ -80,5 +81,5 @@ if (!global.pause) {
 }
 
 // Reativa o alarme
-alarm[0] = 10;
+alarm[0] = 10*tempo;
 	
