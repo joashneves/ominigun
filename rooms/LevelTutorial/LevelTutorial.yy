@@ -44,7 +44,6 @@
     {"name":"inst_685736FC","path":"rooms/LevelTutorial/LevelTutorial.yy",},
     {"name":"inst_91A11D5","path":"rooms/LevelTutorial/LevelTutorial.yy",},
     {"name":"inst_1D5AB0B8","path":"rooms/LevelTutorial/LevelTutorial.yy",},
-    {"name":"inst_370C6608","path":"rooms/LevelTutorial/LevelTutorial.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -71,7 +70,6 @@
         {"$GMRInstance":"v2","%Name":"inst_4808E166","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4808E166","objectId":{"name":"oLoja","path":"objects/oLoja/oLoja.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1984.0,"y":128.0,},
         {"$GMRInstance":"v2","%Name":"inst_6286E65D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6286E65D","objectId":{"name":"oLojista","path":"objects/oLojista/oLojista.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2112.0,"y":128.0,},
         {"$GMRInstance":"v2","%Name":"inst_1D5AB0B8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1D5AB0B8","objectId":{"name":"oTrocaDeArma00","path":"objects/oTrocaDeArma00/oTrocaDeArma00.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":352.0,},
-        {"$GMRInstance":"v2","%Name":"inst_370C6608","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_370C6608","objectId":{"name":"oSpawnBoss","path":"objects/oSpawnBoss/oSpawnBoss.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":672.0,"y":384.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMREffectLayer":"","%Name":"folhaEffect","depth":300,"effectEnabled":true,"effectType":"_effect_windblown_particles","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"folhaEffect","properties":[
         {"name":"param_sprite","type":2,"value":"_effect_windblown_particles_leaf_sprite",},
