@@ -1,6 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_self();
 
 var imagexscale = 0;
 if(x < oPlayer.x) imagexscale = 1;
@@ -24,4 +23,6 @@ draw_text(x + 32, y+48,"Player possição : " + string(distancia));
 }
 
 
+// Inherit the parent event
+event_inherited();
 

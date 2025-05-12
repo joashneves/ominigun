@@ -2,9 +2,9 @@
 // You can write your code in this editor
 
 if (oPlayer.x > x){
-	image_xscale = 2;
+	image_xscale = 1;
 }else if (oPlayer.x < x){
-image_xscale = -2;	
+image_xscale = -1;	
 }
 
 if(place_meeting(x,y,IDbalas)){
@@ -12,9 +12,14 @@ if(place_meeting(x,y,IDbalas)){
 	if(oBala12)lanca+=1;
 	instance_destroy(instance_place(x,y,IDbalas));
 	audio_play_sound(sndDanoinimigo,2,0);
+	levou_dano = true;
+	dano_timer = 5; // frames de recuo/efeito
+
 }
 if(place_meeting(x,y,IDarmas)){
 	life=life-50;
+	levou_dano = true;
+	dano_timer = 5; // frames de recuo/efeito
 	audio_play_sound(sndDanoinimigo,2,0);
 }
 

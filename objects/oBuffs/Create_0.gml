@@ -9,4 +9,4 @@ _tipo = "dano"
 cursor_sprite = sMouse;
 
 
-createLight(x,y,c_white, 1, 12,12, self)
+createLight(x,y,c_white, 1, 5,12, self)

@@ -13,4 +13,5 @@ draw_text(x + 32, y+24,"Lanças : " + string(lanca));
 }
 
 
-draw_self();
+// Inherit the parent event
+event_inherited();

@@ -10,4 +10,5 @@ draw_text(x + 32, y+16,"Posição: (" + string(x) + ", " + string(y) + ")");
 }
 
 
-draw_self();
+// Inherit the parent event
+event_inherited();

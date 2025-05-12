@@ -12,5 +12,4 @@ draw_set_font(fnt_ui);
 draw_text(x + 32, y+36,"Velocidade:"  + string(speed));
 }
 
-
-draw_self();
+draw_self()
