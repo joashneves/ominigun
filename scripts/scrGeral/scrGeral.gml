@@ -26,8 +26,32 @@ with(_inst){
 function rectangle_in_rectangle(left1, top1, right1, bottom1, left2, top2, right2, bottom2) {
     return !(right1 < left2 || left1 > right2 || bottom1 < top2 || top1 > bottom2);
 }
+
+function resize_light_surface() {
+    with(oLightRender) {
+        var _w = view_get_wport(view_camera[0]);
+        var _h = view_get_hport(view_camera[0]);
+
+        if (!surface_exists(surf_light) || surface_get_width(surf_light) != _w || surface_get_height(surf_light) != _h) {
+            if (surface_exists(surf_light)) surface_free(surf_light);
+            surf_light = surface_create(_w, _h, surface_rgba16float);
+        }
+
+        // Sempre inicialize essas variáveis
+        if (!variable_instance_exists(id, "draw_surf_x")) draw_surf_x = 0;
+        if (!variable_instance_exists(id, "draw_surf_y")) draw_surf_y = 0;
+		// Centralizar na view
+		
+		draw_surf_x = camera_get_view_x(view_camera[0]);
+		draw_surf_y = camera_get_view_y(view_camera[0]);
+		
+		show_debug_message("draw_surf_x : " + string(draw_surf_x) + "draw_surf_y : " + string(draw_surf_y))
+    }
+}
+
+
 // balanço de camera
-function  camera_shake(magnitude, duration){
+function camera_shake(magnitude, duration){
 	if(oDataSuperCarrie.TremorTela){
 	global.shake_magnitude = magnitude;
 	global.shake_duration = duration;
