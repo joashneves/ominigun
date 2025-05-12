@@ -19,3 +19,5 @@ image_xscale = 2;
 image_yscale = 2;
 
 if(!alarm[0]) alarm[0] = 60;
+
+createLight(x,y,c_red, 0.5, 2,2, self)

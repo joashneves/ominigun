@@ -25,5 +25,7 @@ item2 = choose(oTrocaDeArma00, oTrocaDeArma01,oTrocaDeArma02,
 	oTrocaDeArma13, oTrocaDeArma14, oTrocaDeArma16,oCuraLife,oMoeda);	
 
 
+createLight(x,y,c_lime, 1, image_xscale,image_yscale, self)
+
 
 

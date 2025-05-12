@@ -22,3 +22,5 @@ oPlayer.BossMorto = false
 
 	 image_xscale = 2;
 	 image_yscale = 2;
+	 
+	 createLight(x,y,c_white, 2, image_xscale,image_yscale, self)

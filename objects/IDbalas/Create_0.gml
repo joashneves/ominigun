@@ -1,0 +1,1 @@
+createLight(x,y,c_white, 1, 1,1, self)

@@ -7,3 +7,6 @@ _tipo = "dano"
 
 
 cursor_sprite = sMouse;
+
+
+createLight(x,y,c_white, 1, 12,12, self)

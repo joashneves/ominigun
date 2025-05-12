@@ -16,3 +16,5 @@ image_yscale = 2;
 
 municao = random_range(1,60);
 municaoTotal = random_range(60,90);
+
+createLight(x,y,c_red, 0.5, 2,2, self)

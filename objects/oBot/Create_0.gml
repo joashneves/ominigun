@@ -17,3 +17,5 @@ municaoTotal = random_range(50,150);
 if(!alarm[0]) alarm[0] = 60;
 if(!alarm[1]) alarm[1] = 60;
 if(!alarm[3]) alarm[3] = 60;
+
+createLight(x,y,c_white, 1, 1,1, self)

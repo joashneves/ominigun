@@ -16,3 +16,6 @@ image_yscale = 2;
 
 speed = spd;
 alarm[0] = 10;
+
+
+createLight(x,y,c_red, 0.5, 2,2, self)

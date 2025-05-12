@@ -82,4 +82,6 @@ axiosLH = 0
 axiosLV = 0
 axiosRH = 0
 axiosRV = 0
-
+// luz
+createLight(x,y,c_white, 0.5, 2,2, self)
+createLight(x,y,c_white, 1, 4,4, oCursor)
