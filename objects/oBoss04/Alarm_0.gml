@@ -35,14 +35,13 @@ if (!global.pause) {
     // Ataques por segmento
     switch(corpo){
         case "corpo":
-			var bala_atack = choose(oThornAtack00, oBulletOlhoBoss02)
+			municaoMax = random_range(30, 60);
             if (++municao >= municaoMax) {
-                var bala = instance_create_depth(x, y, 0, bala_atack);
-                var shot_dir = point_direction(x, y, oPlayer.x, oPlayer.y);
-                bala.image_angle = shot_dir;
-                bala.direction = shot_dir;
-                bala.speed = choose(3,5,7);
-                municao = 0;
+				var laser = instance_create_depth(x,y,0,oBulletLaserBoss00);
+				laser.image_angle = point_direction(x,y,oPlayer.x, oPlayer.y);
+				laser.direction = point_direction(x,y,oPlayer.x, oPlayer.y);
+				laser.speed = 7;
+				municao = 0
             }
         break;
 
@@ -59,11 +58,11 @@ if (!global.pause) {
 		
 			if (distance_to_object(oPlayer) < 12)
 			{
-				var bala = instance_create_depth(x,y,0,oBalaInimigo);
+				var bala = instance_create_depth(x,y,0,oBulletLaserBoss00);
 				bala.image_angle = point_direction(x,y,oPlayer.x, oPlayer.y);
 				bala.direction = point_direction(x,y,oPlayer.x, oPlayer.y);
-				bala.speed = 6;
-				bala.image_blend = c_red;
+				bala.speed = 16;
+				
 			}
 			municaoMax = 60;
             if (++municao >= municaoMax) {

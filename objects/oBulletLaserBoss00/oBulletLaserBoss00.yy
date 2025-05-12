@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"oBalaInimigoBase",
+  "%Name":"oBulletLaserBoss00",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oBloco","path":"objects/oBloco/oBloco.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oBalaInimigoBase",
+  "name":"oBulletLaserBoss00",
   "overriddenProperties":[],
   "parent":{
-    "name":"Projeteis",
-    "path":"folders/Objects/Inimigos/Projeteis.yy",
+    "name":"Boss03",
+    "path":"folders/Objects/Inimigos/BOSS/Boss03.yy",
   },
   "parentObjectId":{
     "name":"oBalaInimigo",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sBalas02",
-    "path":"sprites/sBalas02/sBalas02.yy",
+    "name":"sBala04",
+    "path":"sprites/sBala04/sBala04.yy",
   },
   "spriteMaskId":null,
   "visible":true,

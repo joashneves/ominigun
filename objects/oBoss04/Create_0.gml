@@ -13,7 +13,6 @@ vel = 2
 alarm[0] = 10*tempo;
 //
 
-
 show_debug_message("Corpo : " + string(corpo) + " baixo : " + string(baixo)+ " Topo : " + string(topo));
 dir = point_direction(x,y,x,y);
 speed = 0
