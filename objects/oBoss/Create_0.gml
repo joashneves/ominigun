@@ -26,7 +26,7 @@ if (!alarm[0]) alarm[0] = timeInvocar;
 lanca = 0;
 
 oPlayer.BossMorto = false
-image_xscale = 2;
-image_yscale = 2;
+image_xscale = 1;
+image_yscale = 1;
 
 createLight(x,y,c_white, 2, image_xscale,image_yscale, self)

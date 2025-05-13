@@ -1,7 +1,7 @@
 topo = noone;
 baixo = noone;
 corpo = "corpo"
-life = 40;
+life = 100;
 lifeMax = life;
 lanca = 0;
 
@@ -18,3 +18,5 @@ dir = point_direction(x,y,x,y);
 speed = 0
 
 oPlayer.BossMorto = false;
+
+createLight(x,y,c_white, 2, 2,2, self)

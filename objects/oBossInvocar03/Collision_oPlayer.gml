@@ -5,10 +5,11 @@ var _Controller = gamepad_button_check(0, gp_face1) || gamepad_button_check(0, g
 var _E =  keyboard_check(ord("E")) ||  _Controller
 
 
-if(_E){
+if(_E and !bossSpawn){
 	
 	instance_create_depth(x,y-602,0,oSpawnBoss);
-	instance_destroy();
+	bossSpawn = true
+	image_alpha = 0
 }
 
 

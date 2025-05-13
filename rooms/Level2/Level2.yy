@@ -261,6 +261,7 @@
     {"name":"inst_27B4DCC5","path":"rooms/Level2/Level2.yy",},
     {"name":"inst_6803E78B","path":"rooms/Level2/Level2.yy",},
     {"name":"inst_41F2FB79","path":"rooms/Level2/Level2.yy",},
+    {"name":"inst_2A315724","path":"rooms/Level2/Level2.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -424,6 +425,7 @@
     {"$GMRInstanceLayer":"","%Name":"Boss","depth":300,"effectEnabled":true,"effectType":"_filter_heathaze","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_2A31FC5D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2A31FC5D","objectId":{"name":"oBoss01","path":"objects/oBoss01/oBoss01.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-544.0,"y":-320.0,},
         {"$GMRInstance":"v2","%Name":"inst_158916DA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_158916DA","objectId":{"name":"oBossInvocar01","path":"objects/oBossInvocar01/oBossInvocar01.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.8125,"scaleY":4.4375,"x":2784.0,"y":2240.0,},
+        {"$GMRInstance":"v2","%Name":"inst_2A315724","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2A315724","objectId":{"name":"oBoss01","path":"objects/oBoss01/oBoss01.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":384.0,"y":224.0,},
       ],"layers":[],"name":"Boss","properties":[
         {"name":"g_Distort1Speed","type":0,"value":"0.01",},
         {"name":"g_Distort2Speed","type":0,"value":"0.025",},

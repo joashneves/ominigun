@@ -1,6 +1,6 @@
 
 // Número de segmentos
-var total = 84;
+var total = 49;
 var anterior = noone;
 
 // Criar os segmentos em sequência

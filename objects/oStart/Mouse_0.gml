@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-room_goto(LevelTutorial);
+room_goto(Level3);
 
 cursor_sprite = -1
 
