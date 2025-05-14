@@ -130,6 +130,7 @@
     {"name":"oBossInvocar03","order":3,"path":"objects/oBossInvocar03/oBossInvocar03.yy",},
     {"name":"oBot","order":2,"path":"objects/oBot/oBot.yy",},
     {"name":"oBotaoWave","order":1,"path":"objects/oBotaoWave/oBotaoWave.yy",},
+    {"name":"oBuffsController","order":1,"path":"objects/oBuffsController/oBuffsController.yy",},
     {"name":"oBulletLaserBoss00","order":5,"path":"objects/oBulletLaserBoss00/oBulletLaserBoss00.yy",},
     {"name":"oBulletOlhoBoss02","order":3,"path":"objects/oBulletOlhoBoss02/oBulletOlhoBoss02.yy",},
     {"name":"oBullletBoss00","order":4,"path":"objects/oBullletBoss00/oBullletBoss00.yy",},

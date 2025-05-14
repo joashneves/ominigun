@@ -6,6 +6,7 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
+    {"name":"inst_91A11D5","path":"rooms/LevelTutorial/LevelTutorial.yy",},
     {"name":"inst_4263C61D","path":"rooms/LevelTutorial/LevelTutorial.yy",},
     {"name":"inst_6DFAECB7","path":"rooms/LevelTutorial/LevelTutorial.yy",},
     {"name":"inst_2FC3891B","path":"rooms/LevelTutorial/LevelTutorial.yy",},
@@ -42,7 +43,6 @@
     {"name":"inst_63E9953B","path":"rooms/LevelTutorial/LevelTutorial.yy",},
     {"name":"inst_1F4709E1","path":"rooms/LevelTutorial/LevelTutorial.yy",},
     {"name":"inst_685736FC","path":"rooms/LevelTutorial/LevelTutorial.yy",},
-    {"name":"inst_91A11D5","path":"rooms/LevelTutorial/LevelTutorial.yy",},
     {"name":"inst_1D5AB0B8","path":"rooms/LevelTutorial/LevelTutorial.yy",},
     {"name":"inst_1FE97BFF","path":"rooms/LevelTutorial/LevelTutorial.yy",},
   ],
@@ -288,7 +288,7 @@
   },
   "sequenceId":null,
   "views":[
-    {"hborder":32,"hport":600,"hspeed":-1,"hview":600,"inherit":false,"objectId":{"name":"olevel","path":"objects/olevel/olevel.yy",},"vborder":32,"visible":true,"vspeed":-1,"wport":800,"wview":800,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":32,"hport":600,"hspeed":-1,"hview":600,"inherit":false,"objectId":{"name":"olevel","path":"objects/olevel/olevel.yy",},"vborder":32,"visible":false,"vspeed":-1,"wport":800,"wview":800,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
@@ -300,7 +300,7 @@
   "viewSettings":{
     "clearDisplayBuffer":true,
     "clearViewBackground":false,
-    "enableViews":true,
+    "enableViews":false,
     "inheritViewSettings":false,
   },
   "volume":1.0,

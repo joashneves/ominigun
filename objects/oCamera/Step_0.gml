@@ -1,4 +1,9 @@
 // Step
+if (!variable_instance_exists(id, "width_") || !variable_instance_exists(id, "height_")) {
+    width_  = camera_get_view_width(view_camera[0]);
+    height_ = camera_get_view_height(view_camera[0]);
+}
+
 if (!instance_exists(target_)) exit;
 
 x = lerp(x, target_.x, 0.1);

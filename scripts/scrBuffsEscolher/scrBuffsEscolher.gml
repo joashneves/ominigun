@@ -130,6 +130,12 @@ global.pause = true
 	
 buffefeito = array_create(2);
 
+var cam_x = camera_get_view_x(view_camera[0]);
+var cam_y = camera_get_view_y(view_camera[0]);
+var cam_w = camera_get_view_width(view_camera[0]);
+var cam_h = camera_get_view_height(view_camera[0]);
+
+
 for(var _i = -1; _i <= 1; _i++;){
 	buffefeito[_i+1] = choose(buffDanoMetralhador, buffDanoFogo, buffDanoPortal, buffDanoArpa, buffTempoPortal,
 	buffTempoRobo, buffTempoBazuca,buffTempoArpa, buffTempoLife, buffTempoMoeda, buffTempoArma00, buffTempoArma01,
@@ -139,7 +145,10 @@ for(var _i = -1; _i <= 1; _i++;){
 	show_debug_message("degub : view port : " + string(view_hport[0]) + "view Y : " + string(view_wport[0])
 	+ "imagem" + string(Buffs));
 	
-	var buff = instance_create_depth((view_wport[0]/2)+(128*_i), view_hport[0]/2 , -100, oBuffs);
+	    var buff_x = cam_x + (cam_w / 2) + (128 * _i);
+    var buff_y = cam_y + (cam_h / 2);
+
+    var buff = instance_create_depth(buff_x, buff_y, -100, oBuffs);
 	buff._id = buffefeito[_i+1]._id;
 	buff._script = buffefeito[_i+1]._script
 	buff._tipo = buffefeito[_i+1]._tipo

@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"olevel",
+  "%Name":"oBuffsController",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"olevel",
+  "name":"oBuffsController",
   "overriddenProperties":[],
   "parent":{
-    "name":"Porta e camera",
-    "path":"folders/Objects/Misc/Porta e camera.yy",
+    "name":"Buffs",
+    "path":"folders/Objects/buffsOustatus/Buffs.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sGenerico",
-    "path":"sprites/sGenerico/sGenerico.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
