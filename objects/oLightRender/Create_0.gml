@@ -6,8 +6,8 @@ ambient_light = c_grey; // Cor da luz
 }
 
 surf_light = -1; // camadas de luzes
-draw_surf_x = camera_get_view_x(view_camera[0]);
-draw_surf_y = camera_get_view_y(view_camera[0]);
+draw_surf_x = 0;
+draw_surf_y = 0;
 
 if (os_type == os_windows) {
     show_debug_message("Rodando no Windows");
