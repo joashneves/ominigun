@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Link",
-    "path":"folders/Objects/Misc/Link.yy",
+    "path":"folders/Objects/Misc/Porta e camera/Link.yy",
   },
   "parentObjectId":null,
   "persistent":false,

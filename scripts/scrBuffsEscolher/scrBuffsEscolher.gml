@@ -142,11 +142,13 @@ for(var _i = -1; _i <= 1; _i++;){
 	buffTempoArma02, buffTiroArma00, buffTiroArma01, buffTiroArma02, buffTiroArma, buffDanoSpike);
 	
 	var Buffs = oBuffs;
-	show_debug_message("degub : view port : " + string(view_hport[0]) + "view Y : " + string(view_wport[0])
-	+ "imagem" + string(Buffs));
-	
+
 	    var buff_x = cam_x + (cam_w / 2) + (128 * _i);
     var buff_y = cam_y + (cam_h / 2);
+	
+		show_debug_message("degub : view port : " + string(buff_x) + "view Y : " + string(buff_y)
+	+ "imagem" + string(Buffs));
+	
 
     var buff = instance_create_depth(buff_x, buff_y, -100, oBuffs);
 	buff._id = buffefeito[_i+1]._id;
