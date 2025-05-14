@@ -23,8 +23,6 @@ gpu_set_blendmode(bm_add);
 		draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, _frac)
 	}
  //draw_sprite_ext(sLight, 0, oCursor.x,  oCursor.y, 4, 4, 0, c_white, 1); // Luz 2x maior
-var _w = camera_get_view_width(view_camera[0]);
-var _h = camera_get_view_height(view_camera[0]);
 
 
 gpu_set_blendmode(bm_normal);
