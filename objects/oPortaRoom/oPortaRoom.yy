@@ -29,8 +29,8 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"targetEntrada","filters":[],"listItems":[],"multiselect":false,"name":"targetEntrada","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"entrada_0_0","varType":4,},
-    {"$GMObjectProperty":"v1","%Name":"tagetRoom","filters":[],"listItems":[],"multiselect":false,"name":"tagetRoom","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"Level1","path":"rooms/Level1/Level1.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Level1","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"targetEntrada","filters":[],"listItems":[],"multiselect":false,"name":"targetEntrada","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Entrada_Final","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"tagetRoom","filters":[],"listItems":[],"multiselect":false,"name":"tagetRoom","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"LevelFinal","path":"rooms/LevelFinal/LevelFinal.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"LevelFinal","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

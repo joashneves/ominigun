@@ -16,7 +16,7 @@ if(!instance_exists(oBoss))instance_destroy();
 	    var bala = instance_create_depth(spawn_x, spawn_y, 0, oBalaInimigoSniper);
 	    bala.direction = point_direction(spawn_x, spawn_y, px, py);
 	    bala.image_angle = bala.direction;
-	    bala.speed = 16;
+	    bala.speed = 7;
 
 	    municao = 0;
 	}
