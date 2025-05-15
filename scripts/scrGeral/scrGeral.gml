@@ -48,9 +48,13 @@ function resize_light_surface() {
         show_debug_message("draw_surf_x: " + string(draw_surf_x) + " draw_surf_y: " + string(draw_surf_y));
     }
 }
+// Obter armas
+function obterTodasArmas(){
+	return choose( oTrocaDeArma01, oTrocaDeArma18, oTrocaDeArma03, oTrocaDeArma05,
+	oTrocaDeArma06, oTrocaDeArma07,oTrocaDeArma08, oTrocaDeArma09, oTrocaDeArma10,
+	oTrocaDeArma11, oTrocaDeArma12, oTrocaDeArma13, oTrocaDeArma14, oTrocaDeArma16);
 
-
-
+}
 // balanço de camera
 function camera_shake(magnitude, duration){
 	if(oDataSuperCarrie.TremorTela){

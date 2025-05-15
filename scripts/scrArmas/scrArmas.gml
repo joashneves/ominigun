@@ -194,10 +194,20 @@ function scrArmas15(){
 
 function scrArmas16(){
 	
-	var bala = instance_create_depth(x,y,0,oBala16);
-	bala.image_angle = global.dir;
-	bala.direction = global.dir;
-	bala.speed = 7;
+	camera_shake(6, 10);
+	 var quantidade = irandom_range(4, 8); // Entre 4 e 8 tiros
+
+    for (var i = 0; i < quantidade; i++) {
+        // Direção com imprecisão (±32 pixels em X e Y)
+        var desvioX = random_range(oCursor.x-32,oCursor.x+ 32);
+        var desvioY = random_range(oCursor.y-32, oCursor.y+32);
+        var dir = point_direction(x, y,  desvioX,  desvioY);
+
+        var bala = instance_create_depth(x, y, 0, oBala16);
+        bala.direction = dir;
+        bala.image_angle = dir;
+        bala.speed = random_range(10, 14); // Velocidade levemente variável
+    }
 	
 }
 

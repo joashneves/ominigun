@@ -1,5 +1,6 @@
 /// @description Mirar no player
 
+createLight(x,y,c_red, 1, 1,1, self)
 
 scale = 0.2;
 

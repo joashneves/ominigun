@@ -9,20 +9,11 @@ item = choose(oTrocaDeArma00, oTrocaDeArma01,oTrocaDeArma02,
 	oTrocaDeArma03,oTrocaDeArma04, oTrocaDeArma05,  oTrocaDeArma17,
 	oTrocaDeArma06, oTrocaDeArma07, oTrocaDeArma08,
 	oTrocaDeArma09, oTrocaDeArma10, oTrocaDeArma11, oTrocaDeArma12,
-	oTrocaDeArma13, oTrocaDeArma14,oTrocaDeArma16,oCuraLife,oMoeda);	
+	oTrocaDeArma13, oTrocaDeArma14,oTrocaDeArma16, oTrocaDeArma18,oCuraLife,oMoeda);	
 
+item1 = obterTodasArmas();	
 
-item1 = choose(oTrocaDeArma00, oTrocaDeArma01,oTrocaDeArma02,
-	oTrocaDeArma03,oTrocaDeArma04, oTrocaDeArma05, oTrocaDeArma17,
-	oTrocaDeArma06, oTrocaDeArma07, oTrocaDeArma08,
-	oTrocaDeArma09, oTrocaDeArma10, oTrocaDeArma11, oTrocaDeArma12,
-	oTrocaDeArma13, oTrocaDeArma14, oTrocaDeArma16, oCuraLife,oMoeda);	
-
-item2 = choose(oTrocaDeArma00, oTrocaDeArma01,oTrocaDeArma02,
-	oTrocaDeArma03,oTrocaDeArma04, oTrocaDeArma05,  oTrocaDeArma17,
-	oTrocaDeArma06, oTrocaDeArma07, oTrocaDeArma08,
-	oTrocaDeArma09, oTrocaDeArma10, oTrocaDeArma11, oTrocaDeArma12,
-	oTrocaDeArma13, oTrocaDeArma14, oTrocaDeArma16,oCuraLife,oMoeda);	
+item2 = obterTodasArmas();	
 
 
 createLight(x,y,c_lime, 1, image_xscale,image_yscale, self)

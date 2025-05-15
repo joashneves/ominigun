@@ -67,7 +67,7 @@ function scrTrocaDeArma16(){
 		var arma16 = {
 	aparencia: sArma16,
 	recarga: 0,
-	recargaTotal: 9,
+	recargaTotal: 29,
 	arma: oArma16,
 	bala: scrArmas16,
 	municaoTotal: 20
