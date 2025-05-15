@@ -11,7 +11,13 @@ if (vuneravel) {
             // Fase padrão: perseguição simples + ataque eventual
             
             // Transparência e velocidade
-            image_alpha = 1;
+            // Visibilidade baseada na velocidade
+			// spd_max é a velocidade máxima possível (ajuste conforme seu jogo)
+			var spd_max = 5;
+
+			// Garante que a alpha fique entre 0.2 (mais invisível) e 1 (totalmente visível)
+			image_alpha = clamp(0.2 + (spd / spd_max), 0.2, 1);
+
             speed = (instance_number(oBulletOlhoBoss02) >= 6) ? 0.2 : 0.6;
             
             // Direção para o player
@@ -107,7 +113,13 @@ if (vuneravel) {
     speed = spd;
 
     // Transparência reduzida antes de vulnerabilidade
-    image_alpha = 0.6;
+    // Visibilidade baseada na velocidade
+	// spd_max é a velocidade máxima possível (ajuste conforme seu jogo)
+	var spd_max = 2.5;
+
+	// Garante que a alpha fique entre 0.2 (mais invisível) e 1 (totalmente visível)
+	image_alpha = clamp(0.2 + (spd / spd_max), 0.2, 1);
+
 }
 
 // Dano com bala especial
