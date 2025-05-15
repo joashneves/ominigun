@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"Level2_2",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/Level2_2/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
@@ -29,7 +29,6 @@
     {"name":"inst_70E3DBDB","path":"rooms/Level2_2/Level2_2.yy",},
     {"name":"inst_3448078D","path":"rooms/Level2_2/Level2_2.yy",},
     {"name":"inst_2C8CA1CA","path":"rooms/Level2_2/Level2_2.yy",},
-    {"name":"inst_5D61DA5B","path":"rooms/Level2_2/Level2_2.yy",},
     {"name":"inst_4DB58DE7","path":"rooms/Level2_2/Level2_2.yy",},
     {"name":"inst_19B33D2C","path":"rooms/Level2_2/Level2_2.yy",},
     {"name":"inst_1429CD38","path":"rooms/Level2_2/Level2_2.yy",},
@@ -71,8 +70,6 @@
     {"name":"inst_32ADCEEF","path":"rooms/Level2_2/Level2_2.yy",},
     {"name":"inst_3EE337CC","path":"rooms/Level2_2/Level2_2.yy",},
     {"name":"inst_320CAE4D_3_1","path":"rooms/Level2_2/Level2_2.yy",},
-    {"name":"inst_69AB8DB8","path":"rooms/Level2_2/Level2_2.yy",},
-    {"name":"inst_42B522F0","path":"rooms/Level2_2/Level2_2.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -106,9 +103,6 @@
         {"$GMRInstance":"v2","%Name":"inst_302A6BE4_2_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_302A6BE4_2_1","objectId":{"name":"oLoja","path":"objects/oLoja/oLoja.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1920.0,"y":128.0,},
         {"$GMRInstance":"v2","%Name":"inst_4808E166_2_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4808E166_2_1","objectId":{"name":"oLoja","path":"objects/oLoja/oLoja.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1984.0,"y":128.0,},
         {"$GMRInstance":"v2","%Name":"inst_6286E65D_2_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6286E65D_2_1","objectId":{"name":"oLojista","path":"objects/oLojista/oLojista.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2112.0,"y":128.0,},
-        {"$GMRInstance":"v2","%Name":"inst_5D61DA5B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5D61DA5B","objectId":{"name":"oGeraArma","path":"objects/oGeraArma/oGeraArma.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1211.0,"y":914.0,},
-        {"$GMRInstance":"v2","%Name":"inst_69AB8DB8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_69AB8DB8","objectId":{"name":"oGeraArma","path":"objects/oGeraArma/oGeraArma.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":661.0,"y":946.0,},
-        {"$GMRInstance":"v2","%Name":"inst_42B522F0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_42B522F0","objectId":{"name":"oGeraArma","path":"objects/oGeraArma/oGeraArma.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2000.0,"y":898.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMREffectLayer":"","%Name":"folhaEffect","depth":400,"effectEnabled":true,"effectType":"_effect_windblown_particles","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"folhaEffect","properties":[
         {"name":"param_sprite","type":2,"value":"_effect_windblown_particles_leaf_sprite",},
