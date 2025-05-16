@@ -14,7 +14,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Boss00",
-    "path":"folders/Objects/Inimigos/BOSS/Boss00.yy",
+    "path":"folders/Objects/BOSS/Boss00.yy",
   },
   "parentObjectId":{
     "name":"IDenemy",

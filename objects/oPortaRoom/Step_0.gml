@@ -4,4 +4,4 @@
 
 image_angle = angle;
 
-angle++;
+angle--;

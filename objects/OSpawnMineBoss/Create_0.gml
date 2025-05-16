@@ -1,0 +1,1 @@
+oPlayer.BossMorto = false

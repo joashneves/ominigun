@@ -95,6 +95,7 @@
     {"name":"inst_EF680F8","path":"rooms/Level1_2/Level1_2.yy",},
     {"name":"inst_7C932E89","path":"rooms/Level1_2/Level1_2.yy",},
     {"name":"inst_7C446584_1","path":"rooms/Level1_2/Level1_2.yy",},
+    {"name":"inst_39B87F5F","path":"rooms/Level1_2/Level1_2.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -154,6 +155,7 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oPortaRoom","path":"objects/oPortaRoom/oPortaRoom.yy",},"propertyId":{"name":"targetEntrada","path":"objects/oPortaRoom/oPortaRoom.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"entrada_0_3",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oPortaRoom","path":"objects/oPortaRoom/oPortaRoom.yy",},"propertyId":{"name":"tagetRoom","path":"objects/oPortaRoom/oPortaRoom.yy",},"resource":{"name":"Level2","path":"rooms/Level2/Level2.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Level2",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":0.9687519,"x":3628.0,"y":872.0,},
+        {"$GMRInstance":"v2","%Name":"inst_39B87F5F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_39B87F5F","objectId":{"name":"OSpawnMineBoss","path":"objects/OSpawnMineBoss/OSpawnMineBoss.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3616.0,"y":864.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMREffectLayer":"","%Name":"folhaEffect","depth":300,"effectEnabled":true,"effectType":"_effect_windblown_particles","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"folhaEffect","properties":[
         {"name":"param_sprite","type":2,"value":"_effect_windblown_particles_leaf_sprite",},

@@ -6,7 +6,7 @@
   "name":"PathBoss",
   "parent":{
     "name":"Boss00",
-    "path":"folders/Objects/Inimigos/BOSS/Boss00.yy",
+    "path":"folders/Objects/BOSS/Boss00.yy",
   },
   "points":[
     {"speed":100.0,"x":0.0,"y":-100.0,},

@@ -19,7 +19,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Boss01",
-    "path":"folders/Objects/Inimigos/BOSS/Boss01.yy",
+    "path":"folders/Objects/BOSS/Boss01.yy",
   },
   "parentObjectId":null,
   "persistent":false,
