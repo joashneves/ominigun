@@ -1,9 +1,9 @@
 	/// @description IA 
 
 if (oPlayer.x > x){
-	image_xscale = 1;
+	image_xscale = 2;
 }else if (oPlayer.x < x){
-image_xscale = -1;	
+image_xscale = -2;	
 }
 
 // Atribui o valor gerado às variáveis de movimento horizontal e vertical

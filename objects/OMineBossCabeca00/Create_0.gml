@@ -1,6 +1,7 @@
 /// @description atributos
 
-life =  2200;
+life =  1200;
+lifeMax =  life;
 
 lanca = 0;
 

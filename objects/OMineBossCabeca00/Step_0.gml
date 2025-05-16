@@ -5,24 +5,30 @@ movimento_tempo -= 1;
 
 // Muda o comportamento após o tempo acabar
 if (movimento_tempo <= 0) {
-    movimento_tipo = choose(0,1,2); // aleatoriamente 0, 1 ou 2
+    movimento_tipo = choose(0,1,2,3); // aleatoriamente 0, 1 ou 2
     movimento_tempo = irandom_range(100, 280); // próximo tempo de duração
 }
 
 // Executa movimento baseado no tipo
 switch (movimento_tipo) {
     case 0: // Perseguir
-       scrFicarProximo(spd, 100);
+		scrMovPerseguirFicarEmCima();
 		municaoTotal = 200
         break;
     case 1: // Aleatório
-        scrFicarProximo(spd,100);
+        scrMovAleatorio();
 		municaoTotal = 180
         break;
     case 2: // Parado
-         scrFicarProximo(spd, 180); // 80 é a distância de órbita
+         scrFicarProximo(); // 80 é a distância de órbita
 		 municaoTotal = 100
         break;
+		case 3: 
+		if (!alarm[3]) {
+			scrDashMovimentoBoss()
+			alarm[3] = random_range(60, 180); // recarga do dash
+			   }
+		break;
 }
 
 
