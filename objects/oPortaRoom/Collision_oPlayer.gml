@@ -4,6 +4,7 @@ var _Controller = gamepad_button_check(0, gp_face1) || gamepad_button_check(0, g
 var _E =  keyboard_check(ord("E")) ||  _Controller
 
 if(_E){
+		entrando = true
 		global.pause = true
 		other.targetEntrada = targetEntrada;
 		//room_goto(tagetRoom)
