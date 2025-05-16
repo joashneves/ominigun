@@ -1,4 +1,28 @@
 // Troca de armas e variaveis do personagem
+function scrTrocaDeArmaChuva(){
+	var guardaChuva ={
+	
+	aparencia: sArma21,
+	recarga: 1,
+	recargaTotal: 22,
+	arma: oArma21,
+	bala: scrArmas21,
+	municaoTotal: 20
+
+}
+
+oPlayer.aparencia = guardaChuva.aparencia;
+oPlayer.arma = guardaChuva.arma;
+oPlayer.recarga = guardaChuva.recarga;
+oPlayer.recargaTotal = guardaChuva.recargaTotal;
+oPlayer.bala= guardaChuva.bala;
+oPlayer.municaoTotal = guardaChuva.municaoTotal;
+oPlayer.municao = guardaChuva.municaoTotal;
+
+
+}
+
+// Troca de armas e variaveis do personagem
 function scrTrocaDeArmaMetralhadoraEspacial(){
 	var metralhadoraEspacial ={
 	
@@ -21,7 +45,6 @@ oPlayer.municao = metralhadoraEspacial.municaoTotal;
 
 
 }
-
 function scrTrocaDeArmaEspada(){
 	var arma19 = {
 	aparencia: sArma19,
