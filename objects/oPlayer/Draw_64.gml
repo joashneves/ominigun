@@ -7,60 +7,73 @@ draw_set_colour(c_white);
 		draw_set_font(fnt_ui);
 		
 if(debug_mode){
-		var tirosNaTela = instance_number(oBalaInimigo);
-		draw_text(32, 64+28,"Tempo de Recarga: " + string(recarga));
-		draw_text(32, 64+52,"Tempo Total de Recarga: " + string(recargaTotal));
-		draw_text(32, 64+68,"Tempo Tiros na tela: " + string(tirosNaTela));
-		draw_text(32, 64+(68*2),"Moeda: " + string(moeda));
-		draw_text(12 , 120*4,"Mouse: " + string(global.dir));
-		draw_text(1052,64, "Rage : " + string(rage));
-		draw_text(32,64+(68*3), "Level : " + string(global.dificuldade));
-		draw_text(32,64+(68*4), "Boss : " + string(BossMorto));
+    draw_set_font(fnt_ui);
+    var y_base = 64;
+    var y_step = 20;
+
+    draw_text(32, y_base + y_step * 0, "Recarga: " + string(recarga));
+    draw_text(32, y_base + y_step * 1, "Recarga Total: " + string(recargaTotal));
+    draw_text(32, y_base + y_step * 2, "Tiros Inimigo: " + string(instance_number(oBalaInimigo)));
+    draw_text(32, y_base + y_step * 3, "Moedas: " + string(moeda));
+    draw_text(32, y_base + y_step * 4, "Level: " + string(global.dificuldade));
+    draw_text(32, y_base + y_step * 5, "Boss Morto: " + string(BossMorto));
+    draw_text(1052, 64, "Rage: " + string(rage));
+    draw_text(12, 480, "Mouse: " + string(global.dir));
 }
+
 draw_text(600,48, "Fps : " + string(fps));
 
-// Converte o tempo de microssegundos para segundos
-var segundos = current_time / 1000;
-var minutos = current_time /  60000;
-var horas = current_time /  3600000;
+var tempo_ms = current_time;
+var segundos = floor((tempo_ms div 1000) mod 60);
+var minutos  = floor((tempo_ms div 60000) mod 60);
+var horas    = floor((tempo_ms div 3600000));
 
-	// Exibe o tempo atual no console ou onde for apropriado
-draw_text(600,94,string(horas) + ":" + string(minutos)+ ":" + string(segundos) + "S");
+var tempo_str = string_format(horas, 2, 0) + ":" + string_format(minutos, 2, 0) + ":" + string_format(segundos, 2, 0);
+draw_text(600, 94, "Tempo: " + tempo_str);
 
 #endregion
 
 // Arma HUD
 //draw_sprite(aparencia,0,64,64)
-if(!fim_de_jogo){
+if(!fim_de_jogo and !player_morto){
+    if(aparencia != sArma00){
+        draw_text(64, 78, "Munição: " + string(municao));
+    }
 
-// Arma basicas
-if(aparencia != sArma00){
-draw_text(64, 78,"Munição: " + string(municao) );
-}
-	// Lista das sprites da arma que trocou
-	// Compila tudo na tela
-	var tamanho = ds_list_size(listaSprites); 
+    // Mostrar sprites das armas
+    for (var i = ds_list_size(listaSprites) - 1; i >= 0; i--) {
+        draw_sprite(listaSprites[| i], 0, 12, 64 + ((ds_list_size(listaSprites) - i) * 16));
+    }
 
-	for (lista = tamanho - 1; lista >= 0; lista--) {
-	    draw_sprite(listaSprites[|lista], 0, 12, 64+((tamanho - lista) * 16));
-	}
-	 draw_sprite(sMoeda,0,125,52);
-	 draw_text(155,54,  string(moeda)+"X");
-// Vida de pontuação 
+	var moeda_x = 40 * 5 + 16;
+	var moeda_y = 39;
 
-for(i = 0; i < vida; i++){
-	draw_sprite(sVida, 0, i * 32, 0);
-}
+	// Ajusta para origem no canto superior esquerdo
+	moeda_x -= sprite_width / 2;
+	moeda_y -= sprite_height / 2;
 
-draw_text(600,32, "Pontuação : " + string(score));
+	draw_sprite(sMoeda, 0, moeda_x, moeda_y);
+	draw_text(moeda_x + sprite_width, moeda_y + 2, string(moeda) + "X");
+    // Vida
+    for(var i = 0; i < vida; i++){
+        draw_sprite(sVida, 0, i * 32, 0);
+    }
 
-// Rage 
-var barraDeRage = (rage/rageMax)  * 100;
-draw_healthbar(780,100,790,500,barraDeRage, c_black, c_blue, c_red, 3, false, true);
+    // Pontuação
+    draw_text(600, 32, "Pontuação: " + string(score));
+
+    // Rage bar
+    var barraDeRage = (rage / rageMax) * 100;
+    draw_healthbar(780, 100, 790, 500, barraDeRage, c_black, c_blue, c_red, 3, false, true);
 
 }else if(fim_de_jogo){
 	draw_text(300,300, "Voce Conseguiu : " + string(score) + " Pontos");
 	draw_text(300,200, "O jogo Acaba por enquanto... Obrigado por jogar");	
+}
+if(player_morto){
+	draw_set_colour(c_black);
+	draw_rectangle(0,0,camera_x,camera_y,false);
+	draw_sprite(sprite_index, image_index,camera_x/2,camera_y/2);
 }
 if(levou_dano){
 	draw_set_colour(#1c1c1c);
@@ -68,15 +81,9 @@ if(levou_dano){
 	levou_dano = false;
 }
 
-if(player_morto){
-	draw_set_colour(c_black);
-	draw_rectangle(0,0,camera_x,camera_y,false);
-	draw_sprite(sprite_index, image_index,camera_x/2,camera_y/2);
-}
 // wave
 if(instance_exists(geradorDeWave)){
-	var _wave = geradorDeWave.wave;
-	var _quantidade_inimigo = instance_number(IDenemy);
-	draw_text(600,61,"Wave: " + string(_wave) );
-	draw_text(600,73,"Inimigos: " + string(_quantidade_inimigo) );
+    draw_text(600, 61, "Wave: " + string(geradorDeWave.wave));
+    draw_text(600, 73, "Inimigos: " + string(instance_number(IDenemy)));
 }
+
