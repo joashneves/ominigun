@@ -53,7 +53,7 @@ function obterTodasArmas(){
 	return choose( oTrocaDeArma01, oTrocaDeArma18, oTrocaDeArma03, oTrocaDeArma05,
 	oTrocaDeArma06, oTrocaDeArma07,oTrocaDeArma08, oTrocaDeArma09, oTrocaDeArma10,
 	oTrocaDeArma11, oTrocaDeArma12, oTrocaDeArma13, oTrocaDeArma14, oTrocaDeArma18,
-	oTrocaDeArma15, oTrocaDeArma16);
+	oTrocaDeArma15, oTrocaDeArma16, oTrocaDeArma19);
 
 }
 // balanço de camera

@@ -1,4 +1,27 @@
 // Troca de armas e variaveis do personagem
+function scrTrocaDeArmaMetralhadoraEspacial(){
+	var metralhadoraEspacial ={
+	
+	aparencia: sArma20,
+	recarga: 1,
+	recargaTotal: 12,
+	arma: oArma20,
+	bala: scrArmas20,
+	municaoTotal: 80
+
+}
+
+oPlayer.aparencia = metralhadoraEspacial.aparencia;
+oPlayer.arma = metralhadoraEspacial.arma;
+oPlayer.recarga = metralhadoraEspacial.recarga;
+oPlayer.recargaTotal = metralhadoraEspacial.recargaTotal;
+oPlayer.bala= metralhadoraEspacial.bala;
+oPlayer.municaoTotal = metralhadoraEspacial.municaoTotal;
+oPlayer.municao = metralhadoraEspacial.municaoTotal;
+
+
+}
+
 function scrTrocaDeArmaEspada(){
 	var arma19 = {
 	aparencia: sArma19,

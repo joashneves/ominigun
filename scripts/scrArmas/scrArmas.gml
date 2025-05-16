@@ -242,6 +242,22 @@ function scrArmas19(){
 	bala.speed = 9;
 	
 }
+function scrArmas20(){
+	camera_shake(1, 5);
+	
+		 var quantidade = irandom_range(2, 4); // Entre 4 e 8 tiros
+	    for (var i = 0; i < quantidade; i++) {
+        // Direção com imprecisão (±32 pixels em X e Y)
+        var desvioX = random_range(oCursor.x-32,oCursor.x+ 32);
+        var desvioY = random_range(oCursor.y-32, oCursor.y+32);
+        var dir = point_direction(x, y,  desvioX,  desvioY);
 
+        var bala = instance_create_depth(x, y, 0, oBala16);
+        bala.direction = dir;
+        bala.image_angle = dir;
+        bala.speed = 8; // Velocidade levemente variável
+    }
+	
+}
 
 #endregion
