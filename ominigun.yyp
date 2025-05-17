@@ -284,6 +284,7 @@
     {"id":{"name":"scrBuffsEscolher","path":"scripts/scrBuffsEscolher/scrBuffsEscolher.yy",},},
     {"id":{"name":"scrBuffsRecursos","path":"scripts/scrBuffsRecursos/scrBuffsRecursos.yy",},},
     {"id":{"name":"scrBuffsTempo","path":"scripts/scrBuffsTempo/scrBuffsTempo.yy",},},
+    {"id":{"name":"scrEscolherLoja","path":"scripts/scrEscolherLoja/scrEscolherLoja.yy",},},
     {"id":{"name":"scrGeral","path":"scripts/scrGeral/scrGeral.yy",},},
     {"id":{"name":"scrGerarInimigo","path":"scripts/scrGerarInimigo/scrGerarInimigo.yy",},},
     {"id":{"name":"scrInimigoArmas","path":"scripts/scrInimigoArmas/scrInimigoArmas.yy",},},

@@ -5,14 +5,9 @@ var _Controller = gamepad_button_check(0, gp_face1) || gamepad_button_check(0, g
 var _E =  keyboard_check(ord("E")) ||  _Controller
 
 
-if(_E && oPlayer.moeda >= 10){
-	oPlayer.moeda-=10;
+if(_E && oPlayer.moeda >=  preco){
+	oPlayer.moeda-= preco;
 	instance_create_depth(x,y,0,venda);
 	instance_destroy();
 	audio_play_sound(sndComprarItem,5,false)
 }
-
-
-
-
-

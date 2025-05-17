@@ -1,8 +1,9 @@
-/// @description Insert description here
-// You can write your code in this editor
-var escolhe = obterTodasArmas();
+/// @description escolhe uma personagem
 
-venda = escolhe;
+var armaEscolhida = scrEscolherArmaAleatoria();
+venda = armaEscolhida.objeto;
+ preco = armaEscolhida.preco;
+
 
 image_alpha = 0.5;
 

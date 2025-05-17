@@ -239,6 +239,7 @@
     {"name":"scrBuffsEscolher","order":9,"path":"scripts/scrBuffsEscolher/scrBuffsEscolher.yy",},
     {"name":"scrBuffsRecursos","order":12,"path":"scripts/scrBuffsRecursos/scrBuffsRecursos.yy",},
     {"name":"scrBuffsTempo","order":11,"path":"scripts/scrBuffsTempo/scrBuffsTempo.yy",},
+    {"name":"scrEscolherLoja","order":16,"path":"scripts/scrEscolherLoja/scrEscolherLoja.yy",},
     {"name":"scrGeral","order":3,"path":"scripts/scrGeral/scrGeral.yy",},
     {"name":"scrGerarInimigo","order":8,"path":"scripts/scrGerarInimigo/scrGerarInimigo.yy",},
     {"name":"scrInimigoArmas","order":5,"path":"scripts/scrInimigoArmas/scrInimigoArmas.yy",},

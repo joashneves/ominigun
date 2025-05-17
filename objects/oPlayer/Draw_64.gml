@@ -42,18 +42,26 @@ if(!fim_de_jogo and !player_morto){
 
     // Mostrar sprites das armas
     for (var i = ds_list_size(listaSprites) - 1; i >= 0; i--) {
-        draw_sprite(listaSprites[| i], 0, 12, 64 + ((ds_list_size(listaSprites) - i) * 16));
+        draw_sprite(listaSprites[| i], 0, -12, 64 + ((ds_list_size(listaSprites) - i) * 16));
     }
 
-	var moeda_x = 40 * 5 + 16;
-	var moeda_y = 39;
+		var moeda_x = 40 * 5 + 16;
+		var moeda_y = 39;
 
-	// Ajusta para origem no canto superior esquerdo
-	moeda_x -= sprite_width / 2;
-	moeda_y -= sprite_height / 2;
+		// Usa o tamanho fixo da sprite (não afetado por image_xscale)
+		var moeda_w = sprite_get_width(sMoeda);
+		var moeda_h = sprite_get_height(sMoeda);
 
-	draw_sprite(sMoeda, 0, moeda_x, moeda_y);
-	draw_text(moeda_x + sprite_width, moeda_y + 2, string(moeda) + "X");
+		// Ajusta para origem no canto superior esquerdo
+		moeda_x -= moeda_w / 2;
+		moeda_y -= moeda_h / 2;
+
+		// Desenha sprite da moeda
+		draw_sprite(sMoeda, 0, moeda_x, moeda_y);
+
+		// Desenha texto da quantidade ao lado
+		draw_text(moeda_x + moeda_w + 2, moeda_y + 2, string(moeda) + "X");
+
     // Vida
     for(var i = 0; i < vida; i++){
         draw_sprite(sVida, 0, i * 32, 0);
