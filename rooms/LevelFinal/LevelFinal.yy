@@ -72,7 +72,7 @@
         {"name":"g_OldFilmRingScale","type":0,"value":"1",},
         {"name":"g_OldFilmRingSharpness","type":0,"value":"64",},
         {"name":"g_OldFilmRingIntensity","type":0,"value":"1",},
-        {"name":"g_OldFilmTexture","type":2,"value":"_filter_old_film_texture",},
+        {"name":"g_OldFilmTexture","type":2,"value":"sLight",},
       ],"resourceType":"GMREffectLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":false,},
     {"$GMRInstanceLayer":"","%Name":"Cenario","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Cenario","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Player","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
