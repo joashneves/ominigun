@@ -46,7 +46,19 @@ if !gamepad_is_connected(0){
 	cursor.x = mouse_x;
 	cursor.y = mouse_y;
 }
-
+var moving = (vspd != 0 || hspd != 0);
+if(oCursor.x > x){
+	image_xscale = 1
+}else{
+	image_xscale = -1
+}
+if (rage >= rageMax) {
+    sprite_index = moving ? sPlayerWalk01 : sPlayerIdle01; // com raiva
+	image_speed = 2
+} else {
+    sprite_index = moving ? sPlayerWalk00 : sPlayerIdle00; // normal
+	image_speed = 2
+}
 move_and_collide(vspd, hspd, oBloco);
 
 #endregion
@@ -166,6 +178,8 @@ if(debug_mode) {
 if (vida <= 0){
 	player_morto = true;
 	sprite_index = sPlayerMorte;
+	image_index = 0
+	image_speed = 1
 }
 
 }else {
