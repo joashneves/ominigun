@@ -1,4 +1,4 @@
-if (fim_animacao()) {
+if (fim_animacao() and em_view()) {
     instance_create_depth(x, y, 0, oRaio);
     // Calcula a posição deslocada em 32 pixels na direção atual
     var dx = lengthdir_x(32, direction);
@@ -10,4 +10,7 @@ if (fim_animacao()) {
 
 
     instance_destroy();
+}else  if (!em_view())
+{
+	instance_destroy()	
 }

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-life = random_range(50,150) *global.dificuldade;
+life = random_range(50,100) *global.dificuldade;
 
 hspd = 0;
 vspd = 0;
@@ -21,8 +21,8 @@ municaoTotal = random_range(120,290);
 
 lanca = 0;
 
-image_xscale = 2;
-image_yscale = 2;
+image_xscale = 1;
+image_yscale = 1;
 
 if(!alarm[0]) alarm[0] = 60;
 

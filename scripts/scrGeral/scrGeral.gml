@@ -13,6 +13,18 @@ function fim_animacao(){
     return _image + _spd >= sprite_get_number(_sprite);
 
 }
+function em_view() {
+    var vx = camera_get_view_x(view_camera[0]);
+    var vy = camera_get_view_y(view_camera[0]);
+    var vw = camera_get_view_width(view_camera[0]);
+    var vh = camera_get_view_height(view_camera[0]);
+
+    if (point_in_rectangle(x, y, vx, vy, vx + vw, vy + vh)) {
+        return true;
+    }
+    return false;
+}
+
 function FadeToRoom(_room , _dur, _color){
 	show_debug_message("Debug : OFade criado")
 var _inst = instance_create_depth(0,0,0,oFade)
