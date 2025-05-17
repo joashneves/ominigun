@@ -1,14 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-repeat(50){
-instance_create_depth(x,y,0,oMoeda);
+if(instance_exists(oPlayer)){
+instance_create_depth(oPlayer.x,y,0,oCuraLife);
+instance_create_depth(oPlayer.x,y,0,oCuraLife);
+instance_create_depth(oPlayer.x,y,0,oCuraLife);
+
+oPlayer.moeda =+ 50;
+
 }
-instance_create_depth(x-64,y,0,oCuraLife);
-instance_create_depth(x,y,0,oCuraLife);
-instance_create_depth(x+64,y,0,oCuraLife);
-
-
-
 oPlayer.BossMorto = true
 

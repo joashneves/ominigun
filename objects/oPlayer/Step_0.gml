@@ -3,6 +3,8 @@
 if(fim_de_jogo) room_goto(fim_de_jogo_room);
 if(global.pause) return;
 
+tempo_de_jogo+=1;
+
 #region // Teclas
 up_press = keyboard_check(ord("W")) ||keyboard_check(vk_up) || gamepad_button_check(0, gp_padu);
 down_press = keyboard_check(ord("S"))||keyboard_check(vk_down) ||  gamepad_button_check(0, gp_padd);

@@ -21,15 +21,17 @@ if(debug_mode){
     draw_text(12, 480, "Mouse: " + string(global.dir));
 }
 
-draw_text(600,48, "Fps : " + string(fps));
+draw_text(700,48, "Fps : " + string(fps));
 
-var tempo_ms = current_time;
+
+var tempo_ms = tempo_de_jogo * (1000 / room_speed);
+
 var segundos = floor((tempo_ms div 1000) mod 60);
 var minutos  = floor((tempo_ms div 60000) mod 60);
 var horas    = floor((tempo_ms div 3600000));
 
 var tempo_str = string_format(horas, 2, 0) + ":" + string_format(minutos, 2, 0) + ":" + string_format(segundos, 2, 0);
-draw_text(600, 94, "Tempo: " + tempo_str);
+draw_text(700, 94, "Tempo: " + tempo_str);
 
 #endregion
 

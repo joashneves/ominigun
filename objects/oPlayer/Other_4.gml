@@ -11,6 +11,7 @@ if(instance_exists(oDataCarrie)){
 	rage = oDataCarrie.rage;
 	multiplicadorDeRecarga = oDataCarrie.multiplicadorDeRecarga;
 	moeda = oDataCarrie.moeda;
+	tempo_de_jogo= oDataCarrie.tempo_de_jogo;
 
 	aparencia= 	oDataCarrie.aparencia;
 	recarga= oDataCarrie. recarga;

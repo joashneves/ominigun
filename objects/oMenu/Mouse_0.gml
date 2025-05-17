@@ -3,5 +3,4 @@
 
 room_goto(Menu);
 
-
 instance_destroy(oDataCarrie);

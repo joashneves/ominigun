@@ -10,6 +10,7 @@ if(debug_mode){
 global.dificuldade = 1;
 global.pause = false;
 score = 1;
+tempo_de_jogo = 0;
 fim_de_jogo = false;
 player_morto = false;
 levou_dano = false;

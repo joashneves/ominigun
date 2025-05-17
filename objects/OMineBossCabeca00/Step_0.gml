@@ -36,7 +36,9 @@ if (distance_to_object(oPlayer) < range)
 {
 	if(!alarm[0]) alarm[0] = 10;
 }
-
+if(!em_view()){
+movimento_tipo = 0;	
+}
 
 if( municao++ >= municaoTotal){
 		var bala = instance_create_depth(x,y,0,oBalaInimigo);

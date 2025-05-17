@@ -18,6 +18,7 @@ oDataCarrie.score = score;
 oDataCarrie.rage = rage;
 oDataCarrie.multiplicadorDeRecarga = multiplicadorDeRecarga;
 oDataCarrie.moeda = moeda;
+oDataCarrie.tempo_de_jogo = tempo_de_jogo;
 
 // armas
 
