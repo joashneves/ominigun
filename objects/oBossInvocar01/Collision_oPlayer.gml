@@ -11,10 +11,5 @@ if(instance_exists(oBoss01)){
 		image_alpha = 0.2;
 		oBoss01.x = oPlayer.x-180;
 		oBoss01.y = oPlayer.y-180;
-		audio_stop_all();
-		audio_play_sound(sndMiguel,1,0);
-
-		audio_play_sound(sndMusicBoss02,1,true);
-
 	}
 }

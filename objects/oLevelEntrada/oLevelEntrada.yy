@@ -9,8 +9,8 @@
   "name":"oLevelEntrada",
   "overriddenProperties":[],
   "parent":{
-    "name":"Porta e camera",
-    "path":"folders/Objects/Misc/Porta e camera.yy",
+    "name":"Gerenciador",
+    "path":"folders/Objects/Misc/Gerenciador.yy",
   },
   "parentObjectId":null,
   "persistent":false,

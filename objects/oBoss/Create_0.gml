@@ -16,10 +16,6 @@ orbital_speed = 1.2; // velocidade do giro
 
 depth = -100
 
-audio_stop_all();
-audio_play_sound(ambient_horror_bleep,1,0);
-audio_play_sound(sndMusicTerror,1,true);
-
 timeInvocar = 120;
 if (!alarm[0]) alarm[0] = timeInvocar;
 
