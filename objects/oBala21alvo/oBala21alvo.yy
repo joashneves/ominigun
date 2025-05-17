@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"oTrocaDeArma21",
+  "%Name":"oBala21alvo",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oTrocaDeArma21",
+  "name":"oBala21alvo",
   "overriddenProperties":[],
   "parent":{
-    "name":"buffsOustatus",
-    "path":"folders/Objects/buffsOustatus.yy",
+    "name":"bala",
+    "path":"folders/Objects/player/armasebalas/bala.yy",
   },
-  "parentObjectId":{
-    "name":"IDtrocadeArma",
-    "path":"objects/IDtrocadeArma/IDtrocadeArma.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sArma22",
-    "path":"sprites/sArma22/sArma22.yy",
+    "name":"sTempoAlvo",
+    "path":"sprites/sTempoAlvo/sTempoAlvo.yy",
   },
   "spriteMaskId":null,
   "visible":true,

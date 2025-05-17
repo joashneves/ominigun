@@ -1,3 +1,28 @@
+// Troca para thor
+// Troca de armas e variaveis do personagem
+function scrTrocaDeArmaThor(){
+	var thor ={
+	
+	aparencia: sArma22,
+	recarga: 1,
+	recargaTotal: 96,
+	arma: oArma22,
+	bala: scrArmas22,
+	municaoTotal: 9
+
+}
+
+oPlayer.aparencia = thor.aparencia;
+oPlayer.arma = thor.arma;
+oPlayer.recarga = thor.recarga;
+oPlayer.recargaTotal = thor.recargaTotal;
+oPlayer.bala= thor.bala;
+oPlayer.municaoTotal = thor.municaoTotal;
+oPlayer.municao = thor.municaoTotal;
+
+
+}
+
 // Troca de armas e variaveis do personagem
 function scrTrocaDeArmaChuva(){
 	var guardaChuva ={

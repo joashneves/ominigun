@@ -1,19 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"oTrocaDeArma21",
+  "%Name":"oRaio",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oTrocaDeArma21",
+  "name":"oRaio",
   "overriddenProperties":[],
   "parent":{
-    "name":"buffsOustatus",
-    "path":"folders/Objects/buffsOustatus.yy",
+    "name":"Efeitos",
+    "path":"folders/Objects/player/armasebalas/Efeitos.yy",
   },
   "parentObjectId":{
-    "name":"IDtrocadeArma",
-    "path":"objects/IDtrocadeArma/IDtrocadeArma.yy",
+    "name":"IDarmas",
+    "path":"objects/IDarmas/IDarmas.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sArma22",
-    "path":"sprites/sArma22/sArma22.yy",
+    "name":"sRaio",
+    "path":"sprites/sRaio/sRaio.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -278,7 +278,13 @@ function scrArmas21(){
 	    bala.speed = 16;
 	
 }
-	
+function scrArmas22(){
+		camera_shake(12, 6);
+		var dir = point_direction(x, y, oCursor.x,  oCursor.y);
+        var bala = instance_create_depth(x, y, 0, oBala21alvo);
+        bala.direction = dir;
+        bala.image_angle = dir;	
+}
 
 
 #endregion
