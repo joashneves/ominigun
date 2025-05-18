@@ -286,5 +286,15 @@ function scrArmas22(){
         bala.image_angle = dir;	
 }
 
+function scrArmas23(){
+	camera_shake(12, 10);
+	for(var i = 0 ; i < 3; i += 1;) {
+	var bala = instance_create_depth(x,y,0,oBala23);
+	bala.image_angle = global.dir;
+	bala.direction = global.dir+(4*i);
+	bala.speed = 5;
+	}
+	
+}
 
 #endregion
