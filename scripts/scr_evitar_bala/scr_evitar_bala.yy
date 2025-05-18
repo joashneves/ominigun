@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_evitar_bala",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_evitar_bala",
+  "parent":{
+    "name":"MineBossGenerico",
+    "path":"folders/Objects/MineBoss/MineBossGenerico.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

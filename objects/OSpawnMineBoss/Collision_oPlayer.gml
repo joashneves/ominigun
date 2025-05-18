@@ -6,7 +6,8 @@ var _E =  keyboard_check(ord("E")) ||  _Controller
 
 
 if(_E ){
-	instance_create_depth(x,y-64,0, OMineBossCabeca00);
+	var MineBoss = choose( OMineBossCabeca00,oMineBossGenerico01,oMineBossGenerico00 );
+	 instance_create_depth(x,y-64,0, MineBoss);
 	instance_destroy()
 }
 

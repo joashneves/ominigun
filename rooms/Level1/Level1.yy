@@ -221,7 +221,6 @@
     {"name":"inst_1D8AC283","path":"rooms/Level1/Level1.yy",},
     {"name":"inst_2BD4B5DD","path":"rooms/Level1/Level1.yy",},
     {"name":"inst_34CD1216","path":"rooms/Level1/Level1.yy",},
-    {"name":"inst_24DE0259","path":"rooms/Level1/Level1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -437,7 +436,6 @@
         {"$GMRInstance":"v2","%Name":"inst_5BD21AB5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5BD21AB5","objectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":361.0,"y":932.0,},
         {"$GMRInstance":"v2","%Name":"inst_49BD7F69","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_49BD7F69","objectId":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":119.0,"y":-246.0,},
         {"$GMRInstance":"v2","%Name":"inst_FB1ACC7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_FB1ACC7","objectId":{"name":"oLightRender","path":"objects/oLightRender/oLightRender.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":222.0,"y":-315.0,},
-        {"$GMRInstance":"v2","%Name":"inst_24DE0259","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_24DE0259","objectId":{"name":"oGerenciadorMusica","path":"objects/oGerenciadorMusica/oGerenciadorMusica.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":896.0,},
       ],"layers":[],"name":"Player","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Parede","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_4395F011","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4395F011","objectId":{"name":"oBloco","path":"objects/oBloco/oBloco.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":28.34375,"scaleY":2.25,"x":-41.0,"y":-40.0,},

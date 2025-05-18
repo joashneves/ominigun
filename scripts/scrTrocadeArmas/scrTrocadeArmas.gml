@@ -74,7 +74,7 @@ function scrTrocaDeArmaEspada(){
 	var arma19 = {
 	aparencia: sArma19,
 	recarga: 0, // Tempo cooldown
-	recargaTotal: 12, // Maximo tempo
+	recargaTotal: 29, // Maximo tempo
 	arma: oArma19, // Arma jogada
 	bala: scrArmas19,
 	municaoTotal: 36
@@ -138,7 +138,7 @@ function scrTrocaDeArma16(){
 		var arma16 = {
 	aparencia: sArma16,
 	recarga: 0,
-	recargaTotal: 29,
+	recargaTotal: 55,
 	arma: oArma16,
 	bala: scrArmas16,
 	municaoTotal: 20

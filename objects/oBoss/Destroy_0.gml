@@ -6,7 +6,7 @@ instance_create_depth(oPlayer.x,y,0,oCuraLife);
 instance_create_depth(oPlayer.x,y,0,oCuraLife);
 instance_create_depth(oPlayer.x,y,0,oCuraLife);
 
-oPlayer.moeda =+ 50;
+oPlayer.moeda += 50;
 
 }
 oPlayer.BossMorto = true

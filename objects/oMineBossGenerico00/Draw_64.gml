@@ -1,4 +1,5 @@
 if(oPlayer.player_morto) return;
+
 // Tamanho da barra
 var barra_largura = 600;
 var barra_altura = 12;

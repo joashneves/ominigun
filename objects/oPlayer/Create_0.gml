@@ -3,9 +3,7 @@
 // valores
 
 vida = 5; 
-if(debug_mode){
-	vida = 100;
-}
+
 // Especiais
 global.dificuldade = 1;
 global.pause = false;
@@ -86,3 +84,8 @@ axiosRV = 0
 // luz
 createLight(x,y,c_white, 0.5, 2,2, self)
 createLight(x,y,c_white, 1, 4,4, oCursor)
+// Degub
+if(debug_mode){
+	vida = 100;
+	moeda = 100
+}

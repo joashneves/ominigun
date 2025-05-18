@@ -27,15 +27,6 @@ if (life <= 0) {
 
 }
 
-if(lanca >= 1 && instance_exists(oArma12)){
-		var _lanca = instance_create_depth(x,y,0,oBala12);
-		_lanca.direction = point_direction(x,y,oArma12.x,oArma12.y);
-		_lanca.image_angle = point_direction(x,y,oArma12.x,oArma12.y);
-		_lanca.speed = 16;
-		
-		lanca--;
-}
-
 movimento_tempo -= 1;
 
 // Muda o comportamento após o tempo acabar

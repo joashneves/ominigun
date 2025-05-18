@@ -172,9 +172,9 @@ if(vida > 4 ){
 	vida = 5;
 }
 if(debug_mode) {
-	vida = 5;
+	//vida = 5;
 	rage = rageMax;
-	moeda = 10;
+	//moeda = 10;
 }
 
 if (vida <= 0){
