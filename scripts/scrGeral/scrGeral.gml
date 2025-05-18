@@ -1,5 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+// Verifica o final da animação
 function fim_animacao(){
 	var _sprite = sprite_index;
     var _image = image_index;
@@ -13,6 +14,7 @@ function fim_animacao(){
     return _image + _spd >= sprite_get_number(_sprite);
 
 }
+// Verificar se Esta ou não na tela
 function em_view() {
     var vx = camera_get_view_x(view_camera[0]);
     var vy = camera_get_view_y(view_camera[0]);
@@ -66,8 +68,16 @@ function obterTodasArmas(){
 	oTrocaDeArma06, oTrocaDeArma07,oTrocaDeArma08, oTrocaDeArma09, oTrocaDeArma10,
 	oTrocaDeArma11, oTrocaDeArma12, oTrocaDeArma13, oTrocaDeArma14, oTrocaDeArma18,
 	oTrocaDeArma15, oTrocaDeArma16, oTrocaDeArma19, oTrocaDeArma21, oTrocaDeArma22,
-	oTrocaDeArma23);
+	oTrocaDeArma23, oTrocaDeArma24);
 
+}
+function nenhuma_instance_existe(lista){
+	for (var i = 0; i < array_length(lista); i++) {
+	    if (instance_exists(lista[i])) {
+	        return false; // Encontrou uma, então não está vazio
+	    }
+	}
+	return true; // Nenhuma instância foi encontrada	
 }
 // balanço de camera
 function camera_shake(magnitude, duration){

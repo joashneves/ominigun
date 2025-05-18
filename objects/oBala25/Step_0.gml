@@ -10,9 +10,5 @@ if (alvo != noone) {
 	if (dist < 80) {
 		direction = point_direction(x, y, alvo.x, alvo.y);
 		speed = 1;
-	} else {
-		if (!alarm[0]) alarm[0] = 10;
-	}
-} else {
-	if (!alarm[0]) alarm[0] = 10;
-}
+	} 
+} 

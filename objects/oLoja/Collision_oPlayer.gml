@@ -7,7 +7,7 @@ var _E =  keyboard_check(ord("E")) ||  _Controller
 
 if(_E && oPlayer.moeda >=  preco){
 	oPlayer.moeda-= preco;
-	instance_create_depth(x,y,0,venda);
+	instance_create_depth(oPlayer.x,oPlayer.y,0,venda);
 	instance_destroy();
 	audio_play_sound(sndComprarItem,5,false)
 }

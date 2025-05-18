@@ -302,4 +302,11 @@ function scrArmas24(){
 		bala.image_angle = global.dir;
 		bala.direction = point_direction(x,y, random_range(oCursor.x-32, oCursor.x+32),  random_range(oCursor.y-32, oCursor.y+32));
 }
+function scrArmas25(){
+	camera_shake(1, 5);
+	var bala = instance_create_depth(x,y,0,oBala25);
+	bala.image_angle = point_direction(x,y, oCursor.x, oCursor.y);
+	bala.direction = point_direction(x,y, irandom_range(oCursor.x-164,oCursor.x+164), irandom_range(oCursor.y-164,oCursor.y+164));
+
+}
 #endregion
