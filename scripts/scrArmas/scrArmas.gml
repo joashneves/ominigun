@@ -309,4 +309,19 @@ function scrArmas25(){
 	bala.direction = point_direction(x,y, irandom_range(oCursor.x-164,oCursor.x+164), irandom_range(oCursor.y-164,oCursor.y+164));
 
 }
+function scrArmas26(){
+	camera_shake(12, 10);
+	var bala = instance_create_depth(x,y,0,oBala26);
+	bala.image_angle = global.dir;
+	bala.direction = global.dir;
+	bala.speed = 6;
+}
+function scrArmas27(){
+			camera_shake(12, 6);
+		var dir = point_direction(x, y, oCursor.x,  oCursor.y);
+        var bala = instance_create_depth(x, y, 0, oBala27);
+        bala.direction = dir;
+        bala.image_angle = dir;	
+		bala.speed = 5;
+}
 #endregion
