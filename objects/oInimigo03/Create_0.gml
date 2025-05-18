@@ -5,7 +5,8 @@ life = choose(25,50)*global.dificuldade;
 
 hspd = oPlayer.x;
 vspd = oPlayer.y;
-spd = 0;
+spd = random_range(0.5,1.5);
+
 
 random_valueH = random_range(-3,3);
 random_valueV = random_range(-3,3);
@@ -23,3 +24,5 @@ municaoTotal = random_range(160,190);
 
 
 createLight(x,y,c_red, 0.5, 2,2, self)
+
+if(!alarm[0]) alarm[0] = 60;

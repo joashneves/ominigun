@@ -5,7 +5,7 @@ life = random_range(50,100) *global.dificuldade;
 
 hspd = 0;
 vspd = 0;
-spd = 0.5;
+spd = random_range(0.5,1.5);
 
 levou_dano = false;
 dano_timer = 0;

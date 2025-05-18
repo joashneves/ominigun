@@ -6,6 +6,12 @@ if(distance_to_object(oPlayer) > 160) {
 mp_potential_step_object(oPlayer.x,oPlayer.y,spd,oPlayer);
 }
 */
+// Atribui o valor gerado às variáveis de movimento horizontal e vertical
+vspd = random_valueV * spd;
+hspd = random_valueH * spd;
+
+// Executa o comando de movimento e colisão
+move_and_collide(vspd, hspd, oBloco);
 
 if (oPlayer.x > x){
 	image_xscale = 1;

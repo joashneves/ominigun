@@ -79,7 +79,7 @@ if(place_meeting(x,y,IDbalas)){
 
 }
 if(place_meeting(x,y,IDarmas)){
-	life=life-50;
+	life=life-8;
 	audio_play_sound(sndDanoinimigo,2,0);
 	levou_dano = true;
 	dano_timer = 5; // frames de recuo/efeito
