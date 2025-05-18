@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"oArma13",
+  "%Name":"oArma24",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oBloco","path":"objects/oBloco/oBloco.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oArma13",
+  "name":"oArma24",
   "overriddenProperties":[],
   "parent":{
     "name":"armas",
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sArma24",
-    "path":"sprites/sArma24/sArma24.yy",
+    "name":"sArma13",
+    "path":"sprites/sArma13/sArma13.yy",
   },
   "spriteMaskId":null,
   "visible":true,

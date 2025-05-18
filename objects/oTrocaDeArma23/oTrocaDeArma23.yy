@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"oArma13",
+  "%Name":"oTrocaDeArma23",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oBloco","path":"objects/oBloco/oBloco.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oArma13",
+  "name":"oTrocaDeArma23",
   "overriddenProperties":[],
   "parent":{
-    "name":"armas",
-    "path":"folders/Objects/player/armasebalas/armas.yy",
+    "name":"buffsOustatus",
+    "path":"folders/Objects/buffsOustatus.yy",
   },
   "parentObjectId":{
-    "name":"IDarmas",
-    "path":"objects/IDarmas/IDarmas.yy",
+    "name":"IDtrocadeArma",
+    "path":"objects/IDtrocadeArma/IDtrocadeArma.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

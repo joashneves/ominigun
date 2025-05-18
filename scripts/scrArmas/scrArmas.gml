@@ -296,5 +296,10 @@ function scrArmas23(){
 	}
 	
 }
-
+function scrArmas24(){
+		camera_shake(1, 5);
+		var bala = instance_create_depth(x,y,0,oBala24);
+		bala.image_angle = global.dir;
+		bala.direction = point_direction(x,y, random_range(oCursor.x-32, oCursor.x+32),  random_range(oCursor.y-32, oCursor.y+32));
+}
 #endregion

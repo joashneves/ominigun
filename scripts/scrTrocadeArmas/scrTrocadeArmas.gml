@@ -1,5 +1,27 @@
 // Troca para thor
 // Troca de armas e variaveis do personagem
+function scrTrocaDeArma24(){
+	var veneno ={
+	
+	aparencia: sArma24,
+	recarga: 1,
+	recargaTotal: 5,
+	arma: oArma24,
+	bala: scrArmas24,
+	municaoTotal:  180
+
+}
+
+oPlayer.aparencia = veneno.aparencia;
+oPlayer.arma = veneno.arma;
+oPlayer.recarga = veneno.recarga;
+oPlayer.recargaTotal = veneno.recargaTotal;
+oPlayer.bala= veneno.bala;
+oPlayer.municaoTotal = veneno.municaoTotal;
+oPlayer.municao = veneno.municaoTotal;
+
+}
+
 function scrTrocaDeArma23(){
 	var arremeco ={
 	
