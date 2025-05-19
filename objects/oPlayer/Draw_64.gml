@@ -3,6 +3,14 @@ var camera_x = view_wport;
 var camera_y = view_hport;
 draw_set_colour(c_white);
 
+var idioma = string(oDataSuperCarrie.idioma);
+var t = traducao_geral[$ idioma];
+
+// Segurança: fallback se não achar
+if (is_undefined(t)) {
+    t = traducao_geral.BR;
+}
+
 #region // Debug
 		draw_set_font(fnt_ui);
 		
@@ -23,15 +31,17 @@ if(debug_mode){
 
 draw_text(700,48, "Fps : " + string(fps));
 
-
 var tempo_ms = tempo_de_jogo * (1000 / room_speed);
 
+var minutos = floor(tempo_ms div 60000);
 var segundos = floor((tempo_ms div 1000) mod 60);
-var minutos  = floor((tempo_ms div 60000) mod 60);
-var horas    = floor((tempo_ms div 3600000));
+var milissegundos = tempo_ms mod 1000;
 
-var tempo_str = string_format(horas, 2, 0) + ":" + string_format(minutos, 2, 0) + ":" + string_format(segundos, 2, 0);
-draw_text(700, 94, "Tempo: " + tempo_str);
+var tempo_str = string_format(minutos, 2, 0) + ":" +
+                string_format(segundos, 2, 0) + ":" +
+                string_format(milissegundos, 2, 0);
+
+draw_text(700, 94, t.tempo + " " + tempo_str);
 
 #endregion
 
@@ -39,7 +49,7 @@ draw_text(700, 94, "Tempo: " + tempo_str);
 //draw_sprite(aparencia,0,64,64)
 if(!fim_de_jogo and !player_morto){
     if(aparencia != sArma00){
-        draw_text(64, 78, "Munição: " + string(municao));
+        draw_text(64, 78, t.municao + string(municao));
     }
 
     // Mostrar sprites das armas
@@ -70,7 +80,7 @@ if(!fim_de_jogo and !player_morto){
     }
 
     // Pontuação
-    draw_text(600, 32, "Pontuação: " + string(score));
+    draw_text(600, 32,  t.pontuacao + string(score));
 
     // Rage bar
     var barraDeRage = (rage / rageMax) * 100;

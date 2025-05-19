@@ -25,7 +25,7 @@
     {"$GMFolder":"","%Name":"cenario","folderPath":"folders/Objects/cenario.yy","name":"cenario","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Inimigos","folderPath":"folders/Objects/Inimigos.yy","name":"Inimigos","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Projeteis","folderPath":"folders/Objects/Inimigos/Projeteis.yy","name":"Projeteis","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"loja","folderPath":"folders/Objects/loja.yy","name":"loja","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Objetos","folderPath":"folders/Objects/Objetos.yy","name":"Objetos","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Menu","folderPath":"folders/Objects/Menu.yy","name":"Menu","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"MineBoss","folderPath":"folders/Objects/MineBoss.yy","name":"MineBoss","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"MineBoss00","folderPath":"folders/Objects/MineBoss/MineBoss00.yy","name":"MineBoss00","resourceType":"GMFolder","resourceVersion":"2.0",},

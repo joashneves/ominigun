@@ -8,8 +8,8 @@
   "name":"oLojista",
   "overriddenProperties":[],
   "parent":{
-    "name":"loja",
-    "path":"folders/Objects/loja.yy",
+    "name":"Objetos",
+    "path":"folders/Objects/Objetos.yy",
   },
   "parentObjectId":null,
   "persistent":false,

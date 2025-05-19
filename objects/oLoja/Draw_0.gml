@@ -3,9 +3,17 @@ draw_self();
 
 draw_set_font(fnt_loja);
 
+var idioma = string(oDataSuperCarrie.idioma);
+var t = traducao_geral[$ idioma];
+
+// Segurança: fallback se não achar
+if (is_undefined(t)) {
+    t = traducao_geral.BR;
+}
+
 if (place_meeting(x, y, oPlayer)) {
 	// Texto "Press E"
-	draw_text(x - 16, y - 64, "Press E");
+	draw_text(x - 16, y - 64, t.Press_E);
 
 	// Sprite da moeda + preço
 	draw_sprite(sMoeda, 0, x - 16, y - 80); // moeda um pouco acima do "Press E"

@@ -2,7 +2,7 @@ index = 0;
 window_set_fullscreen(true);
 
 // Idioma padrão se não existir
-var_nao_existe(oDataSuperCarrie, "idioma", "BR");
+var_nao_existe(oDataSuperCarrie, "idioma", "EN");
 
 // Dicionário de traduções
 menu_traducao = {

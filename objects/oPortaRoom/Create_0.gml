@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor[
-
+scrTraducao()
 angle = 0;
 tamanhoPlayer = 1;
 entrando = false;

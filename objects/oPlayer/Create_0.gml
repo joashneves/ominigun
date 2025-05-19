@@ -1,5 +1,5 @@
 /// @description criação do player
-
+scrTraducao()
 // valores
 
 vida = 5; 

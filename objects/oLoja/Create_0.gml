@@ -1,5 +1,5 @@
 /// @description escolhe uma personagem
-
+scrTraducao()
 var armaEscolhida = scrEscolherArmaAleatoria();
 venda = armaEscolhida.objeto;
  preco = armaEscolhida.preco;

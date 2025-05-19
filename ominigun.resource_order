@@ -15,7 +15,7 @@
     {"name":"cenario","order":5,"path":"folders/Objects/cenario.yy",},
     {"name":"Inimigos","order":1,"path":"folders/Objects/Inimigos.yy",},
     {"name":"Projeteis","order":1,"path":"folders/Objects/Inimigos/Projeteis.yy",},
-    {"name":"loja","order":4,"path":"folders/Objects/loja.yy",},
+    {"name":"Objetos","order":4,"path":"folders/Objects/Objetos.yy",},
     {"name":"Menu","order":7,"path":"folders/Objects/Menu.yy",},
     {"name":"MineBoss","order":9,"path":"folders/Objects/MineBoss.yy",},
     {"name":"MineBoss00","order":1,"path":"folders/Objects/MineBoss/MineBoss00.yy",},
