@@ -332,6 +332,7 @@
     {"id":{"name":"scrMenuSelecionar","path":"scripts/scrMenuSelecionar/scrMenuSelecionar.yy",},},
     {"id":{"name":"scrMineBoss00","path":"scripts/scrMineBoss00/scrMineBoss00.yy",},},
     {"id":{"name":"scrPlaceObjects","path":"scripts/scrPlaceObjects/scrPlaceObjects.yy",},},
+    {"id":{"name":"scrTraducao","path":"scripts/scrTraducao/scrTraducao.yy",},},
     {"id":{"name":"scrTrocadeArmas","path":"scripts/scrTrocadeArmas/scrTrocadeArmas.yy",},},
     {"id":{"name":"scrWave","path":"scripts/scrWave/scrWave.yy",},},
     {"id":{"name":"alert_abyssal","path":"sounds/alert_abyssal/alert_abyssal.yy",},},

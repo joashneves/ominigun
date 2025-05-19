@@ -21,7 +21,8 @@ var m_y = device_mouse_y_to_gui(0)
 for (var i = 0; i < op_max; i++) {
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_middle);
-	
+	var texto = opcoes[i];
+	show_debug_message(string(opcoes))
 	var pos_y = y1 + (dist * i);
 	// tamanho do texto
 	var string_w = string_width(opcoes[i])
@@ -44,7 +45,11 @@ for (var i = 0; i < op_max; i++) {
 		draw_set_color(c_white);	
 	}
 	
-	draw_text(x1, pos_y, opcoes[i]);
+    if (i == 2) { // Mostrar o idioma atual
+        texto += " (" + oDataSuperCarrie.idioma + ")";
+    }
+	
+    draw_text(x1, pos_y, texto);
 }
 
 draw_set_font(-1);

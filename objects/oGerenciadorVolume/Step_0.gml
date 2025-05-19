@@ -3,7 +3,7 @@ down_press = keyboard_check_pressed(ord("S"))||keyboard_check_pressed(vk_down) |
 right_press = keyboard_check_pressed(ord("A"))||keyboard_check_pressed(vk_left) ||  gamepad_button_check_pressed(0, gp_padl);
 left_press = keyboard_check_pressed(ord("D"))||keyboard_check_pressed(vk_right) ||  gamepad_button_check_pressed(0, gp_padr);
 enter = keyboard_check_pressed(ord("E"))||keyboard_check_pressed(vk_enter) ||  gamepad_button_check_pressed(0, gp_face1);
-var idiomas = ["PT", "EN", "ES"];
+var idiomas = ["BR", "EN", "ES"];
 global.pause = true;
 if (up_press){
 	index --;

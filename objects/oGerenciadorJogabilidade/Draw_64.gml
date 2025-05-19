@@ -9,12 +9,19 @@ draw_set_alpha(1); // Resetar o alpha para evitar interferência nos próximos d
 
 
 draw_set_font(fnt_menu);
-
+// Desenha as opçoes!
 var dist = 55;
 var gui_largura = display_get_gui_width();
 var gui_altura = display_get_gui_height();
 var x1 = 64;
 var y1 = gui_altura / 2;
+
+var idioma = string(oDataSuperCarrie.idioma);
+var t = traducao_geral[$ idioma];
+// Segurança: fallback se não achar
+if (is_undefined(t)) {
+    t = traducao_geral.BR;
+}
 
 for (var i = 0; i < op_max; i++) {
 	draw_set_halign(fa_left);
@@ -30,24 +37,25 @@ for (var i = 0; i < op_max; i++) {
 	}
 	
 	var texto = opcoes[i];
-	var tremo = oDataSuperCarrie.TremorTela ? "Ativado" :  "Desativado"
+	var tremo = oDataSuperCarrie.TremorTela ? t.ativado : t.desativado;
+
 	// Adiciona valores ao lado do texto
 	switch(i){
-	case 0:
-		if (window_get_fullscreen()) {
-			var spr = oDataSuperCarrie.fundos[oDataSuperCarrie.fundo_index];
-			texto += " (Sim) < Fundo: " + sprite_get_name(spr) + " >";
-		} else {
-			texto += " (Não)";
-		}
-		break;
-	case 1:
-		var spr_cursor = oDataSuperCarrie.cursor_sprites[oDataSuperCarrie.cursor_index];
-		texto += " < Cursor: " + sprite_get_name(spr_cursor) + " >";
-		break;
-	case 2:
-		texto += " (" + string(oDataSuperCarrie.TremorTela ? "Ativado" : "Desativado") + ")";
-		break;
+    case 0:
+        if (window_get_fullscreen()) {
+            var spr = oDataSuperCarrie.fundos[oDataSuperCarrie.fundo_index];
+            texto += " (" + t.sim + ") < " + t.fundo + ": " + sprite_get_name(spr) + " >";
+        } else {
+            texto += " (" + t.nao + ")";
+        }
+        break;
+    case 1:
+        var spr_cursor = oDataSuperCarrie.cursor_sprites[oDataSuperCarrie.cursor_index];
+        texto += " < " + t.cursor + ": " + sprite_get_name(spr_cursor) + " >";
+        break;
+    case 2:
+        texto += " (" + (oDataSuperCarrie.TremorTela ? t.ativado : t.desativado) + ")";
+        break;
 }
 
 	draw_text(x1, pos_y, texto);

@@ -286,6 +286,7 @@
     {"name":"scrMenuSelecionar","order":17,"path":"scripts/scrMenuSelecionar/scrMenuSelecionar.yy",},
     {"name":"scrMineBoss00","order":2,"path":"scripts/scrMineBoss00/scrMineBoss00.yy",},
     {"name":"scrPlaceObjects","order":4,"path":"scripts/scrPlaceObjects/scrPlaceObjects.yy",},
+    {"name":"scrTraducao","order":18,"path":"scripts/scrTraducao/scrTraducao.yy",},
     {"name":"scrTrocadeArmas","order":1,"path":"scripts/scrTrocadeArmas/scrTrocadeArmas.yy",},
     {"name":"scrWave","order":7,"path":"scripts/scrWave/scrWave.yy",},
     {"name":"alert_abyssal","order":6,"path":"sounds/alert_abyssal/alert_abyssal.yy",},
