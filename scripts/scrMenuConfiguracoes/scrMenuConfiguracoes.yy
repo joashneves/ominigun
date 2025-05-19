@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrMenuConfiguracoes",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrMenuConfiguracoes",
+  "parent":{
+    "name":"Opcoes",
+    "path":"folders/Objects/Misc/Gerenciador/Opcoes.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

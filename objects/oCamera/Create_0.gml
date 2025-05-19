@@ -1,3 +1,12 @@
+// Se ainda não foi definido, define o sprite padrão
+if (!variable_instance_exists(oDataSuperCarrie, "sprite_mouse")) {
+    oDataSuperCarrie.sprite_mouse = sMouse;
+}
+if (!variable_instance_exists(oDataSuperCarrie, "TremorTela")) {
+	oDataSuperCarrie.TremorTela = true
+}
+// Aplica ao cursor
+cursor_sprite = oDataSuperCarrie.sprite_mouse;
 
 // Ativa view se não estiver ativada
 if (!view_enabled)
@@ -43,5 +52,8 @@ if (instance_exists(target_)) {
 show_debug_message("camera criada em : " + string(cam_x) + "," + string(cam_y))
 
 // Outras configs
-screenfull = false;
+if (!variable_instance_exists(oDataSuperCarrie, "Fullscreen")) {
+oDataSuperCarrie.Fullscreen = true
+}
+screenfull = oDataSuperCarrie.Fullscreen;
 window_set_cursor(cr_none);

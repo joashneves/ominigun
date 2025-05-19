@@ -8,7 +8,7 @@ var y1 = gui_altura / 2;
 // mouse
 var m_x = device_mouse_x_to_gui(0)
 var m_y = device_mouse_y_to_gui(0)
-		cursor_sprite = sMouse
+
 for (var i = 0; i < op_max; i++) {
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_middle);

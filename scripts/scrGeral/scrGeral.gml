@@ -107,9 +107,14 @@ function mouseCordenada(_Player, _mouse){
 	return 	_Binario;
 	
 }
-
-
-
+/// @function array_index_of(array, value)
+/// @description Retorna o índice do valor em um array, ou -1 se não encontrar.
+function array_index_of(arr, val) {
+	for (var i = 0; i < array_length(arr); i++) {
+		if (arr[i] == val) return i;
+	}
+	return -1;
+}
 // atakes
 function scrspikes(){
 

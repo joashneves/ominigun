@@ -9,3 +9,4 @@ if(debug_mode){
     draw_text(x_base, y_base + 44, "Quantidade: " + string(instance_number(oGerenciadorMusica)));
 
 }
+

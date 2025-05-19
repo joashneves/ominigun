@@ -12,8 +12,6 @@
     {"name":"inst_14E706E0","path":"rooms/Menu/Menu.yy",},
     {"name":"inst_41091126","path":"rooms/Menu/Menu.yy",},
     {"name":"inst_2250B75E","path":"rooms/Menu/Menu.yy",},
-    {"name":"inst_534D247F","path":"rooms/Menu/Menu.yy",},
-    {"name":"inst_664F97C","path":"rooms/Menu/Menu.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -24,8 +22,6 @@
         {"$GMRInstance":"v2","%Name":"inst_78F24C8D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_78F24C8D","objectId":{"name":"oDataSuperCarrie","path":"objects/oDataSuperCarrie/oDataSuperCarrie.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
         {"$GMRInstance":"v2","%Name":"inst_14E706E0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_14E706E0","objectId":{"name":"oLightRender","path":"objects/oLightRender/oLightRender.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
         {"$GMRInstance":"v2","%Name":"inst_2250B75E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2250B75E","objectId":{"name":"oGerenciadorMenu","path":"objects/oGerenciadorMenu/oGerenciadorMenu.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
-        {"$GMRInstance":"v2","%Name":"inst_534D247F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_534D247F","objectId":{"name":"oTirarTremorDeTela","path":"objects/oTirarTremorDeTela/oTirarTremorDeTela.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":704.0,"y":384.0,},
-        {"$GMRInstance":"v2","%Name":"inst_664F97C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_664F97C","objectId":{"name":"oFullscreen","path":"objects/oFullscreen/oFullscreen.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":704.0,"y":288.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMREffectLayer":"","%Name":"Effect_1","depth":100,"effectEnabled":true,"effectType":"_effect_windblown_particles","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Effect_1","properties":[
         {"name":"param_sprite","type":2,"value":"_effect_windblown_particles_leaf_sprite",},
