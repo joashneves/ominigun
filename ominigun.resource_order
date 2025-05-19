@@ -109,6 +109,7 @@
     {"name":"oArma30","order":31,"path":"objects/oArma30/oArma30.yy",},
     {"name":"oArvores","order":1,"path":"objects/oArvores/oArvores.yy",},
     {"name":"oBack","order":5,"path":"objects/oBack/oBack.yy",},
+    {"name":"oBackgrounrdRender","order":15,"path":"objects/oBackgrounrdRender/oBackgrounrdRender.yy",},
     {"name":"oBala00","order":1,"path":"objects/oBala00/oBala00.yy",},
     {"name":"oBala01","order":2,"path":"objects/oBala01/oBala01.yy",},
     {"name":"oBala02","order":5,"path":"objects/oBala02/oBala02.yy",},

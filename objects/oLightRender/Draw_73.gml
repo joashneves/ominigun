@@ -9,6 +9,7 @@ if (!surface_exists(surf_light) || surface_get_width(surf_light) != _w || surfac
 
 surface_set_target(surf_light);
 draw_clear(ambient_light);
+
 camera_apply(view_camera[0]);
 
 gpu_set_blendmode(bm_add);

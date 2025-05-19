@@ -135,6 +135,7 @@
     {"id":{"name":"oArma30","path":"objects/oArma30/oArma30.yy",},},
     {"id":{"name":"oArvores","path":"objects/oArvores/oArvores.yy",},},
     {"id":{"name":"oBack","path":"objects/oBack/oBack.yy",},},
+    {"id":{"name":"oBackgrounrdRender","path":"objects/oBackgrounrdRender/oBackgrounrdRender.yy",},},
     {"id":{"name":"oBala00","path":"objects/oBala00/oBala00.yy",},},
     {"id":{"name":"oBala01","path":"objects/oBala01/oBala01.yy",},},
     {"id":{"name":"oBala02","path":"objects/oBala02/oBala02.yy",},},
