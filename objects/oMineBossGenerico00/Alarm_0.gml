@@ -30,5 +30,7 @@ if (len != 0) {
 	vspd = (vspd / len) * spd;
 }
 
+    // Movimento com colisão
+    move_and_collide(vspd, hspd, oBloco);
 // Reativa o alarm para repetir o comportamento
 alarm[0] = 60 * 2;

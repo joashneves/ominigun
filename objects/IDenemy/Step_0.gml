@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+if(!em_view()) instance_destroy();
 if (oPlayer.x > x){
 	image_xscale = 1;
 }else if (oPlayer.x < x){
