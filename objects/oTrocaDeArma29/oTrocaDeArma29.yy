@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sArma28",
-    "path":"sprites/sArma28/sArma28.yy",
+    "name":"sArma30",
+    "path":"sprites/sArma30/sArma30.yy",
   },
   "spriteMaskId":null,
   "visible":true,
