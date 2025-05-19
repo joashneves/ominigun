@@ -15,7 +15,9 @@ function scrArmas00(){
 	camera_shake(2, 10);
 	var crsr = instance_exists(oCursor)
 	show_debug_message("texto serio: " + " ocurso.x "+string(oCursor.x)+ " oCursor.y " + string(oCursor.y))
-	audio_play_sound(sndTiroArma00,4,false)
+	var id_som = audio_play_sound(sndTiroArma00,4,false)
+	var vol_efeito = oDataSuperCarrie.vol_geral * oDataSuperCarrie.vol_tiros;
+	audio_sound_gain(id_som, vol_efeito, 0);
 	var bala = instance_create_depth(x,y,0,oBala00);
 	bala.image_angle = global.dir;
 	bala.direction =point_direction(x,y, oCursor.x, oCursor.y );
@@ -35,7 +37,9 @@ function scrArmas01(){
 // Sniper
 function scrArmas02(){
 	camera_shake(10, 10);
-	audio_play_sound(sndTiroArma02,4,false)
+	var id_som = audio_play_sound(sndTiroArma02,4,false)
+	var vol_efeito = oDataSuperCarrie.vol_geral * oDataSuperCarrie.vol_tiros;
+	audio_sound_gain(id_som, vol_efeito, 0);
 	var bala = instance_create_depth(x,y,0,oBala02);
 	bala.image_angle = global.dir;
 	bala.direction = global.dir;
@@ -59,7 +63,9 @@ function scrArmas02(){
 // Pistola Tier 2
 function scrArmas03(){
 	camera_shake(3, 10);
-	audio_play_sound(sndTiroArma03,4,false)
+	var id_som = audio_play_sound(sndTiroArma03,4,false);
+	var vol_efeito = oDataSuperCarrie.vol_geral * oDataSuperCarrie.vol_tiros;
+	audio_sound_gain(id_som, vol_efeito, 0);
 	var bala = instance_create_depth(x,y,0,oBala03);
 	bala.image_angle = global.dir;
 	bala.direction = global.dir;
@@ -68,7 +74,9 @@ function scrArmas03(){
 // Metralhadora
 function scrArmas04(){
 	camera_shake(1, 5);
-	audio_play_sound(sndTiroArma04,4,false)
+	var id_som = audio_play_sound(sndTiroArma04,4,false)
+	var vol_efeito = oDataSuperCarrie.vol_geral * oDataSuperCarrie.vol_tiros;
+	audio_sound_gain(id_som, vol_efeito, 0);
 	var bala = instance_create_depth(x,y,0,oBala03);
 	bala.image_angle = global.dir;
 	bala.direction = global.dir;
@@ -77,7 +85,9 @@ function scrArmas04(){
 //RPg
 function scrArmas05(){
 	camera_shake(12, 10);
-	audio_play_sound(sndTiroArma05,4,false)
+	var id_som = audio_play_sound(sndTiroArma05,4,false)
+	var vol_efeito = oDataSuperCarrie.vol_geral * oDataSuperCarrie.vol_tiros;
+	audio_sound_gain(id_som, vol_efeito, 0);
 	var bala = instance_create_depth(x,y,0,oBala05);
 	bala.image_angle = global.dir;
 	bala.direction = global.dir;
@@ -89,7 +99,9 @@ function scrArmas05(){
 //Mouse
 function scrArmas06(){
 	camera_shake(1, 5);
-	audio_play_sound(sndTiroArma06,4,false)
+	var id_som = audio_play_sound(sndTiroArma06,4,false)
+	var vol_efeito = oDataSuperCarrie.vol_geral * oDataSuperCarrie.vol_tiros;
+	audio_sound_gain(id_som, vol_efeito, 0);
 	var bala = instance_create_depth(oCursor.x, oCursor.y,0,oBala06);
 	bala.image_angle = global.dir;
 	bala.direction = point_direction(oCursor.x, oCursor.y,oPlayer.x,oPlayer.y);
@@ -106,7 +118,9 @@ function scrArmas07(){
 // Inimigo
 function scrArmas08(){
 	camera_shake(6, 10);
-	audio_play_sound(sndTiroArma08,4,false)
+	var id_som = audio_play_sound(sndTiroArma08,4,false)
+	var vol_efeito = oDataSuperCarrie.vol_geral * oDataSuperCarrie.vol_tiros;
+	audio_sound_gain(id_som, vol_efeito, 0);
 	var bala = instance_create_depth(x,y,0,oBala08);
 	bala.image_angle = global.dir;
 	bala.direction = global.dir;

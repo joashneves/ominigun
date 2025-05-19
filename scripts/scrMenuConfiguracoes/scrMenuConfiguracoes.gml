@@ -16,7 +16,8 @@ function scrMenuConfiguracoes(index) {
 			break;
 		case 4: // Voltar
 			instance_destroy();
-			instance_create_depth(0,1,-10,oGerenciadorMenu)
+			global.pause = false
+			if(room == Menu) instance_create_depth(0,1,-10,oGerenciadorMenu);
 			break;
 		default:
 			break;
@@ -31,8 +32,7 @@ function scrMenuConfiguracoesJogabilidade(index) {
 		 show_debug_message("fullscreen : " + string(fullscreen))
 			break;
 		case 1: // Mouse
-			instance_destroy();
-			instance_create_depth(0,1,-10,oGerenciadorVolume)
+			// pass
 			break;
 		case 2: // Tremor de tela
 		var tremor  = oDataSuperCarrie.TremorTela  ?  false  :  true;
@@ -46,4 +46,14 @@ function scrMenuConfiguracoesJogabilidade(index) {
 		default:
 			break;
 	}
+}
+function scrMenuConfiguracoesVolume(index){
+	switch(index){
+				case 4: // Voltar
+			instance_destroy();
+			instance_create_depth(0,1,-10,oConfiguracoes)
+			break;
+		default:
+			break;
+			}
 }

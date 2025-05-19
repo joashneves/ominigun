@@ -1,5 +1,9 @@
-if (global.pause) return;
-
+sprite_index =  oDataSuperCarrie.sprite_mouse;
+cursor_sprite = -1;
+if (global.pause){
+	cursor_sprite = oDataSuperCarrie.sprite_mouse;
+	return;
+}
 var mira_distancia = 100;
 var deadzone = 0.2;
 

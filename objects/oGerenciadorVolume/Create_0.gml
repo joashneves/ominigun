@@ -1,10 +1,10 @@
-opcoes = ["Geral", "Tiros", "Musicas", "Boss", "Voltar"];
+opcoes = ["Geral", "Tiros", "Musicas", "Ambiente", "Voltar"];
 index = 0;
 
 op_max = array_length(opcoes) ;
 
 // Valores padrão (de 0.0 a 1.0)
-oDataSuperCarrie.vol_geral  = 1.0;
-oDataSuperCarrie.vol_tiros  = 0.8;
-oDataSuperCarrie.vol_musica = 0.7;
-oDataSuperCarrie.vol_boss   = 1.0;
+var_nao_existe(oDataSuperCarrie, "vol_geral", 0.5);
+var_nao_existe(oDataSuperCarrie, "vol_tiros", 1);
+var_nao_existe(oDataSuperCarrie, "vol_musica", 1);
+var_nao_existe(oDataSuperCarrie, "vol_ambiente", 1);

@@ -16,19 +16,16 @@ var x1 = 64;
 var y1 = gui_altura / 2;
 
 for (var i = 0; i < op_max; i++) {
-	draw_set_halign(fa_left);
-	draw_set_valign(fa_middle);
+	draw_set_color(index == i ? c_aqua : c_white);
 	
 	var pos_y = y1 + (dist * i);
-	
-	// Seleção visual
-	if (index == i) {
-		draw_set_color(c_aqua);
-	} else {
-		draw_set_color(c_white);
-	}
-	
 	var texto = opcoes[i];
+	switch(i) {
+		case 0: texto += ": " + string(floor(oDataSuperCarrie.vol_geral * 100)) + "%"; break;
+		case 1: texto += ": " + string(floor(oDataSuperCarrie.vol_tiros * 100)) + "%"; break;
+		case 2: texto += ": " + string(floor(oDataSuperCarrie.vol_musica * 100)) + "%"; break;
+		case 3: texto += ": " + string(floor(oDataSuperCarrie.vol_ambiente * 100)) + "%"; break;
+	}
 
-	draw_text(x1, pos_y, texto);
+	draw_text(x1, pos_y, texto); 
 }

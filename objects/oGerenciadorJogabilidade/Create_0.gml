@@ -4,16 +4,18 @@ index = 0;
 
 op_max = array_length(opcoes) ;
 
-// oConfiguracoes - Create
-oDataSuperCarrie.vol_musica = 0.8;
-oDataSuperCarrie.vol_ambiente = 0.6;
-oDataSuperCarrie.idioma = "PT";
+// Garante que o objeto exista
+if (!instance_exists(oDataSuperCarrie)) {
+    instance_create_layer(0, 0, "Instances", oDataSuperCarrie);
+}
 
-// Listas de sprites
-oDataSuperCarrie.fundos = [sFundoCamera, sCutCene, sMenuBackgroun];
-oDataSuperCarrie.cursor_sprites = [sMouse, sMouseFinal];
+// Define valores padrão apenas se não existirem
+var_nao_existe(oDataSuperCarrie, "fundo_index", 0);
+var_nao_existe(oDataSuperCarrie, "cursor_index", 0);
+var_nao_existe(oDataSuperCarrie, "TremorTela", true);
+var_nao_existe(oDataSuperCarrie, "fundos", [sFundoCamera, sCutCene, sMenuBackgroun]);
+var_nao_existe(oDataSuperCarrie, "cursor_sprites", [sMouse, sMouseFinal]);
 
-// Índices atuais
-oDataSuperCarrie.fundo_index = 0;
-oDataSuperCarrie.cursor_index = 0;
-oDataSuperCarrie.TremorTela = true
+// Garante que o cursor padrão seja definido
+var_nao_existe(oDataSuperCarrie, "sprite_mouse", sMouse);
+cursor_sprite = oDataSuperCarrie.sprite_mouse;

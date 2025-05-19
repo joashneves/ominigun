@@ -2,7 +2,7 @@ up_press = keyboard_check_pressed(ord("W")) ||keyboard_check_pressed(vk_up) || g
 down_press = keyboard_check_pressed(ord("S"))||keyboard_check_pressed(vk_down) ||  gamepad_button_check_pressed(0, gp_padd);
 enter = keyboard_check_pressed(ord("E"))||keyboard_check_pressed(vk_enter) ||  gamepad_button_check_pressed(0, gp_face1);
 var idiomas = ["PT", "EN", "ES"];
-
+global.pause = true;
 if (up_press){
 	index --;
 }else if (down_press){
@@ -14,7 +14,6 @@ if(index > op_max -1){
 if(index < 0 ){
 	index = op_max -1;
 }
-
 if (enter){
 	scrMenuConfiguracoes(index);
 

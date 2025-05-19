@@ -85,9 +85,14 @@ function camera_shake(magnitude, duration){
 	if(oDataSuperCarrie.TremorTela){
 	global.shake_magnitude = magnitude;
 	global.shake_duration = duration;
-	}
-	
+	}	
 }
+function var_nao_existe(inst, varname, default_val) {
+    if (!variable_instance_exists(inst, varname)) {
+        variable_instance_set(inst, varname, default_val);
+    }
+}
+
 //Salva jogo
 function salvaJogo(){
 if(file_exists("save.sav")) file_delete("save.sav");

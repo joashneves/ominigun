@@ -1,9 +1,20 @@
+// Se ainda não existem os valores, inicializa com os padrões
+var_nao_existe(oDataSuperCarrie, "vol_geral", 0.5);
+var_nao_existe(oDataSuperCarrie, "vol_tiros", 1);
+var_nao_existe(oDataSuperCarrie, "vol_musica", 1);
+var_nao_existe(oDataSuperCarrie, "vol_ambiente", 1);
+
+// Toca as músicas
 musica_calma = audio_play_sound(sndMusicaCalma, 1, true);
 musica_ativa = audio_play_sound(sndMusicaAtiva, 1, true);
 
-audio_sound_gain(musica_calma, 1, 0); // Volume cheio
-audio_sound_gain(musica_ativa, 0, 0); // Mutado
-
+// Inicializa valores alvo
 musica_calma_target = 1;
 musica_ativa_target = 0;
 
+// Aplica os volumes usando os controles definidos
+var volume_final_calma = oDataSuperCarrie.vol_geral * oDataSuperCarrie.vol_musica * musica_calma_target;
+var volume_final_ativa = oDataSuperCarrie.vol_geral * oDataSuperCarrie.vol_musica * musica_ativa_target;
+
+audio_sound_gain(musica_calma, volume_final_calma, 0);
+audio_sound_gain(musica_ativa, volume_final_ativa, 0);

@@ -1,5 +1,4 @@
 /// @description movimento a ação
-
 if(fim_de_jogo) room_goto(fim_de_jogo_room);
 if(global.pause) return;
 
@@ -12,6 +11,9 @@ right_press = keyboard_check(ord("A"))||keyboard_check(vk_left) ||  gamepad_butt
 left_press = keyboard_check(ord("D"))||keyboard_check(vk_right) ||  gamepad_button_check(0, gp_padr);
 click_do_mouse_left = mouse_check_button(mb_left) ||  gamepad_button_check(0, gp_shoulderrb);
 click_do_mouse_right = mouse_check_button(mb_right) ||  gamepad_button_check(0, gp_shoulderlb);
+esc = keyboard_check_pressed(vk_escape);
+
+if(esc and nenhuma_instance_existe([IDenemy, oBoss, oBoss02, oBoss04])) instance_create_depth(0,0,-10,oConfiguracoes);
 
 if gamepad_is_connected(0){
 	gamepad_set_axis_deadzone(0, 0.15);
@@ -198,10 +200,6 @@ if (vida <= 0){
 	}
 	score = 0;
 //Buff
-
-
 }
-
-
 #endregion
 
