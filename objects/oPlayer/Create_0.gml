@@ -59,9 +59,6 @@ if(!instance_exists(oCursor)) {
 }
 levelAntigo = room_get_name(room)
 
-if(!audio_play_sound(sndMusicFloresta,3,true)){
-	(audio_play_sound(sndMusicFloresta,3,true))
-}
 gc_enable(true);
 
 // receber dano

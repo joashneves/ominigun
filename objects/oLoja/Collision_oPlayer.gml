@@ -9,5 +9,7 @@ if(_E && oPlayer.moeda >=  preco){
 	oPlayer.moeda-= preco;
 	instance_create_depth(oPlayer.x,oPlayer.y,0,venda);
 	instance_destroy();
-	audio_play_sound(sndComprarItem,5,false)
+	var id_som = 	audio_play_sound(sndComprarItem,5,false)
+var vol_efeito = oDataSuperCarrie.vol_geral * oDataSuperCarrie.vol_ambiente;
+audio_sound_gain(id_som, vol_efeito, 0);
 }

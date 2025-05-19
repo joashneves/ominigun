@@ -8,4 +8,6 @@
 	}
 	
 
-audio_play_sound(sndArma01Destruida,5,false)	
+var id_som = audio_play_sound(sndArma01Destruida,5,false)	
+var vol_efeito = oDataSuperCarrie.vol_geral * oDataSuperCarrie.vol_ambiente;
+audio_sound_gain(id_som, vol_efeito, 0);

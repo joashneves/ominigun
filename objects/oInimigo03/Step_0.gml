@@ -22,7 +22,10 @@ if( municao++ >= municaoTotal){
 		bala.image_blend = c_purple;
 		}
 		municao=0;
-		audio_play_sound(sndTiroInimigo,2,0);
+
+								var id_som = 		audio_play_sound(sndTiroInimigo,2,0);
+var vol_efeito = oDataSuperCarrie.vol_geral * oDataSuperCarrie.vol_ambiente;
+audio_sound_gain(id_som, vol_efeito, 0);
 }
 
 if(place_meeting(x,y,IDbalas)){
@@ -32,14 +35,17 @@ if(place_meeting(x,y,IDbalas)){
 	dano_timer = 5; // frames de recuo/efeito
 
 	instance_destroy(instance_place(x,y,IDbalas));
-	audio_play_sound(sndDanoinimigo,2,0);
+							var id_som = 			audio_play_sound(sndDanoinimigo,2,0);
+var vol_efeito = oDataSuperCarrie.vol_geral * oDataSuperCarrie.vol_ambiente;
+audio_sound_gain(id_som, vol_efeito, 0);
 }
 if(place_meeting(x,y,IDarmas)){
 	life=life-50;
 	levou_dano = true;
 	dano_timer = 5; // frames de recuo/efeito
-
-	audio_play_sound(sndDanoinimigo,2,0);
+						var id_som = 			audio_play_sound(sndDanoinimigo,2,0);
+var vol_efeito = oDataSuperCarrie.vol_geral * oDataSuperCarrie.vol_ambiente;
+audio_sound_gain(id_som, vol_efeito, 0);
 }
 
 if (life <= 0) {

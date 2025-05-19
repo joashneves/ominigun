@@ -18,7 +18,3 @@ for (var i = 0; i < total; i++) {
     var eye = instance_create_layer(x, y, "Boss", eyes[i]);
     eye.angle_offset = i * angle_step;
 }
-
-
-audio_stop_all();
-audio_play_sound(sndMusicBossFinal,1,true);

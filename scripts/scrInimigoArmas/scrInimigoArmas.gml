@@ -11,7 +11,10 @@ function scrInimigoPistola(){
 		bala.speed = 6;
 		bala.image_blend = c_red;
 		municao=0;
-	audio_play_sound(sndTiroInimigo,2,0);
+
+		var id_som = 		audio_play_sound(sndTiroInimigo,2,0);
+		var vol_efeito = oDataSuperCarrie.vol_geral * oDataSuperCarrie.vol_ambiente;
+		audio_sound_gain(id_som, vol_efeito, 0);
 }
 
 function scrInimigoespingarda(){
@@ -24,5 +27,7 @@ function scrInimigoespingarda(){
 		bala.image_blend = c_red;
 	}
 		municao=0;
-	audio_play_sound(sndTiroInimigo,2,0);
+			var id_som = 		audio_play_sound(sndTiroInimigo,2,0);
+		var vol_efeito = oDataSuperCarrie.vol_geral * oDataSuperCarrie.vol_ambiente;
+		audio_sound_gain(id_som, vol_efeito, 0);
 }

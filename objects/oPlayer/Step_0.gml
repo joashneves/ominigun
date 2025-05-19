@@ -138,7 +138,10 @@ if(place_meeting(x,y,oBalaInimigo)){
 		rage = 1;
 		levou_dano = true
 		camera_shake(6, 20);
-		audio_play_sound(sndDano,1,0);
+
+		var id_som = 		audio_play_sound(sndDano,1,0);
+		var vol_efeito = oDataSuperCarrie.vol_geral * oDataSuperCarrie.vol_ambiente;
+		audio_sound_gain(id_som, vol_efeito, 0);
 		gamepad_set_vibration(0, 0.5, 0.5);
 		for (var i = 0; i < ds_list_size(global.buffsAtivosDano); i++) {
 			var executarScript = ds_list_find_value(global.buffsAtivosDano,i);
@@ -156,7 +159,9 @@ if(place_meeting(x,y,oInimigo04)){
 		vida--;
 		rage = 1;
 		levou_dano = true
-		audio_play_sound(sndDano,1,0);
+		var id_som = 		audio_play_sound(sndDano,1,0);
+		var vol_efeito = oDataSuperCarrie.vol_geral * oDataSuperCarrie.vol_ambiente;
+		audio_sound_gain(id_som, vol_efeito, 0);
 		camera_shake(6, 20);
 		gamepad_set_vibration(0, 0.5, 0.5);
 	for (var i = 0; i < ds_list_size(global.buffsAtivosDano); i++) {
