@@ -190,7 +190,7 @@ function scrArmas15(){
 
 #endregion
 
-#region // Armas Controle robozinho
+#region // Armas de laser
 
 function scrArmas16(){
 	
@@ -213,7 +213,7 @@ function scrArmas16(){
 
 #endregion
 
-#region // Armas Controle robozinho
+#region // Armas de ar
 
 function scrArmas17(){
 	camera_shake(3, 10);
@@ -324,4 +324,54 @@ function scrArmas27(){
         bala.image_angle = dir;	
 		bala.speed = 5;
 }
+#region // Avatar
+function scrArmas28(){
+		camera_shake(12, 6);
+		var dir = point_direction(x, y, oCursor.x,  oCursor.y);
+        var fogo = instance_create_depth(x, y, 0, oBala27);
+        fogo.direction = dir;
+        fogo.image_angle = dir;	
+		fogo.speed = 5;
+		var terra = instance_create_depth(x,y,0,oBala26);
+		terra.image_angle = global.dir;
+		terra.direction = global.dir;
+		terra.speed = 6;
+			for(var i = 0 ; i < 3; i += 1;) {
+		var bolha = instance_create_depth(x,y,0,oBala25);
+		bolha.image_angle = point_direction(x,y, oCursor.x, oCursor.y);
+		bolha.direction = point_direction(x,y, irandom_range(oCursor.x-64*i,oCursor.x+164*i), irandom_range(oCursor.y-164*i,oCursor.y+164*i));
+			}
+				var bala = instance_create_depth(x,y,0,oBala17);
+		bala.direction = point_direction(x,y,x*90, y);
+		bala.speed = 6;
+	
+		var bala = instance_create_depth(x,y,0,oBala17);
+		bala.direction = point_direction(x,y,x,y*-90);
+		bala.speed = 6;
+	
+		var bala = instance_create_depth(x,y,0,oBala17);
+		bala.direction = point_direction(x,y,x, y*90);
+		bala.speed = 6;
+	
+		var bala = instance_create_depth(x,y,0,oBala17);
+		bala.direction = point_direction(x,y,x*-90,y);
+		bala.speed = 6;
+
+}
 #endregion
+function scrArmas29(){
+			camera_shake(1, 5);
+			var brushe = instance_create_depth(oCursor.x, oCursor.y, 0, oBala29);
+			brushe.image_blend = choose(c_white, c_aqua, c_red, c_green, c_blue, c_black, c_yellow);
+			brushe.image_index = irandom_range(0,5)
+			brushe.image_angle = random_range(0,360)
+}
+#endregion
+function scrArmas30(){
+	camera_shake(6, 10);
+	var arma = choose(oArma02, oArma04, oArma06, oArma08, oArma10, oArma14, oArma16, oArma18, oArma20, oArma22, oArma24, oArma26, oArma28)
+	var bala = instance_create_depth(x,y,0,arma);
+	bala.image_angle = global.dir;
+	bala.direction = global.dir;
+	bala.speed = 8;
+}

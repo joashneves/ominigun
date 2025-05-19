@@ -1,5 +1,70 @@
 // Troca para thor
 // Troca de armas e variaveis do personagem
+function scrTrocaDeArma30(){
+		var armas ={
+	
+	aparencia: sArma30,
+	recarga: 1,
+	recargaTotal: 42,
+	arma: oArma30,
+	bala: scrArmas30,
+	municaoTotal:  16
+
+}
+
+oPlayer.aparencia = armas.aparencia;
+oPlayer.arma = armas.arma;
+oPlayer.recarga = armas.recarga;
+oPlayer.recargaTotal = armas.recargaTotal;
+oPlayer.bala= armas.bala;
+oPlayer.municaoTotal = armas.municaoTotal;
+oPlayer.municao = armas.municaoTotal;
+
+}
+function scrTrocaDeArma29(){
+		var pincel ={
+	
+	aparencia: sArma29,
+	recarga: 1,
+	recargaTotal: 2,
+	arma: oArma29,
+	bala: scrArmas29,
+	municaoTotal:  50
+
+}
+
+oPlayer.aparencia = pincel.aparencia;
+oPlayer.arma = pincel.arma;
+oPlayer.recarga = pincel.recarga;
+oPlayer.recargaTotal = pincel.recargaTotal;
+oPlayer.bala= pincel.bala;
+oPlayer.municaoTotal = pincel.municaoTotal;
+oPlayer.municao = pincel.municaoTotal;
+
+}
+
+function scrTrocaDeArma28(){
+		var avatar ={
+	
+	aparencia: sArma28,
+	recarga: 1,
+	recargaTotal: 42,
+	arma: oArma28,
+	bala: scrArmas28,
+	municaoTotal:  12
+
+}
+
+oPlayer.aparencia = avatar.aparencia;
+oPlayer.arma = avatar.arma;
+oPlayer.recarga = avatar.recarga;
+oPlayer.recargaTotal = avatar.recargaTotal;
+oPlayer.bala= avatar.bala;
+oPlayer.municaoTotal = avatar.municaoTotal;
+oPlayer.municao = avatar.municaoTotal;
+
+}
+
 function scrTrocaDeArma27(){
 		var fogo ={
 	

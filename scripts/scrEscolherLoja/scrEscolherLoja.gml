@@ -21,7 +21,15 @@ function scrEscolherArmaAleatoria() {
 		{ objeto: oTrocaDeArma18, preco: 12 },
 		{ objeto: oTrocaDeArma19, preco: 17 },
 		{ objeto: oTrocaDeArma20, preco: 12 },
-		{ objeto: oTrocaDeArma21, preco: 12 }
+		{ objeto: oTrocaDeArma21, preco: 12 },
+		{ objeto: oTrocaDeArma22, preco: 14 },
+		{ objeto: oTrocaDeArma23, preco: 6 },
+		{ objeto: oTrocaDeArma24, preco: 12 },
+		{ objeto: oTrocaDeArma25, preco: 12 },
+		{ objeto: oTrocaDeArma26, preco: 12 },
+		{ objeto: oTrocaDeArma27, preco: 12 },
+		{ objeto: oTrocaDeArma28, preco: 16 },
+		{ objeto: oTrocaDeArma29, preco: 20 }
 	];
 	var index = irandom(array_length(armas) - 1);
 		return armas[index]; // retorna um objeto aleatório da lista

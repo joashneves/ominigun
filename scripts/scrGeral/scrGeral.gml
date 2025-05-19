@@ -68,7 +68,8 @@ function obterTodasArmas(){
 	oTrocaDeArma06, oTrocaDeArma07,oTrocaDeArma08, oTrocaDeArma09, oTrocaDeArma10,
 	oTrocaDeArma11, oTrocaDeArma12, oTrocaDeArma13, oTrocaDeArma14, oTrocaDeArma18,
 	oTrocaDeArma15, oTrocaDeArma16, oTrocaDeArma19, oTrocaDeArma21, oTrocaDeArma22,
-	oTrocaDeArma23, oTrocaDeArma24);
+	oTrocaDeArma23, oTrocaDeArma24, oTrocaDeArma25, oTrocaDeArma26, oTrocaDeArma27,
+	oTrocaDeArma28, oTrocaDeArma29);
 
 }
 function nenhuma_instance_existe(lista){

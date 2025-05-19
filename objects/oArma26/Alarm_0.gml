@@ -17,6 +17,4 @@
 		var bala = instance_create_depth(x,y,0,oTerra);
 		bala.direction = point_direction(x,y,x*-90,y);
 
-
-
 alarm[0] = 15;
