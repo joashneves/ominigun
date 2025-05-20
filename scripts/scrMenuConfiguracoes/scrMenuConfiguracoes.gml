@@ -34,12 +34,12 @@ function scrMenuConfiguracoesJogabilidade(index) {
 		case 1: // Mouse
 			// pass
 			break;
-		case 2: // Tremor de tela
+		case 3: // Tremor de tela
 		var tremor  = oDataSuperCarrie.TremorTela  ?  false  :  true;
 		 oDataSuperCarrie.TremorTela = tremor;
 		 show_debug_message("Tremor : " + string(tremor))
 			break;
-		case 3: // Voltar
+		case 4: // Voltar
 			instance_destroy();
 			instance_create_depth(0,1,-10,oConfiguracoes)
 			break;

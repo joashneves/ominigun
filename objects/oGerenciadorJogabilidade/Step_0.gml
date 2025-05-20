@@ -23,7 +23,7 @@ if (enter){
 
 if (left_press) {
 	switch(index){
-		case 0:
+		case 1:
 			if (window_get_fullscreen()) {
 				oDataSuperCarrie.fundo_index--;
 				if(oDataSuperCarrie.fundo_index < 0)
@@ -31,7 +31,7 @@ if (left_press) {
 			}
 						
 			break;
-		case 1:
+		case 2:
 			oDataSuperCarrie.cursor_index--;
 			if(oDataSuperCarrie.cursor_index < 0)
 				oDataSuperCarrie.cursor_index = array_length(oDataSuperCarrie.cursor_sprites) - 1;
@@ -42,7 +42,7 @@ if (left_press) {
 }
 if (right_press) {
 	switch(index){
-		case 0:
+		case 1:
 			if (window_get_fullscreen()) {
 				oDataSuperCarrie.fundo_index++;
 				if(oDataSuperCarrie.fundo_index >= array_length(oDataSuperCarrie.fundos))
@@ -50,7 +50,7 @@ if (right_press) {
 			}
 			
 			break;
-		case 1:
+		case 2:
 			oDataSuperCarrie.cursor_index++;
 			if(oDataSuperCarrie.cursor_index >= array_length(oDataSuperCarrie.cursor_sprites))
 				oDataSuperCarrie.cursor_index = 0;

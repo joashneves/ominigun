@@ -98,28 +98,28 @@ global.pause = true
 		_sprite: sBuffs03,
 		_script: scrBuffsRecursosArma00,
 		_tipo: "recurso",
-		_descricao_id: "recurso_arma_00"
+		_descricao_id: "recurso_arma"
 	};
 	var buffTempoArma01 = {
 		_id: 33,
 		_sprite: sBuffs03,
 		_script: scrBuffsRecursosArma01,
 		_tipo: "recurso",
-		_descricao_id: "recurso_arma_01"
+		_descricao_id: "recurso_arma"
 	};
 	var buffTempoArma02 = {
 		_id: 34,
 		_sprite: sBuffs03,
 		_script: scrBuffsRecursosArma02,
 		_tipo: "recurso",
-		_descricao_id: "recurso_arma_02"
+		_descricao_id: "recurso_arma"
 	};
 	var buffTempoArma03 = {
 		_id: 35,
 		_sprite: sBuffs03,
 		_script: scrBuffsRecursosArma03,
 		_tipo: "recurso",
-		_descricao_id: "recurso_arma_03"
+		_descricao_id: "recurso_arma"
 	};
 
 	// === Buffs de ARREMESSO (Tiro) ===

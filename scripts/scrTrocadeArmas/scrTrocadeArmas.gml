@@ -51,7 +51,7 @@ function scrTrocaDeArma28(){
 	recargaTotal: 42,
 	arma: oArma28,
 	bala: scrArmas28,
-	municaoTotal:  12
+	municaoTotal:  6
 
 }
 
@@ -73,7 +73,7 @@ function scrTrocaDeArma27(){
 	recargaTotal: 32,
 	arma: oArma27,
 	bala: scrArmas27,
-	municaoTotal:  23
+	municaoTotal:  9
 
 }
 
@@ -95,7 +95,7 @@ function scrTrocaDeArma26(){
 	recargaTotal: 70,
 	arma: oArma26,
 	bala: scrArmas26,
-	municaoTotal:  16
+	municaoTotal:  12
 
 }
 

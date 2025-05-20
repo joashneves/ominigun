@@ -8,6 +8,7 @@ var descricao = t.buffs[$ desc_id];
 if (is_undefined(descricao)) descricao = desc_id; // fallback
 
 if (position_meeting(mouse_x, mouse_y, id)) {
+	show_debug_message(descricao)
     global.buff_hover = true;
 	global.buff_text = descricao;
     global.buff_obj = id;

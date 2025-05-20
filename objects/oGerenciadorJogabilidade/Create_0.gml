@@ -19,9 +19,9 @@ cursor_sprite = oDataSuperCarrie.sprite_mouse;
 
 // Dicionário de traduções para esse menu
 menu_traducao = {
-    BR: ["Tela cheia", "Mouse", "Tremor de tela", "Voltar"],
-    EN: ["Fullscreen", "Mouse", "Screen Shake", "Back"],
-    ES: ["Pantalla completa", "Ratón", "Temblor de pantalla", "Volver"]
+    BR: ["Tela cheia", "Fundo" ,"Mouse", "Tremor de tela", "Voltar"],
+    EN: ["Fullscreen", "Background","Mouse", "Screen Shake", "Back"],
+    ES: ["Pantalla completa","Fondo" ,"Ratón", "Temblor de pantalla", "Volver"]
 };
 
 // Atribui opções com base no idioma

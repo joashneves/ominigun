@@ -24,39 +24,46 @@ if (is_undefined(t)) {
 }
 
 for (var i = 0; i < op_max; i++) {
-	draw_set_halign(fa_left);
-	draw_set_valign(fa_middle);
-	
-	var pos_y = y1 + (dist * i);
-	
-	// Seleção visual
-	if (index == i) {
-		draw_set_color(c_aqua);
-	} else {
-		draw_set_color(c_white);
-	}
-	
-	var texto = opcoes[i];
-	var tremo = oDataSuperCarrie.TremorTela ? t.ativado : t.desativado;
+    draw_set_halign(fa_left);
+    draw_set_valign(fa_middle);
+    
+    var pos_y = y1 + (dist * i);
+    
+    // Condição especial para desabilitar a opção de fundo
+    var is_disabled = (i == 1 && !window_get_fullscreen());
+    
+    if (index == i && !is_disabled) {
+        draw_set_color(c_aqua);
+    } else if (is_disabled) {
+        draw_set_color(c_gray); // Exibe a opção como "desativada"
+    } else {
+        draw_set_color(c_white);
+    }
 
-	// Adiciona valores ao lado do texto
-	switch(i){
-    case 0:
-        if (window_get_fullscreen()) {
-            var spr = oDataSuperCarrie.fundos[oDataSuperCarrie.fundo_index];
-            texto += " (" + t.sim + ") < " + t.fundo + ": " + sprite_get_name(spr) + " >";
-        } else {
-            texto += " (" + t.nao + ")";
-        }
-        break;
-    case 1:
-        var spr_cursor = oDataSuperCarrie.cursor_sprites[oDataSuperCarrie.cursor_index];
-        texto += " < " + t.cursor + ": " + sprite_get_name(spr_cursor) + " >";
-        break;
-    case 2:
-        texto += " (" + (oDataSuperCarrie.TremorTela ? t.ativado : t.desativado) + ")";
-        break;
+    var texto = opcoes[i];
+    var tremo = oDataSuperCarrie.TremorTela ? t.ativado : t.desativado;
+
+    switch(i){
+        case 0:
+            texto += " (" + (window_get_fullscreen() ? t.sim : t.nao) + ")";
+            break;
+        case 1:
+            if (window_get_fullscreen()) {
+                var spr = oDataSuperCarrie.fundos[oDataSuperCarrie.fundo_index];
+                texto += " < " + t.fundo + ": " + sprite_get_name(spr) + " >";
+            } else {
+                texto += " <" + t.fundo + ": " + t.desativado + ">";
+            }
+            break;
+        case 2:
+            var spr_cursor = oDataSuperCarrie.cursor_sprites[oDataSuperCarrie.cursor_index];
+            texto += " < " + t.cursor + ": " + sprite_get_name(spr_cursor) + " >";
+            break;
+        case 3:
+            texto += " (" + tremo + ")";
+            break;
+    }
+
+    draw_text(x1, pos_y, texto);
 }
 
-	draw_text(x1, pos_y, texto);
-}

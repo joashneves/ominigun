@@ -1,5 +1,5 @@
 depth = 5;
-if(!nenhuma_instance_existe([IDenemy, oBoss04]))return;
+if(!nenhuma_instance_existe([IDenemy, oBoss04]))exit;
 draw_self();
 
 draw_set_font(fnt_loja);

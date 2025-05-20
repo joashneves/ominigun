@@ -60,7 +60,7 @@ if (rage >= rageMax) {
     sprite_index = moving ? sPlayerWalk01 : sPlayerIdle01; // com raiva
 	image_speed = 2
 } else {
-    sprite_index = moving ? sPlayerWalk00 : sPlayerIdle00; // normal
+    sprite_index = moving ? sPlayerWalk00 : sPlayerIdle00_2; // normal
 	image_speed = 2
 }
 move_and_collide(vspd, hspd, oBloco);
@@ -179,7 +179,7 @@ if(vida > 4 ){
 	vida = 5;
 }
 if(debug_mode) {
-	//vida = 5;
+	vida = 5;
 	rage = rageMax;
 	//moeda = 10;
 }
