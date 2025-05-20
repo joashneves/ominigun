@@ -29,6 +29,7 @@ if (left_press) {
 				if(oDataSuperCarrie.fundo_index < 0)
 					oDataSuperCarrie.fundo_index = array_length(oDataSuperCarrie.fundos) - 1;
 			}
+						
 			break;
 		case 1:
 			oDataSuperCarrie.cursor_index--;
@@ -47,6 +48,7 @@ if (right_press) {
 				if(oDataSuperCarrie.fundo_index >= array_length(oDataSuperCarrie.fundos))
 					oDataSuperCarrie.fundo_index = 0;
 			}
+			
 			break;
 		case 1:
 			oDataSuperCarrie.cursor_index++;

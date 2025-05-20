@@ -9,23 +9,6 @@ surface_get_height(surf_back) != _h) {
 
 
 surface_set_target(surf_back);
-draw_clear(ambient_light);
-
-camera_apply(view_camera[0]);
-
-gpu_set_blendmode(bm_add);
-
-	with(oLight){
-		//draw_self()	
-		var _int = floor(image_alpha)
-		repeat(_int){
-			draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, 1 )
-		}
-		var _frac = frac(image_alpha)
-		draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, _frac)
-	}
- //draw_sprite_ext(sLight, 0, oCursor.x,  oCursor.y, 4, 4, 0, c_white, 1); // Luz 2x maior
-
 
 gpu_set_blendmode(bm_normal);
 surface_reset_target();

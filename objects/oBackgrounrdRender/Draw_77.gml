@@ -20,7 +20,7 @@ gpu_set_blendmode(bm_normal);
 
 // Desenha o sprite de fundo na posição (0, 0) da surface
 // Se quiser que ele se estenda até cobrir a view:
-draw_sprite_stretched(sMenuBackgroun, 0, 0, 0, vw, vh);
+draw_sprite_stretched(oDataSuperCarrie.fundos[oDataSuperCarrie.fundo_index], 0, 0, 0, vw, vh);
 
 surface_reset_target();
 
