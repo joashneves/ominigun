@@ -1,4 +1,4 @@
-function scr_evitar_bala(spd = 2, vspd = 0, hspd = 0) {
+function scr_evitar_bala(spd = 1, vspd = 0, hspd = 0) {
     // Vetores de desvio
     var avoid_v = 0;
     var avoid_h = 0;
@@ -18,12 +18,6 @@ function scr_evitar_bala(spd = 2, vspd = 0, hspd = 0) {
             avoid_v += dy / dist * factor;
         }
     }
-
-    // Inverter o vetor de desvio
-    hspd -= avoid_h;
-    vspd -= avoid_v;
-
-
     // Movimento com colisão
     move_and_collide(vspd, hspd, oBloco);
 }

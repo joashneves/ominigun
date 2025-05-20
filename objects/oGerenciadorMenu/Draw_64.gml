@@ -1,5 +1,8 @@
 draw_set_font(fnt_menu);
 
+draw_set_color(c_white);
+draw_text(32, display_get_gui_height() - 32, "versão Alpha 3.2.0.0");
+
 var dist = 55; // espaçamento entre as opções
 var gui_largura = display_get_gui_width();
 var gui_altura = display_get_gui_height();

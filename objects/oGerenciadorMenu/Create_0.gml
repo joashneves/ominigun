@@ -1,5 +1,16 @@
 index = 0;
-window_set_fullscreen(true);
+if (!variable_instance_exists(oDataSuperCarrie, "sprite_mouse")) {
+    oDataSuperCarrie.sprite_mouse = sMouse;
+}
+if (!variable_instance_exists(oDataSuperCarrie, "TremorTela")) {
+	oDataSuperCarrie.TremorTela = true
+}
+// Outras configs
+if (!variable_instance_exists(oDataSuperCarrie, "Fullscreen")) {
+oDataSuperCarrie.Fullscreen = true
+}
+screenfull = oDataSuperCarrie.Fullscreen;
+window_set_fullscreen(screenfull);
 
 // Idioma padrão se não existir
 var_nao_existe(oDataSuperCarrie, "idioma", "EN");

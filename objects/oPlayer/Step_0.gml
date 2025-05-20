@@ -57,7 +57,7 @@ if(oCursor.x > x){
 	image_xscale = -1
 }
 if (rage >= rageMax) {
-    sprite_index = moving ? sPlayerWalk01 : sPlayerIdle01; // com raiva
+    sprite_index = moving ? sPlayerWalk01 : sPlayerIdle01_2; // com raiva
 	image_speed = 2
 } else {
     sprite_index = moving ? sPlayerWalk00 : sPlayerIdle00_2; // normal

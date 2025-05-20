@@ -289,7 +289,7 @@ function scrArmas21(){
 	    var bala = instance_create_depth(spawn_x, spawn_y, 0, oBala20);
 	    bala.direction = point_direction(spawn_x, spawn_y, px, py);
 	    bala.image_angle = bala.direction;
-	    bala.speed = 16;
+
 	
 }
 function scrArmas22(){

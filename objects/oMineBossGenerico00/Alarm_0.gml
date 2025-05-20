@@ -1,7 +1,7 @@
 /// @description Muda a direção se não estiver tocando parede, senão vai para o centro
 
 // Velocidade aleatória
-spd = random_range(0.5, 1.5);
+spd = random_range(0.5, 1);
 
 // Se NÃO estiver colidindo com oBloco, escolhe uma direção aleatória
 if (!place_meeting(x, y, oBloco)) {

@@ -19,3 +19,21 @@ function scrMenuSelecionar(index) {
 			break;
 	}
 }
+function scrMenuGameOver(index){
+switch (index) {
+		case 0:
+			room_goto(Level1);
+			instance_destroy(oDataCarrie);
+			break;
+		case 1:
+			// Abre as configurações
+					room_goto(Menu);
+			break;
+		case 2:
+		game_end();
+			// Créditos (ex: room_goto(rm_Credits))
+			break;
+		default:
+			break;
+	}
+}

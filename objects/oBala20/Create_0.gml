@@ -1,4 +1,4 @@
 // Inherit the parent event
 event_inherited();
-speed = 16
+speed = 22
 alarm[0] = 180
