@@ -11,6 +11,7 @@ function scrMenuSelecionar(index) {
 			break;
 		case 2:
 			// Créditos (ex: room_goto(rm_Credits))
+			instance_destroy();
 			instance_create_depth(0,0,-10, oCreditosMenu);
 			break;
 		case 3:

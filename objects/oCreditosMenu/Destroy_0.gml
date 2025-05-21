@@ -1,0 +1,1 @@
+if(room == Menu) instance_create_depth(0,1,-10,oGerenciadorMenu);

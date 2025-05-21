@@ -1,25 +1,28 @@
 scrTraducao(); // já puxa o idioma atual
 
+
 // Pega o idioma atual
 var idioma = string(oDataSuperCarrie.idioma);
 
 // Dicionário de textos fixos para cada idioma
 credito_traducao = {
-    BR: ["Criado por: ", "Artista: ", "Música por: ", "Agradecimentos:", "Voltar"],
-    EN: ["Created by: ", "Artist: ", "Music by: ", "Special thanks:", "Back"],
-    ES: ["Creado por: ", "Artista: ", "Música por: ", "Agradecimientos:", "Volver"]
+    BR: ["Criado por: ", "Artista: ", "Música por: ", "Agradecimentos:", "<3"],
+    EN: ["Created by: ", "Artist: ", "Music by: ", "Special thanks:", "<3"],
+    ES: ["Creado por: ", "Artista: ", "Música por: ", "Agradecimientos:", "<3"]
 };
 
 // Dados variáveis (nomes)
-criado_por = "Fulano";
-artista = "Beltrano";
-musica_por = "Ciclano";
+criado_por = "Joas (Yoyatsu)";
+artista = "Nicolle (Nillie7)";
+musica_por = "Nothing.Leor";
 
 // Lista de agradecimentos
 agradecimento = [
     "Você por jogar!",
     "A todos que ajudaram.",
-    "Comunidade GML ❤️"
+    "Fabs",
+	"Afkarlos",
+	" AnodosYuu"
 ];
 
 // Combina tudo em uma lista única de créditos

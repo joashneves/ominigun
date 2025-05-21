@@ -85,10 +85,6 @@ if(!fim_de_jogo and !player_morto){
     // Rage bar
     var barraDeRage = (rage / rageMax) * 100;
     draw_healthbar(780, 100, 790, 500, barraDeRage, c_black, c_blue, c_red, 3, false, true);
-
-}else if(fim_de_jogo){
-	draw_text(300,300, "Voce Conseguiu : " + string(score) + " Pontos");
-	draw_text(300,200, "O jogo Acaba por enquanto... Obrigado por jogar");	
 }
 if(player_morto){
 	draw_set_colour(c_black);
