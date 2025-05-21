@@ -167,6 +167,7 @@
     {"name":"oBullletBoss00","order":4,"path":"objects/oBullletBoss00/oBullletBoss00.yy",},
     {"name":"oBussola","order":5,"path":"objects/oBussola/oBussola.yy",},
     {"name":"oConfiguracoes","order":1,"path":"objects/oConfiguracoes/oConfiguracoes.yy",},
+    {"name":"oCreditosMenu","order":5,"path":"objects/oCreditosMenu/oCreditosMenu.yy",},
     {"name":"oCuraLife","order":2,"path":"objects/oCuraLife/oCuraLife.yy",},
     {"name":"oCursor","order":6,"path":"objects/oCursor/oCursor.yy",},
     {"name":"oDataCarrie","order":3,"path":"objects/oDataCarrie/oDataCarrie.yy",},

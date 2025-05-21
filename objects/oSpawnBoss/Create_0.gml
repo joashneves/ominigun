@@ -1,19 +1,26 @@
-
 // Número de segmentos
 var total = 49;
 var anterior = noone;
+var raio = 100; // Raio do círculo
+var centro_x = x;
+var centro_y = y;
 
-// Criar os segmentos em sequência
+// Criar os segmentos em sequência formando um círculo
 for (var i = 0; i < total; i++) {
-var parte = instance_create_depth(x, y, -i, oBoss04, );
+    var angulo = i * (360 / total); // Ângulo atual em graus
+    var rad = degtorad(angulo);     // Converter para radianos
 
-if (anterior != noone) {
-    parte.topo = anterior;  // Segue o anterior
-    anterior.baixo = parte; // O anterior aponta para esse
-}
+    var px = centro_x + lengthdir_x(raio, angulo);
+    var py = centro_y + lengthdir_y(raio, angulo);
 
-anterior = parte;
+    var parte = instance_create_depth(px, py, -i, oBoss04);
 
+    if (anterior != noone) {
+        parte.topo = anterior;      // Segue o anterior
+        anterior.baixo = parte;     // O anterior aponta para esse
+    }
+
+    anterior = parte;
 }
 
 instance_destroy();
