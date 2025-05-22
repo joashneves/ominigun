@@ -8,7 +8,7 @@ if(movimento == 0 or movimento ==  1){
 	radius = 360;	
 }
 if(movimento == 3){
-	if(radius < 480){
+	if(radius < 380){
 		radius++;
 	}
 }
@@ -32,7 +32,7 @@ var vel_min = 1;
 var vel_max = 6;
 
 // Interpola entre min e max baseado na quantidade destruída
-orbital_speed = lerp(vel_min, vel_max, olhos_destruidos / olhos_totais);
+orbital_speed = lerp(vel_min, vel_max, olhos_destruidos);
 
 // Atualiza o ângulo da órbita
 angle_offset += orbital_speed;

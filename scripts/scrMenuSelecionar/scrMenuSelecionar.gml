@@ -1,7 +1,7 @@
 function scrMenuSelecionar(index) {
 	switch (index) {
 		case 0:
-			room_goto(LevelFinal);
+			room_goto(LevelTutorial);
 			instance_destroy(oDataCarrie);
 			break;
 		case 1:

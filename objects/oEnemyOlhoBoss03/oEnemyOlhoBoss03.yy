@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"oBlocoPorta",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oEnemyOlhoBoss03",
+  "eventList":[],
   "managed":true,
-  "name":"oBlocoPorta",
+  "name":"oEnemyOlhoBoss03",
   "overriddenProperties":[],
   "parent":{
-    "name":"Bloco",
-    "path":"folders/Objects/Misc/Bloco.yy",
+    "name":"Boss01",
+    "path":"folders/Objects/BOSS/Boss01.yy",
   },
   "parentObjectId":{
-    "name":"oBloco",
-    "path":"objects/oBloco/oBloco.yy",
+    "name":"IDenemy",
+    "path":"objects/IDenemy/IDenemy.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sBlocoWave",
-    "path":"sprites/sBlocoWave/sBlocoWave.yy",
+    "name":"sEnemyOlhoBoss01",
+    "path":"sprites/sEnemyOlhoBoss01/sEnemyOlhoBoss01.yy",
   },
   "spriteMaskId":null,
   "visible":true,

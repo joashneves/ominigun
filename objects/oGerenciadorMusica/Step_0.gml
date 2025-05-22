@@ -28,7 +28,7 @@ if (!audio_is_playing(musica_ativa) && musica_ativa_target > 0) {
 
 
 // Define os alvos de volume com base nos inimigos em tela
-if (instance_number(IDenemy) > 0) {
+if ( !nenhuma_instance_existe([oBoss02, oBoss04, IDenemy])) {
     musica_calma_target = 0;
     musica_ativa_target = 1;
 } else {

@@ -16,7 +16,7 @@ if (vuneravel) {
 			var spd_max = 5;
 
 			// Garante que a alpha fique entre 0.2 (mais invisível) e 1 (totalmente visível)
-			image_alpha = clamp(0.2 + (spd / spd_max), 0.2, 1);
+			//image_alpha = clamp(0.2 + (spd / spd_max), 0.2, 1);
 
             speed = (instance_number(oBulletOlhoBoss02) >= 6) ? 0.2 : 0.6;
             
@@ -118,7 +118,7 @@ if (vuneravel) {
 	var spd_max = 2.5;
 
 	// Garante que a alpha fique entre 0.2 (mais invisível) e 1 (totalmente visível)
-	image_alpha = clamp(0.2 + (spd / spd_max), 0.2, 1);
+	//image_alpha = clamp(0.2 + (spd / spd_max), 0.2, 1);
 
 }
 

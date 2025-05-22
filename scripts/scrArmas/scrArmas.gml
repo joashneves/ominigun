@@ -383,7 +383,7 @@ function scrArmas29(){
 #endregion
 function scrArmas30(){
 	camera_shake(6, 10);
-	var arma = choose(oArma02, oArma04, oArma06, oArma08, oArma10, oArma14, oArma16, oArma18, oArma20, oArma22, oArma24, oArma26, oArma28)
+	var arma = choose(oArma02, oArma04, oArma06, oArma08, oArma10, oArma14, oArma16, oArma18, oArma20, oArma22, oArma24, oArma26, oArma27)
 	var bala = instance_create_depth(x,y,0,arma);
 	bala.image_angle = global.dir;
 	bala.direction = global.dir;
