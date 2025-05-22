@@ -13,7 +13,7 @@ credito_traducao = {
 
 // Dados variáveis (nomes)
 criado_por = "Joas (Yoyatsu)";
-artista = "Nicolle (Nillie7)";
+artista = "Nicolle (Nille7)";
 musica_por = "Nothing.Leor";
 
 // Lista de agradecimentos
