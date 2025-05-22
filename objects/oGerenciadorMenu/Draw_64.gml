@@ -33,7 +33,7 @@ for (var i = 0; i < op_max; i++) {
 		draw_set_color(c_aqua);
 		// Desenhar sArma ao lado do item selecionado
 		var sprite_offset_x = 32; // distância do texto para a sprite
-		draw_sprite(sArma00, 0, x1 - sprite_offset_x, pos_y);
+		draw_sprite(sPlayerIdle00_2, 0, x1 - sprite_offset_x, pos_y);
 	} else {
 		draw_set_color(c_white);	
 	}
