@@ -244,6 +244,7 @@
     {"id":{"name":"oInimigo05","path":"objects/oInimigo05/oInimigo05.yy",},},
     {"id":{"name":"oInimigoBase","path":"objects/oInimigoBase/oInimigoBase.yy",},},
     {"id":{"name":"oInimigoRun","path":"objects/oInimigoRun/oInimigoRun.yy",},},
+    {"id":{"name":"oInit","path":"objects/oInit/oInit.yy",},},
     {"id":{"name":"olevel","path":"objects/olevel/olevel.yy",},},
     {"id":{"name":"oLevelEntrada","path":"objects/oLevelEntrada/oLevelEntrada.yy",},},
     {"id":{"name":"oLevelLink","path":"objects/oLevelLink/oLevelLink.yy",},},

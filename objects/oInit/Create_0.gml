@@ -1,0 +1,2 @@
+// Create do oGameManager
+randomize();

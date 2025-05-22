@@ -204,6 +204,7 @@
     {"name":"oInimigo05","order":8,"path":"objects/oInimigo05/oInimigo05.yy",},
     {"name":"oInimigoBase","order":9,"path":"objects/oInimigoBase/oInimigoBase.yy",},
     {"name":"oInimigoRun","order":11,"path":"objects/oInimigoRun/oInimigoRun.yy",},
+    {"name":"oInit","order":16,"path":"objects/oInit/oInit.yy",},
     {"name":"olevel","order":1,"path":"objects/olevel/olevel.yy",},
     {"name":"oLevelEntrada","order":5,"path":"objects/oLevelEntrada/oLevelEntrada.yy",},
     {"name":"oLevelLink","order":2,"path":"objects/oLevelLink/oLevelLink.yy",},
