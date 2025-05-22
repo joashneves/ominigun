@@ -385,6 +385,7 @@
     {"name":"sBlocolevel2","order":19,"path":"sprites/sBlocolevel2/sBlocolevel2.yy",},
     {"name":"sBlocolevel3","order":20,"path":"sprites/sBlocolevel3/sBlocolevel3.yy",},
     {"name":"sBlocoPreto","order":17,"path":"sprites/sBlocoPreto/sBlocoPreto.yy",},
+    {"name":"sBlocoWave","order":30,"path":"sprites/sBlocoWave/sBlocoWave.yy",},
     {"name":"sBluesky","order":5,"path":"sprites/sBluesky/sBluesky.yy",},
     {"name":"sBoss00","order":1,"path":"sprites/sBoss00/sBoss00.yy",},
     {"name":"sBoss01Atack","order":1,"path":"sprites/sBoss01Atack/sBoss01Atack.yy",},

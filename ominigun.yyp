@@ -442,6 +442,7 @@
     {"id":{"name":"sBlocolevel2","path":"sprites/sBlocolevel2/sBlocolevel2.yy",},},
     {"id":{"name":"sBlocolevel3","path":"sprites/sBlocolevel3/sBlocolevel3.yy",},},
     {"id":{"name":"sBlocoPreto","path":"sprites/sBlocoPreto/sBlocoPreto.yy",},},
+    {"id":{"name":"sBlocoWave","path":"sprites/sBlocoWave/sBlocoWave.yy",},},
     {"id":{"name":"sBluesky","path":"sprites/sBluesky/sBluesky.yy",},},
     {"id":{"name":"sBoss00","path":"sprites/sBoss00/sBoss00.yy",},},
     {"id":{"name":"sBoss01","path":"sprites/sBoss01/sBoss01.yy",},},
