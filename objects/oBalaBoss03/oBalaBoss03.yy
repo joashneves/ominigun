@@ -10,8 +10,8 @@
   "name":"oBalaBoss03",
   "overriddenProperties":[],
   "parent":{
-    "name":"Boss02",
-    "path":"folders/Objects/BOSS/Boss02.yy",
+    "name":"Atacks",
+    "path":"folders/Objects/BOSS/Boss02/Atacks.yy",
   },
   "parentObjectId":{
     "name":"oBalaInimigo",

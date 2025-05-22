@@ -25,7 +25,7 @@ if (!view_get_camera(view_camera[0])) {
 }
 
 // Define quem será o alvo da câmera
-if (room != LevelSobrevivencia) {
+if (room != LevelFinal) {
     target_ = olevel;
 } else {
     target_ = oPlayer;

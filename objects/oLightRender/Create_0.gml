@@ -1,5 +1,5 @@
 
-if (room == Menu or room == GameOver or room == Option){
+if (room == Menu or room == GameOver){
 	ambient_light = c_white; // Cor da luz
 }else {
 ambient_light = c_grey; // Cor da luz

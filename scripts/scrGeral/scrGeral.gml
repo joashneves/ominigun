@@ -26,7 +26,6 @@ function em_view() {
     }
     return false;
 }
-
 function FadeToRoom(_room , _dur, _color){
 	show_debug_message("Debug : OFade criado")
 var _inst = instance_create_depth(0,0,0,oFade)
