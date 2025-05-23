@@ -14,6 +14,7 @@ var_nao_existe(oDataSuperCarrie, "TremorTela", true);
 var_nao_existe(oDataSuperCarrie, "fundos", [sFundoCamera, sCutCene, sMenuBackgroun]);
 var_nao_existe(oDataSuperCarrie, "mortes_player", 0);
 var_nao_existe(oDataSuperCarrie, "niveis_terminado", 0);
+var_nao_existe(oDataSuperCarrie, "maximo_pontos", 0);
 var_nao_existe(oDataSuperCarrie, "vol_geral", 0.5);
 var_nao_existe(oDataSuperCarrie, "vol_tiros", 1);
 var_nao_existe(oDataSuperCarrie, "vol_musica", 1);

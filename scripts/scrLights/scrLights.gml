@@ -5,4 +5,5 @@ function createLight(_x, _y, _color = c_white, _intensity =0.2, _xscale= 1, _ysc
 	_luz.image_yscale = _yscale
 	_luz.image_alpha = _intensity
 	_luz.alvo = _alvo
+	return _luz;
 }

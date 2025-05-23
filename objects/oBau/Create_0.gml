@@ -7,7 +7,8 @@ image_alpha = 0;
 
 item2 = obterTodasArmas();	
 
-createLight(x,y,c_lime, 4, image_xscale,image_yscale, self)
-
-
-
+luz = createLight(x,y,c_lime, 1, image_xscale,image_yscale, self)
+image_alpha = 0;	
+if (instance_exists(luz)) {
+	luz.image_alpha = 0; // enfraquece a luz
+}
