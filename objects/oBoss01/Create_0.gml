@@ -8,6 +8,11 @@ spd = 0.3;
 
 vuneravel = false;
 
+levou_dano = false;
+dano_timer = 0;
+shake_offset_x = 0;
+shake_offset_y = 0;
+
 
 // ataque
 lasers = false;

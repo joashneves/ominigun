@@ -13,6 +13,7 @@ function scrMenuConfiguracoes(index) {
 			break;
 		case 3: // Acessibilidade
 			//global.acessibilidade_ativa = !global.acessibilidade_ativa;
+			game_end()
 			break;
 		case 4: // Voltar
 			instance_destroy();

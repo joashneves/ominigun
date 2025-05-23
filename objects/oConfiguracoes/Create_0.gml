@@ -8,9 +8,9 @@ var_nao_existe(oDataSuperCarrie, "idioma", "BR");
 
 // Dicionário de traduções (como struct)
 menu_traducao = {
-    BR : ["Jogabilidade", "Volume", "Idioma", "Sobre", "Voltar"],
-    EN: ["Gameplay", "Volume", "Language", "About", "Back"],
-    ES: ["Jugabilidad", "Volumen", "Idioma", "Acerca de", "Volver"]
+    BR : ["Jogabilidade", "Volume", "Idioma", "Sair", "Voltar"],
+    EN: ["Gameplay", "Volume", "Language", "Exit", "Back"],
+    ES: ["Jugabilidad", "Volumen", "Idioma", "Salir", "Volver"]
 };
 
 // Acesso seguro sem usar string()

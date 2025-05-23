@@ -1,3 +1,4 @@
+depth= -100
 sprite_index =  oDataSuperCarrie.sprite_mouse;
 cursor_sprite = -1;
 if (global.pause){

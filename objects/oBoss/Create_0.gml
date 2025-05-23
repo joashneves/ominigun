@@ -10,6 +10,11 @@ vuneravel = false;
 municao = 0;
 municaoMax = 90;
 
+levou_dano = false;
+dano_timer = 0;
+shake_offset_x = 0;
+shake_offset_y = 0;
+
 angle_offset = irandom_range(0, 359); // cada olho começa em um ângulo diferente
 radius = 210; // distância em que ele orbita o boss
 orbital_speed = 1.2; // velocidade do giro
@@ -19,7 +24,6 @@ depth = -100
 timeInvocar = 120;
 if (!alarm[0]) alarm[0] = timeInvocar;
 
-lanca = 0;
 
 oPlayer.BossMorto = false
 image_xscale = 1;

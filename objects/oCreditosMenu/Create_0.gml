@@ -1,6 +1,9 @@
 scrTraducao(); // já puxa o idioma atual
 
 
+// Define valores padrão apenas se não existirem
+var_nao_existe(oDataSuperCarrie, "idioma", "BR");
+
 // Pega o idioma atual
 var idioma = string(oDataSuperCarrie.idioma);
 

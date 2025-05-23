@@ -9,6 +9,9 @@ municao = 0;
 municaoMax = random_range(10, 60);
 tempo = 2.5
 
+levou_dano = true;
+dano_timer = 5; // frames de recuo/efeito
+
 vel = 2
 alarm[0] = 10*tempo;
 //

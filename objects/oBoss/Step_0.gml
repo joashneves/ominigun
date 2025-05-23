@@ -49,18 +49,20 @@ if(instance_number(oOlho) > 2)vuneravel = false;
 if(vuneravel){
 	mask_index = sBoss00;
 	image_alpha = 1;
-	if(place_meeting(x,y,IDbalas)){
+	if(place_meeting(x,y,IDbalas) and dano_timer <= 0){
 		life=life-5;
 		instance_destroy(instance_place(x,y,IDbalas))
+		var id_som = 	audio_play_sound(sndDanoinimigo,2,0);
+var vol_efeito = oDataSuperCarrie.vol_geral * oDataSuperCarrie.vol_ambiente;
+audio_sound_gain(id_som, vol_efeito, 0);
+	levou_dano = true;
+	dano_timer = 5; // frames de recuo/efeito
 	}
 	if(place_meeting(x,y,IDarmas)){
-		image_alpha = 0.1;
+		image_alpha = 1;
 	}
 
-} else{
-	mask_index = -1;
-	image_alpha = 0.2;
-}
+} 
 
 if (life <= 0) {
 	

@@ -12,7 +12,6 @@ var_nao_existe(oDataSuperCarrie, "cursor_index", 0);
 var_nao_existe(oDataSuperCarrie, "TremorTela", true);
 var_nao_existe(oDataSuperCarrie, "fundos", [sFundoCamera, sCutCene, sMenuBackgroun]);
 var_nao_existe(oDataSuperCarrie, "cursor_sprites", [sMouse, sMouseFinal]);
-var_nao_existe(oDataSuperCarrie, "sprite_mouse", sMouse);
 
 // Define o sprite atual
 cursor_sprite = oDataSuperCarrie.sprite_mouse;
