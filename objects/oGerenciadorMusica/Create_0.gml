@@ -1,8 +1,3 @@
-// Se ainda não existem os valores, inicializa com os padrões
-var_nao_existe(oDataSuperCarrie, "vol_geral", 0.5);
-var_nao_existe(oDataSuperCarrie, "vol_tiros", 1);
-var_nao_existe(oDataSuperCarrie, "vol_musica", 1);
-var_nao_existe(oDataSuperCarrie, "vol_ambiente", 1);
 
 // Toca as músicas
 musica_calma = audio_play_sound(sndMusicaCalma, 1, true);

@@ -16,6 +16,7 @@ function scrMenuConfiguracoes(index) {
 			game_end()
 			break;
 		case 4: // Voltar
+		scrSaveGame();
 			instance_destroy();
 			global.pause = false
 			if(room == Menu) instance_create_depth(0,1,-10,oGerenciadorMenu);

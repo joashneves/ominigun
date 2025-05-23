@@ -69,7 +69,7 @@ if (distance_to_object(oPlayer) < range)
 
 }
 
-if(place_meeting(x,y,IDbalas)){
+if(place_meeting(x,y,IDbalas)  and dano_timer <= 0){
 	life=life-5;
 	if(oBala12)lanca += 1;
 	instance_destroy(instance_place(x,y,IDbalas))

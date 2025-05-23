@@ -1,5 +1,4 @@
 
-
 // Define valores padrão apenas se não existirem
 var_nao_existe(oDataSuperCarrie, "idioma", "EN");
 var_nao_existe(oDataSuperCarrie, "fundo_index", 0);

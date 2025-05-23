@@ -9,7 +9,7 @@ if (fechado && _E) {
 	image_index = 1;
 	fechado = false;
 	//instance_create_depth(x-32,y+32,0,item1);
-	instance_create_depth(x+32,y+32,0,item2);
+	instance_create_depth(x,y+32,0,item2);
 
 }
 

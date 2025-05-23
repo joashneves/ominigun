@@ -167,7 +167,7 @@ for(var _i = -1; _i <= 1; _i++;){
 	
 	var Buffs = oBuffs;
 
-	    var buff_x = cam_x + (cam_w / 2) + (128 * _i);
+	    var buff_x = cam_x + (cam_w / 2) + (260 * _i);
     var buff_y = cam_y + (cam_h / 2);
 	
 		show_debug_message("degub : view port : " + string(buff_x) + "view Y : " + string(buff_y)

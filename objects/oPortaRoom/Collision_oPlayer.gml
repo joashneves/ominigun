@@ -7,6 +7,7 @@ if(_E){
 		entrando = true
 		global.pause = true
 		other.targetEntrada = targetEntrada;
+		scrSaveGame();
 		//room_goto(tagetRoom)
 		FadeToRoom(tagetRoom, 60, c_black)
 }

@@ -19,6 +19,6 @@ angle_offset = irandom_range(0, 359); // cada olho começa em um ângulo diferen
 radius = 280; // distância em que ele orbita o boss
 orbital_speed = 0.2; // velocidade do giro
 
-life = 600;
+life = 1200;
 
 alarm[0] = 60
