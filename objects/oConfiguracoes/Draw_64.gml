@@ -30,7 +30,7 @@ for (var i = 0; i < op_max; i++) {
 	
 	if(point_in_rectangle(m_x, m_y, x1 - string_w / 2, pos_y - string_h  / 2,  x1 + string_w / 2, pos_y + string_h /2)){
 		index = i;
-		if(mouse_check_button_pressed(mb_left)) scrMenuSelecionar(index);
+		if(mouse_check_button_pressed(mb_left)) scrMenuConfiguracoes(index);
 				draw_set_color(c_aqua);
 	}else{
 				draw_set_color(c_white);

@@ -23,6 +23,10 @@ if (is_undefined(t)) {
     t = traducao_geral.BR;
 }
 
+// mouse
+var m_x = device_mouse_x_to_gui(0)
+var m_y = device_mouse_y_to_gui(0)
+
 for (var i = 0; i < op_max; i++) {
     draw_set_halign(fa_left);
     draw_set_valign(fa_middle);
@@ -32,6 +36,17 @@ for (var i = 0; i < op_max; i++) {
     // Condição especial para desabilitar a opção de fundo
     var is_disabled = (i == 1 && !window_get_fullscreen());
     
+	var string_w = string_width(opcoes[i])
+	var string_h = string_height(opcoes[i])
+	
+	if(point_in_rectangle(m_x, m_y, x1 - string_w / 2, pos_y - string_h  / 2,  x1 + string_w / 2, pos_y + string_h /2)){
+		index = i;
+		if(mouse_check_button_pressed(mb_left)) scrMenuConfiguracoesJogabilidade(index);
+				draw_set_color(c_aqua);
+	}else{
+				draw_set_color(c_white);
+	};
+	
     if (index == i && !is_disabled) {
         draw_set_color(c_aqua);
     } else if (is_disabled) {

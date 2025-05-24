@@ -15,17 +15,65 @@ var gui_altura = display_get_gui_height();
 var x1 = 64;
 var y1 = gui_altura / 2;
 
-for (var i = 0; i < op_max; i++) {
-	draw_set_color(index == i ? c_aqua : c_white);
-	
-	var pos_y = y1 + (dist * i);
-	var texto = opcoes[i];
-	switch(i) {
-		case 0: texto += ": " + string(floor(oDataSuperCarrie.vol_geral * 100)) + "%"; break;
-		case 1: texto += ": " + string(floor(oDataSuperCarrie.vol_tiros * 100)) + "%"; break;
-		case 2: texto += ": " + string(floor(oDataSuperCarrie.vol_musica * 100)) + "%"; break;
-		case 3: texto += ": " + string(floor(oDataSuperCarrie.vol_ambiente * 100)) + "%"; break;
-	}
+// mouse
+var m_x = device_mouse_x_to_gui(0)
+var m_y = device_mouse_y_to_gui(0)
 
-	draw_text(x1, pos_y, texto); 
+
+for (var i = 0; i < op_max; i++) {
+    var pos_y = y1 + (dist * i);
+    var string_w = string_width(opcoes[i]);
+    var string_h = string_height(opcoes[i]);
+
+    var rect_left   = x1 - string_w / 2;
+    var rect_right  = x1 + string_w / 2;
+    var rect_top    = pos_y - string_h / 2;
+    var rect_bottom = pos_y + string_h / 2;
+
+    var mouse_over = point_in_rectangle(m_x, m_y, rect_left, rect_top, rect_right, rect_bottom);
+
+    if (mouse_over) {
+        index = i;
+        draw_set_color(c_aqua);
+
+        if (mouse_check_button_pressed(mb_left)) {
+            scrMenuConfiguracoesVolume(index);
+        }
+
+        // Checa clique do mouse nas extremidades esquerda e direita para mudar volume
+ 
+				// Clique na parte esquerda ou botão direito -> diminuir
+				if (mouse_check_button_pressed(mb_left)) {
+				    switch(index) {
+				        case 0: oDataSuperCarrie.vol_geral    = max(0, oDataSuperCarrie.vol_geral - 0.1); break;
+				        case 1: oDataSuperCarrie.vol_tiros    = max(0, oDataSuperCarrie.vol_tiros - 0.1); break;
+				        case 2: oDataSuperCarrie.vol_musica   = max(0, oDataSuperCarrie.vol_musica - 0.1); break;
+				        case 3: oDataSuperCarrie.vol_ambiente = max(0, oDataSuperCarrie.vol_ambiente - 0.1); break;
+				    }
+				}
+
+				// Clique na parte direita -> aumentar
+				if ( mouse_check_button_pressed(mb_right)) {
+				    switch(index) {
+				        case 0: oDataSuperCarrie.vol_geral    = min(1, oDataSuperCarrie.vol_geral + 0.1); break;
+				        case 1: oDataSuperCarrie.vol_tiros    = min(1, oDataSuperCarrie.vol_tiros + 0.1); break;
+				        case 2: oDataSuperCarrie.vol_musica   = min(1, oDataSuperCarrie.vol_musica + 0.1); break;
+				        case 3: oDataSuperCarrie.vol_ambiente = min(1, oDataSuperCarrie.vol_ambiente + 0.1); break;
+				    }
+				}
+    } else {
+        draw_set_color(c_white);
+    }
+
+    // Texto com valor
+    var texto = opcoes[i];
+    switch(i) {
+        case 0: texto += ": " + string(floor(oDataSuperCarrie.vol_geral * 100)) + "%"; break;
+        case 1: texto += ": " + string(floor(oDataSuperCarrie.vol_tiros * 100)) + "%"; break;
+        case 2: texto += ": " + string(floor(oDataSuperCarrie.vol_musica * 100)) + "%"; break;
+        case 3: texto += ": " + string(floor(oDataSuperCarrie.vol_ambiente * 100)) + "%"; break;
+    }
+
+    draw_text(x1, pos_y, texto); 
 }
+
