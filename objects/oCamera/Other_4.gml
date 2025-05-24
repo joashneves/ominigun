@@ -3,7 +3,6 @@
 if(instance_exists(oLevelEntrada)){global.pause = true};
 
 if(instance_exists(oDataConfig)){
-	screenfull = oDataConfig.screenfull;
 	
 	instance_destroy(oDataConfig);
 }

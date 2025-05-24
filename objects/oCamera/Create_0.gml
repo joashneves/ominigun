@@ -5,6 +5,7 @@ if (!variable_instance_exists(oDataSuperCarrie, "sprite_mouse")) {
 if (!variable_instance_exists(oDataSuperCarrie, "TremorTela")) {
 	oDataSuperCarrie.TremorTela = true
 }
+var_nao_existe(oDataSuperCarrie, "Fullscreen", true);
 // Aplica ao cursor
 cursor_sprite = oDataSuperCarrie.sprite_mouse;
 
@@ -47,12 +48,7 @@ if (instance_exists(target_)) {
     camera_set_view_pos(view_camera[0], 0, 0);
 }
 
-
 show_debug_message("camera criada em : " + string(cam_x) + "," + string(cam_y))
 
-// Outras configs
-if (!variable_instance_exists(oDataSuperCarrie, "Fullscreen")) {
-oDataSuperCarrie.Fullscreen = true
-}
-screenfull = oDataSuperCarrie.Fullscreen;
+
 window_set_cursor(cr_none);

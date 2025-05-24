@@ -1,5 +1,6 @@
 
 // Define valores padrão apenas se não existirem
+var_nao_existe(oDataSuperCarrie, "Fullscreen", true);
 var_nao_existe(oDataSuperCarrie, "idioma", "EN");
 var_nao_existe(oDataSuperCarrie, "fundo_index", 0);
 var_nao_existe(oDataSuperCarrie, "cursor_index", 0);
