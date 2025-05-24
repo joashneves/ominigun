@@ -6,10 +6,8 @@ var _E =  keyboard_check_pressed(ord("E")) ||  _Controller
 
 if (fechado && _E) {
 	//instance_create_depth(x,y+32,0,item);
-	image_index = 1;
+	image_speed = 4;
 	fechado = false;
 	//instance_create_depth(x-32,y+32,0,item1);
-	instance_create_depth(x,y+32,0,item2);
-
 }
 
