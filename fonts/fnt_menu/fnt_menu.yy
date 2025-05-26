@@ -230,7 +230,10 @@
   "sdfSpread":8,
   "size":25.0,
   "styleName":"Medium Italic",
-  "textureGroupId":null,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
   "TTFName":"",
   "usesSDF":true,
 }

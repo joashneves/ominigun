@@ -31,8 +31,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Boss02",
-    "path":"folders/Sprites/Boss/Boss02.yy",
+    "name":"BossFinal",
+    "path":"folders/Sprites/Boss/BossFinal.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

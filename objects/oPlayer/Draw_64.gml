@@ -69,14 +69,17 @@ if(!fim_de_jogo and !player_morto){
 		moeda_y -= moeda_h / 2;
 
 		// Desenha sprite da moeda
-		draw_sprite(sMoeda, 0, moeda_x, moeda_y);
+		draw_sprite_ext(sMoeda, 0, moeda_x, moeda_y,2,2,0,c_white,1);
 
 		// Desenha texto da quantidade ao lado
 		draw_text(moeda_x + moeda_w + 2, moeda_y + 2, string(moeda) + "X");
 
     // Vida
     for(var i = 0; i < vida; i++){
-        draw_sprite(sVida, 0, i * 32, 0);
+		var vida_y = 39;
+		// Usa o tamanho fixo da sprite (não afetado por image_xscale)
+		var vida_h = sprite_get_height(sMoeda);
+        draw_sprite(sVida, 0, i * 32, vida_h/2 + 19);
     }
 
     // Pontuação
