@@ -216,6 +216,7 @@
     {"name":"OMineBossMao00","order":1,"path":"objects/OMineBossMao00/OMineBossMao00.yy",},
     {"name":"OMineBossMao01","order":3,"path":"objects/OMineBossMao01/OMineBossMao01.yy",},
     {"name":"oMinionEye00","order":1,"path":"objects/oMinionEye00/oMinionEye00.yy",},
+    {"name":"oObjetivoFinal","order":5,"path":"objects/oObjetivoFinal/oObjetivoFinal.yy",},
     {"name":"oOlho","order":2,"path":"objects/oOlho/oOlho.yy",},
     {"name":"oOlho_1","order":5,"path":"objects/oOlho_1/oOlho_1.yy",},
     {"name":"oOlho_2","order":6,"path":"objects/oOlho_2/oOlho_2.yy",},

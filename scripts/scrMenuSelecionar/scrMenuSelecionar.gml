@@ -1,8 +1,8 @@
 function scrMenuSelecionar(index) {
 	switch (index) {
 		case 0:
-			room_goto(LevelTutorial);
 			instance_destroy(oDataCarrie);
+			room_goto(LevelTutorial);
 			break;
 		case 1:
 			// Abre as configurações
@@ -30,6 +30,7 @@ switch (index) {
 		case 1:
 			// Abre as configurações
 					room_goto(Menu);
+					instance_destroy(oDataCarrie);
 			break;
 		case 2:
 		game_end();

@@ -32,9 +32,15 @@ for (var i = 0; i < op_max; i++) {
 
     var mouse_over = point_in_rectangle(m_x, m_y, rect_left, rect_top, rect_right, rect_bottom);
 
+	if (index == i) {
+		// Desenhar sArma ao la do item selecionado
+			var sprite_offset_x = 16; // distância do texto para a sprite
+		draw_sprite_ext( s_MenuSelecao,0, x1 - sprite_offset_x, pos_y, 4,4,0,c_white,1);
+	} else {
+		draw_set_color(c_white);	
+	}
     if (mouse_over) {
         index = i;
-        draw_set_color(c_aqua);
 
         if (mouse_check_button_pressed(mb_left)) {
             scrMenuConfiguracoesVolume(index);

@@ -31,16 +31,16 @@ for (var i = 0; i < op_max; i++) {
 	if(point_in_rectangle(m_x, m_y, x1 - string_w / 2, pos_y - string_h  / 2,  x1 + string_w / 2, pos_y + string_h /2)){
 		index = i;
 		if(mouse_check_button_pressed(mb_left)) scrMenuConfiguracoes(index);
-				draw_set_color(c_aqua);
+	
 	}else{
 				draw_set_color(c_white);
 	};
 	
 	if (index == i) {
-		draw_set_color(c_aqua);
+		
 		// Desenhar sArma ao lado do item selecionado
-		var sprite_offset_x = 32; // distância do texto para a sprite
-		draw_sprite(sArma00, 0, x1 - sprite_offset_x, pos_y);
+				var sprite_offset_x = 16; // distância do texto para a sprite
+		draw_sprite_ext( s_MenuSelecao,0, x1 - sprite_offset_x, pos_y, 4,4,0,c_white,1);
 	} else {
 		draw_set_color(c_white);	
 	}

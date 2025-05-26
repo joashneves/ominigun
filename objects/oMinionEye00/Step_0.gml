@@ -20,17 +20,20 @@ if(place_meeting(x,y,IDbalas)){
 	life=life-25;
 	if(oBala12)lanca += 1;
 	instance_destroy(instance_place(x,y,IDbalas))
-	audio_play_sound(sndDanoinimigo,2,0);
+	
 }
 if(place_meeting(x,y,IDarmas)){
 	life=life-50;
-	audio_play_sound(sndDanoinimigo,2,0);
+
 }
 
 if (life <= 0) {
 	
 	instance_destroy();
 
+}
+if(!instance_exists(oBoss02)){
+instance_destroy()
 }
 
 var vx = camera_get_view_x(view_camera[0]);
@@ -40,6 +43,6 @@ var vh = camera_get_view_height(view_camera[0])
 
 if(!point_in_rectangle(x,y,vx,vy,vx+vw,vy+vh))
 {
-	x = oBoss02.x;
-	y = oBoss02.y-180;
+	x = oPlayer.x;
+	y = oPlayer.y-180;
 }

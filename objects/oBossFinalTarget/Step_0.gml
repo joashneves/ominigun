@@ -3,6 +3,8 @@ if (tempo++ > maxTempo) {
     tempo = 0;
 }
 
+if(!instance_exists(oPlayer)) instance_destroy();
+if(!instance_exists(oBoss02)) instance_destroy();
 switch (movimento) {
     // Parado acima do player
     case 0:
@@ -23,13 +25,17 @@ switch (movimento) {
 
     // Dash até o player
     case 2:
+	if(instance_exists(oPlayer)){
         x = oPlayer.x;
         y = oPlayer.y;
+	}
     break;
 
     // Teleporta para dentro do player
     case 3:
+	if(instance_exists(oPlayer)){
         x = oPlayer.x;
         y = oPlayer.y;
-    break;
+	}
+	break;
 }

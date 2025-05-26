@@ -1,5 +1,6 @@
 scrTraducao(); // já puxa o idioma atual
 
+instance_destroy(oDataCarrie)
 
 // Define valores padrão apenas se não existirem
 var_nao_existe(oDataSuperCarrie, "idioma", "BR");
@@ -25,7 +26,11 @@ agradecimento = [
     "A todos que ajudaram.",
     "Fabs",
 	"Afkarlos",
-	" AnodosYuu"
+	" AnodosYuu",
+	"Kima",
+	"Lucyo",
+	"Coffee",
+	"Yasuko"
 ];
 
 // Combina tudo em uma lista única de créditos

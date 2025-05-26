@@ -6,7 +6,7 @@ var recuo_y = lengthdir_y(-offset, global.dir);
 
 // Direção do player
 var dir = point_direction(x, y, oCursor.x, oCursor.y);
-
+if(instance_exists(oPlayer)){
 // Define offset horizontal extra com base na direção
 var lateral_offset = (dir <= 90 || dir >= 270) ? -16 : 16;
 
@@ -26,6 +26,8 @@ image_alpha = oPlayer.player_morto ? 0 : 1;
 
 if (instance_exists(oPortaRoom)){
 image_alpha = oPortaRoom.entrando  ? 0 : 1;	
+}
+
 }
 
 // Contador de recuo

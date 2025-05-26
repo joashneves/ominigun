@@ -10,7 +10,7 @@ ds_list_add(slotArma,arma)
 
 posLista++;
 var executarScript = ds_list_find_value(slotArma,posLista)
-
+//if(executarScript == undefined) executarScript = scrTrocadeArmaPistolaBasica;
 script_execute(executarScript);
 
 }
