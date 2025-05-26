@@ -437,6 +437,7 @@
     {"name":"sInimigo03","order":3,"path":"sprites/sInimigo03/sInimigo03.yy",},
     {"name":"sInimigo04","order":5,"path":"sprites/sInimigo04/sInimigo04.yy",},
     {"name":"sInimigo05","order":6,"path":"sprites/sInimigo05/sInimigo05.yy",},
+    {"name":"sInimigoArma","order":7,"path":"sprites/sInimigoArma/sInimigoArma.yy",},
     {"name":"sInimigoBala","order":6,"path":"sprites/sInimigoBala/sInimigoBala.yy",},
     {"name":"sInimigos","order":4,"path":"sprites/sInimigos/sInimigos.yy",},
     {"name":"sLaser","order":12,"path":"sprites/sLaser/sLaser.yy",},

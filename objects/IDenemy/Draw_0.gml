@@ -16,3 +16,10 @@ if (dano_timer > 0) {
 
 // Desenha com o deslocamento
 draw_sprite_ext(sprite_index, image_index, x + shake_offset_x, y + shake_offset_y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+
+var armaDraw = sInimigoArma;
+var imagexscale = 1;
+if(x < oPlayer.x) imagexscale = 1;
+if(x > oPlayer.x) imagexscale = -1;
+var distancia = point_direction(x,y,oPlayer.x, oPlayer.y) ;
+draw_sprite_ext(armaDraw, -10, x-16, y+16,1,imagexscale, distancia, c_red, 1);

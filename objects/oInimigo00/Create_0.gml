@@ -14,7 +14,7 @@ dano_timer = 0;
 shake_offset_x = 0;
 shake_offset_y = 0;
 
-
+armaDraw = sInimigoArma;
 
 random_valueH = random_range(-3,3)
 random_valueV = random_range(-3,3)
