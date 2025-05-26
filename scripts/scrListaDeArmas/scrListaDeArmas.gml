@@ -5,8 +5,8 @@ globalvar posLista;
 posLista = 0;
 
 function listaDeArmas(arma){
-
-ds_list_add(slotArma,arma)
+show_debug_message("arma adicionado : " + string(arma) + string(slotArma))
+ds_list_add(slotArma,arma) 
 
 posLista++;
 var executarScript = ds_list_find_value(slotArma,posLista)

@@ -2,6 +2,7 @@ function scrMenuSelecionar(index) {
 	switch (index) {
 		case 0:
 			instance_destroy(oDataCarrie);
+			posLista = 0;
 			room_goto(LevelTutorial);
 			break;
 		case 1:
