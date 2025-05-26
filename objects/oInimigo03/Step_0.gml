@@ -18,6 +18,7 @@ if( municao++ >= municaoTotal){
 		for(var i = -1; i != 1; i++){
 		var bala = instance_create_depth(x,y,0,oBalaInimigo);
 		bala.direction = point_direction(x,y,oPlayer.x+90*i,oPlayer. y+90*i);
+		bala.image_angle = point_direction(x,y,oPlayer.x+90*i,oPlayer. y+90*i);
 		bala.speed = 9.5;
 		bala.image_blend = c_purple;
 		}

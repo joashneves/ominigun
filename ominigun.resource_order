@@ -372,6 +372,7 @@
     {"name":"sBala04","order":3,"path":"sprites/sBala04/sBala04.yy",},
     {"name":"sBala05","order":8,"path":"sprites/sBala05/sBala05.yy",},
     {"name":"sBala06","order":13,"path":"sprites/sBala06/sBala06.yy",},
+    {"name":"sBalaAr","order":27,"path":"sprites/sBalaAr/sBalaAr.yy",},
     {"name":"sBalaBolha","order":21,"path":"sprites/sBalaBolha/sBalaBolha.yy",},
     {"name":"sBalaBolhafogo","order":23,"path":"sprites/sBalaBolhafogo/sBalaBolhafogo.yy",},
     {"name":"sBalaChama","order":9,"path":"sprites/sBalaChama/sBalaChama.yy",},

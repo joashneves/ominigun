@@ -9,6 +9,7 @@ draw_set_alpha(1); // Resetar o alpha para evitar interferência nos próximos d
 
 
 draw_set_font(fnt_menu);
+draw_set_color(c_white);
 // Desenha as opçoes!
 var dist = 55;
 var gui_largura = display_get_gui_width();

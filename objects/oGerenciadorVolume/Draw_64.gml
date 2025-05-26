@@ -8,7 +8,8 @@ draw_rectangle(0, 0, camera_x, camera_y, false);
 draw_set_alpha(1); // Resetar o alpha para evitar interferência nos próximos desenhos
 
 draw_set_font(fnt_menu);
-
+draw_set_color(c_white);
+		
 var dist = 55;
 var gui_largura = display_get_gui_width();
 var gui_altura = display_get_gui_height();

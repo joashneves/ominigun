@@ -20,6 +20,7 @@ if( municao++ >= municaoTotal){
 	var bala = instance_create_depth(x,y,0,oBalaInimigo0);
 	bala.image_angle = point_direction(x,y, random_range(oPlayer.x-32, oPlayer.x+32), oPlayer.y);
 	bala.direction = point_direction(x,y, oPlayer.x+64*i, oPlayer.y+64*i);
+	bala.image_angle = point_direction(x,y, oPlayer.x+64*i, oPlayer.y+64*i);
 	bala.image_xscale = 2;
 	bala.image_yscale = 2;
 	bala.speed = 5;
