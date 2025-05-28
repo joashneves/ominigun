@@ -47,49 +47,47 @@ draw_text(700, 94, t.tempo + " " + tempo_str);
 
 // Arma HUD
 //draw_sprite(aparencia,0,64,64)
-if(!fim_de_jogo and !player_morto){
-    if(aparencia != sArma00){
-        draw_text(64, 78, t.municao + string(municao));
+if (!fim_de_jogo && !player_morto) {
+
+    // === VIDA ===
+    var vida_base_x = 32;
+    var vida_base_y = 32;
+
+    for (var i = 0; i < vida; i++) {
+        draw_sprite(sVida, 0, vida_base_x + i * 32, vida_base_y);
     }
 
-var total = ds_list_size(listaSprites);
-var start = max(0, total - 5); // Evita índice negativo
+    // === RAGE (% ao lado da vida) ===
+    var rage_percent = clamp((rage / rageMax) * 100, 0, 100);
+    draw_text(vida_base_x + vida * 32 + 10, vida_base_y + 4, string_format(rage_percent, 0, 0) + "% Rage");
 
-for (var i = total - 1; i >= start; i--) {
-    draw_sprite(listaSprites[| i], 0, -12, 64 + ((total - i) * 16));
-}
-		var moeda_x = 40 * 5 + 16;
-		var moeda_y = 39;
+    // === MOEDA (abaixo da vida) ===
+    var moeda_x = vida_base_x;
+    var moeda_y = vida_base_y + 40;
 
-		// Usa o tamanho fixo da sprite (não afetado por image_xscale)
-		var moeda_w = sprite_get_width(sMoeda);
-		var moeda_h = sprite_get_height(sMoeda);
+    draw_sprite_ext(sMoeda, 0, moeda_x, moeda_y, 2, 2, 0, c_white, 1);
+    draw_text(moeda_x + 40, moeda_y + 4, string(moeda) + "X");
 
-		// Ajusta para origem no canto superior esquerdo
-		moeda_x -= moeda_w / 2;
-		moeda_y -= moeda_h / 2;
+    // === LISTA DE ARMAS (abaixo da moeda) ===
+    var armas_y_base = moeda_y + 48;
+    var total = ds_list_size(listaSprites);
+    var start = max(0, total - 4);
 
-		// Desenha sprite da moeda
-		draw_sprite_ext(sMoeda, 0, moeda_x, moeda_y,2,2,0,c_white,1);
-
-		// Desenha texto da quantidade ao lado
-		draw_text(moeda_x + moeda_w + 2, moeda_y + 2, string(moeda) + "X");
-
-    // Vida
-    for(var i = 0; i < vida; i++){
-		var vida_y = 39;
-		// Usa o tamanho fixo da sprite (não afetado por image_xscale)
-		var vida_h = sprite_get_height(sMoeda);
-        draw_sprite(sVida, 0, i * 32, vida_h/2 + 19);
+    for (var i = total - 1; i >= start; i--) {
+        var idy = total - i - 1;
+        draw_sprite(listaSprites[| i], 0, vida_base_x  , armas_y_base + idy * 40);
     }
 
-    // Pontuação
-    draw_text(600, 32,  t.pontuacao + string(score));
+    // === MUNIÇÃO (se aplicável) ===
+    if (aparencia != sArma00) {
+        draw_text(vida_base_x + 46, armas_y_base - 12,  string(municao));
+    }
 
-    // Rage bar
-    var barraDeRage = (rage / rageMax) * 100;
-    draw_healthbar(780, 100, 790, 500, barraDeRage, c_black, c_blue, c_red, 3, false, true);
+    // === PONTUAÇÃO ===
+    draw_text(600, 32, t.pontuacao + string(score));
 }
+
+	
 if(player_morto){
 	draw_set_colour(c_black);
 	draw_rectangle(0,0,camera_x,camera_y,false);
