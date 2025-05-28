@@ -52,11 +52,12 @@ if(!fim_de_jogo and !player_morto){
         draw_text(64, 78, t.municao + string(municao));
     }
 
-    // Mostrar sprites das armas
-    for (var i = ds_list_size(listaSprites) - 1; i >= 0; i--) {
-        draw_sprite(listaSprites[| i], 0, -12, 64 + ((ds_list_size(listaSprites) - i) * 16));
-    }
+var total = ds_list_size(listaSprites);
+var start = max(0, total - 5); // Evita índice negativo
 
+for (var i = total - 1; i >= start; i--) {
+    draw_sprite(listaSprites[| i], 0, -12, 64 + ((total - i) * 16));
+}
 		var moeda_x = 40 * 5 + 16;
 		var moeda_y = 39;
 
