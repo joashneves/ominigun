@@ -403,6 +403,8 @@
     {"name":"sBoss04Cauda","order":3,"path":"sprites/sBoss04Cauda/sBoss04Cauda.yy",},
     {"name":"sBoss04Corpo","order":1,"path":"sprites/sBoss04Corpo/sBoss04Corpo.yy",},
     {"name":"sBossDeath","order":1,"path":"sprites/sBossDeath/sBossDeath.yy",},
+    {"name":"sBossHud","order":8,"path":"sprites/sBossHud/sBossHud.yy",},
+    {"name":"sBossStatue_1","order":5,"path":"sprites/sBossStatue_1/sBossStatue_1.yy",},
     {"name":"sBossStatue","order":2,"path":"sprites/sBossStatue/sBossStatue.yy",},
     {"name":"sBot","order":11,"path":"sprites/sBot/sBot.yy",},
     {"name":"sBrusher","order":24,"path":"sprites/sBrusher/sBrusher.yy",},

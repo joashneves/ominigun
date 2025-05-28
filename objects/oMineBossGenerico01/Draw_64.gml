@@ -1,24 +1,26 @@
 if(oPlayer.player_morto) return;
-
-// Tamanho da barra
-var barra_largura = 600;
-var barra_altura = 12;
+/// @description Desenhar a barra de vida centralizada embaixo
 
 // Posição centralizada
-var barra_x = (display_get_gui_width() - barra_largura) / 2;
-var barra_y = display_get_gui_height() - barra_altura - 30; // 30 pixels acima do rodapé
+var barra_x = display_get_gui_width() / 2;
+var barra_y = 6; // 6 pixels abaixo do topo da tela
 
-// Proporção da vida
-var proporcao = life / lifeMax;
+// Proporção da vida (entre 0 e 1)
+var proporcao = clamp(life / lifeMax, 0, 1); // evita valores fora do intervalo
 
-// Fundo da barra
-draw_set_color(make_color_rgb(40, 40, 40));
-draw_rectangle(barra_x, barra_y, barra_x + barra_largura, barra_y + barra_altura, false);
+// Sprite da barra
+var sprite = sBossHud;
 
-// Barra vermelha (vida)
-draw_set_color(c_red);
-draw_rectangle(barra_x, barra_y, barra_x + (barra_largura * proporcao), barra_y + barra_altura, false);
+// Número total de frames (subimagens)
+var total_frames = sprite_get_number(sprite);
 
-// Contorno branco
-draw_set_color(c_white);
-draw_rectangle(barra_x, barra_y, barra_x + barra_largura, barra_y + barra_altura, true);
+// Índice da subimagem proporcional à vida (invertido: 0 = cheio, último = vazio)
+var frame_index = floor((1 - proporcao) * (total_frames - 1));
+
+// Desenhar a subimagem correspondente da sprite
+draw_sprite(
+    sprite,                 // sprite
+    frame_index,            // subimagem (frame)
+    barra_x - sprite_get_width(sprite) / 2, // centraliza horizontalmente
+    barra_y                                // posição vertical no topo
+);

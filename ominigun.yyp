@@ -467,6 +467,8 @@
     {"id":{"name":"sBoss04Cauda","path":"sprites/sBoss04Cauda/sBoss04Cauda.yy",},},
     {"id":{"name":"sBoss04Corpo","path":"sprites/sBoss04Corpo/sBoss04Corpo.yy",},},
     {"id":{"name":"sBossDeath","path":"sprites/sBossDeath/sBossDeath.yy",},},
+    {"id":{"name":"sBossHud","path":"sprites/sBossHud/sBossHud.yy",},},
+    {"id":{"name":"sBossStatue_1","path":"sprites/sBossStatue_1/sBossStatue_1.yy",},},
     {"id":{"name":"sBossStatue","path":"sprites/sBossStatue/sBossStatue.yy",},},
     {"id":{"name":"sBot","path":"sprites/sBot/sBot.yy",},},
     {"id":{"name":"sBrusher","path":"sprites/sBrusher/sBrusher.yy",},},

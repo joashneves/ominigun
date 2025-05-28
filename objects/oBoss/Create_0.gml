@@ -7,6 +7,8 @@ vida_trigger = life; // armazena o valor da vida para controle de disparos
 
 vuneravel = false;
 
+lanca = 0;
+
 municao = 0;
 municaoMax = 90;
 
