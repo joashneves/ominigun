@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 if (!instance_exists(oBoss01)) instance_destroy(self);
-
+image_angle = point_direction(x,y, oPlayer.x, oPlayer.y);
 
 if(place_meeting(x,y,IDbalas)){
 	life=life-25;
