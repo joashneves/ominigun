@@ -11,5 +11,6 @@ if(instance_exists(oBoss01)){
 		image_alpha = 0.2;
 		oBoss01.x = oPlayer.x-180;
 		oBoss01.y = oPlayer.y-180;
+		image_speed = 5;
 	}
 }

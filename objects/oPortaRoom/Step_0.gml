@@ -7,7 +7,11 @@ if(entrando and instance_exists(oPlayer)){
 		
 	tamanhoPlayer--;
 }
-
+if(oPlayer.BossMorto){
+	if (instance_exists(luz)) {
+	luz.image_alpha = 2; // enfraquece a luz
+	}
+}
 
 image_angle = angle;
 

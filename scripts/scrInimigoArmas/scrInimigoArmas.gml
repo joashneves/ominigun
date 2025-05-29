@@ -42,7 +42,7 @@ function scrInimigoLaser(){
         var desvioY = random_range(oPlayer.y-32, oPlayer.y+32);
         var dir = point_direction(x, y,  desvioX,  desvioY);
 
-        var bala = instance_create_layer(x, y, -3, oBalaInimigoBase);
+        var bala = instance_create_depth(x, y, -3, oBalaInimigoBase);
         bala.direction = dir;
         bala.image_angle = dir;
         bala.speed = random_range(10, 14); // Velocidade levemente variável

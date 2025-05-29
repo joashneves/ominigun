@@ -8,4 +8,4 @@ entrando = false;
 image_xscale = 2
 image_yscale = 2
 
-createLight(x,y,c_purple, 2, 2,2, self)
+luz = createLight(x,y,c_purple,0, 2,2, self)
