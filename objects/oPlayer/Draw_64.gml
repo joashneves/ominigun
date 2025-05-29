@@ -12,10 +12,10 @@ if (is_undefined(t)) {
 }
 
 #region // Debug
-		draw_set_font(fnt_ui);
+		draw_set_font(fnt_hud);
 		
 if(debug_mode){
-    draw_set_font(fnt_ui);
+    draw_set_font(fnt_hud);
     var y_base = 64;
     var y_step = 20;
 
@@ -28,20 +28,6 @@ if(debug_mode){
     draw_text(1052, 64, "Rage: " + string(rage));
     draw_text(12, 480, "Mouse: " + string(global.dir));
 }
-
-draw_text(700,48, "Fps : " + string(fps));
-
-var tempo_ms = tempo_de_jogo * (1000 / room_speed);
-
-var minutos = floor(tempo_ms div 60000);
-var segundos = floor((tempo_ms div 1000) mod 60);
-var milissegundos = tempo_ms mod 1000;
-
-var tempo_str = string_format(minutos, 2, 0) + ":" +
-                string_format(segundos, 2, 0) + ":" +
-                string_format(milissegundos, 2, 0);
-
-draw_text(700, 94, t.tempo + " " + tempo_str);
 
 #endregion
 
@@ -75,7 +61,7 @@ if (!fim_de_jogo && !player_morto) {
 
     for (var i = total - 1; i >= start; i--) {
         var idy = total - i - 1;
-        draw_sprite(listaSprites[| i], 0, vida_base_x  , armas_y_base + idy * 40);
+        draw_sprite_ext(listaSprites[| i], 0, vida_base_x  , armas_y_base + idy * 40,0.5,0.5,1,c_white,1);
     }
 
     // === MUNIÇÃO (se aplicável) ===
@@ -85,6 +71,18 @@ if (!fim_de_jogo && !player_morto) {
 
     // === PONTUAÇÃO ===
     draw_text(600, 32, t.pontuacao + string(score));
+	// === FPS E TEMPO === 
+	var tempo_ms = tempo_de_jogo * (1000 / room_speed);
+
+	var minutos = floor(tempo_ms div 60000);
+	var segundos = floor((tempo_ms div 1000) mod 60);
+	var milissegundos = tempo_ms mod 1000;
+	draw_text(600,48, "Fps : " + string(fps));
+	var tempo_str = string_format(minutos, 2, 0) + ":" +
+			        string_format(segundos, 2, 0) + ":" +
+			        string_format(milissegundos, 2, 0);
+
+	draw_text(600, 64, t.tempo + " " + tempo_str);
 }
 
 	

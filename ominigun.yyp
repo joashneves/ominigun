@@ -91,6 +91,7 @@
   },
   "name":"ominigun",
   "resources":[
+    {"id":{"name":"fnt_hud","path":"fonts/fnt_hud/fnt_hud.yy",},},
     {"id":{"name":"fnt_loja","path":"fonts/fnt_loja/fnt_loja.yy",},},
     {"id":{"name":"fnt_menu","path":"fonts/fnt_menu/fnt_menu.yy",},},
     {"id":{"name":"fnt_ui","path":"fonts/fnt_ui/fnt_ui.yy",},},
