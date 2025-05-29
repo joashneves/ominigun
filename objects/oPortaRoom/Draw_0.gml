@@ -1,10 +1,5 @@
 /// @description 
-if(!oPlayer.BossMorto){
-image_alpha = 0;	
-
-return;
-}
-luz.image_alpha = 2; // enfraquece a luz
+if(!oPlayer.BossMorto) return;
 // Acessa a tradução conforme o idioma atual
 var idioma = string(oDataSuperCarrie.idioma);
 var t = traducao_geral[$ idioma];

@@ -7,8 +7,6 @@ var _E =  keyboard_check(ord("E")) ||  _Controller
 if(instance_exists(oBoss01)){
 	if _E && !oBoss01.vuneravel{
 		oBoss01.vuneravel = true;
-		image_index = 1;
-		image_alpha = 0.2;
 		oBoss01.x = oPlayer.x-180;
 		oBoss01.y = oPlayer.y-180;
 		image_speed = 5;
