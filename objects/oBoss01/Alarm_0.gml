@@ -5,7 +5,7 @@
 	if (instance_number(oBulletOlhoBoss02) < 6){
 		
 	if (estado == "ataque") {
-	var enemy = instance_create_layer(x,y, "Boss", oEnemyOlhoBoss01);
+	var enemy = instance_create_layer(x,y, "Boss", oEnemyOlhoBoss04);
 	enemy.direction = point_direction(x,y,x,y-90);
 	enemy.image_angle = point_direction(x,y,x,y-90);
 	enemy.speed = 2;

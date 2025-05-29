@@ -70,7 +70,7 @@ if (!fim_de_jogo && !player_morto) {
     }
 
     // === PONTUAÇÃO ===
-    draw_text(600, 32, t.pontuacao + string(score));
+    draw_text(600, 32, t.pontuacao + " : " + string(score));
 	// === FPS E TEMPO === 
 	var tempo_ms = tempo_de_jogo * (1000 / room_speed);
 
@@ -87,8 +87,8 @@ if (!fim_de_jogo && !player_morto) {
 	// === CARTAS (na GUI) ===
 	var base_x = 64;
 	var base_y = 64;
-	var espaco_y = 36; // espaçamento entre cartas
-	var escala = 0.2;
+	var espaco_y = 16; // espaçamento entre cartas
+	var escala = 0.05;
 
 	// Nomes e listas
 	var categorias = ["Dano", "Tiro", "Tempo", "Recurso"];
@@ -98,12 +98,10 @@ if (!fim_de_jogo && !player_morto) {
 	    global.buffsAtivosTempo,
 	    global.buffsAtivosRecurso
 	];
-
 	// Loop por categorias (colunas)
 	for (var col = 0; col < array_length(categorias); col++) {
 	    var lista = listas[col];
 	    var _x = base_x + col * 48; // distância entre colunas
-
 	    // Loop por cartas da lista
 	    for (var i = 0; i < ds_list_size(lista); i++) {
 	        var carta_nome = lista[| i]; // por ex: "fogo", "gelo"
@@ -121,8 +119,6 @@ if (!fim_de_jogo && !player_morto) {
 	        }
 	    }
 	}
-
-
 }
 
 	

@@ -183,6 +183,7 @@
     {"name":"oEnemyOlhoBoss01","order":2,"path":"objects/oEnemyOlhoBoss01/oEnemyOlhoBoss01.yy",},
     {"name":"oEnemyOlhoBoss02","order":5,"path":"objects/oEnemyOlhoBoss02/oEnemyOlhoBoss02.yy",},
     {"name":"oEnemyOlhoBoss03","order":6,"path":"objects/oEnemyOlhoBoss03/oEnemyOlhoBoss03.yy",},
+    {"name":"oEnemyOlhoBoss04","order":7,"path":"objects/oEnemyOlhoBoss04/oEnemyOlhoBoss04.yy",},
     {"name":"oExit","order":4,"path":"objects/oExit/oExit.yy",},
     {"name":"oExplosao","order":1,"path":"objects/oExplosao/oExplosao.yy",},
     {"name":"oEye00","order":2,"path":"objects/oEye00/oEye00.yy",},

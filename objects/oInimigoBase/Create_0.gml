@@ -14,7 +14,8 @@ if(!alarm[0])alarm[0] = 60;
 var _kitArma = [ 
 	[ sArma01,scrInimigoespingarda, sInimigo03, 140, 200, oTrocaDeArma00],
 	[ sArma03, scrInimigoPistola, sInimigo01, 60, 90, oTrocaDeArma02 ],
-	[ sArma04, scrInimigoPistola, sInimigo00, 10, 70, oTrocaDeArma04 ]
+	[ sArma04, scrInimigoPistola, sInimigo00, 10, 70, oTrocaDeArma04 ],
+	[ sArma16, scrInimigoLaser, sInimigo02, 80, 100, oTrocaDeArma15 ],
 ] 
 var _numeroKit = choose(0, 1, 2);
 

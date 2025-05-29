@@ -31,3 +31,26 @@ function scrInimigoespingarda(){
 		var vol_efeito = oDataSuperCarrie.vol_geral * oDataSuperCarrie.vol_ambiente;
 		audio_sound_gain(id_som, vol_efeito, 0);
 }
+
+function scrInimigoLaser(){
+	
+  var quantidade = irandom_range(4, 8); // Entre 4 e 8 tiros
+
+    for (var i = 0; i < quantidade; i++) {
+        // Direção com imprecisão (±32 pixels em X e Y)
+        var desvioX = random_range(oPlayer.x-32,oPlayer.x+ 32);
+        var desvioY = random_range(oPlayer.y-32, oPlayer.y+32);
+        var dir = point_direction(x, y,  desvioX,  desvioY);
+
+        var bala = instance_create_layer(x, y, -3, oBalaInimigoBase);
+        bala.direction = dir;
+        bala.image_angle = dir;
+        bala.speed = random_range(10, 14); // Velocidade levemente variável
+        bala.image_blend = c_purple;
+    }
+	
+		municao=0;
+			var id_som = 		audio_play_sound(sndTiroInimigo,2,0);
+		var vol_efeito = oDataSuperCarrie.vol_geral * oDataSuperCarrie.vol_ambiente;
+		audio_sound_gain(id_som, vol_efeito, 0);
+}

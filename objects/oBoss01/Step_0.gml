@@ -5,6 +5,10 @@ oPlayer.BossMorto = false;
 
 // Se estiver vulnerável, ativa comportamento de batalha
 if (vuneravel) {
+	
+	if(!instance_exists(oEnemyOlhoBoss01)){
+		instance_create_depth(x,y,0,oEnemyOlhoBoss01)
+	}
     
     switch (fase) {
         case 0:
