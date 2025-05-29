@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sBalas",
-    "path":"sprites/sBalas/sBalas.yy",
+    "name":"sBalaSniper",
+    "path":"sprites/sBalaSniper/sBalaSniper.yy",
   },
   "spriteMaskId":null,
   "visible":true,

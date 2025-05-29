@@ -447,6 +447,7 @@
     {"id":{"name":"sBalasAtack01","path":"sprites/sBalasAtack01/sBalasAtack01.yy",},},
     {"id":{"name":"sBalasAtack02","path":"sprites/sBalasAtack02/sBalasAtack02.yy",},},
     {"id":{"name":"sBalasMagia","path":"sprites/sBalasMagia/sBalasMagia.yy",},},
+    {"id":{"name":"sBalaSniper","path":"sprites/sBalaSniper/sBalaSniper.yy",},},
     {"id":{"name":"sBalasRPG","path":"sprites/sBalasRPG/sBalasRPG.yy",},},
     {"id":{"name":"sBalaTerra","path":"sprites/sBalaTerra/sBalaTerra.yy",},},
     {"id":{"name":"sBalaVeneno","path":"sprites/sBalaVeneno/sBalaVeneno.yy",},},

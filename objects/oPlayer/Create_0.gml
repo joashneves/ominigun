@@ -47,7 +47,7 @@ instance_create_depth(x,y,-1,oImageArma);
 
 // Moedas e Status
 
-moeda = 10;
+moeda = 25;
 
 targetEntrada = oLevelEntrada
 

@@ -387,6 +387,7 @@
     {"name":"sBalasAtack01","order":15,"path":"sprites/sBalasAtack01/sBalasAtack01.yy",},
     {"name":"sBalasAtack02","order":16,"path":"sprites/sBalasAtack02/sBalasAtack02.yy",},
     {"name":"sBalasMagia","order":10,"path":"sprites/sBalasMagia/sBalasMagia.yy",},
+    {"name":"sBalaSniper","order":28,"path":"sprites/sBalaSniper/sBalaSniper.yy",},
     {"name":"sBalasRPG","order":1,"path":"sprites/sBalasRPG/sBalasRPG.yy",},
     {"name":"sBalaTerra","order":22,"path":"sprites/sBalaTerra/sBalaTerra.yy",},
     {"name":"sBalaVeneno","order":20,"path":"sprites/sBalaVeneno/sBalaVeneno.yy",},

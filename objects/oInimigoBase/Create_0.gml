@@ -17,7 +17,7 @@ var _kitArma = [
 	[ sArma04, scrInimigoPistola, sInimigo00, 10, 70, oTrocaDeArma04 ],
 	[ sArma16, scrInimigoLaser, sInimigo02, 80, 100, oTrocaDeArma15 ],
 ] 
-var _numeroKit = choose(0, 1, 2);
+var _numeroKit = choose(0, 1, 2, 3);
 
 municao = random_range(1,15);
 municaoTotal = random_range(_kitArma[_numeroKit][3],_kitArma[_numeroKit][4]);
