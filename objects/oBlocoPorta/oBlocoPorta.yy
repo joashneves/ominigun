@@ -38,5 +38,5 @@
     "path":"sprites/sBlocoWave/sBlocoWave.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

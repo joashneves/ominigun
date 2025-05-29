@@ -83,6 +83,46 @@ if (!fim_de_jogo && !player_morto) {
 			        string_format(milissegundos, 2, 0);
 
 	draw_text(600, 64, t.tempo + " " + tempo_str);
+	
+	// === CARTAS (na GUI) ===
+	var base_x = 64;
+	var base_y = 64;
+	var espaco_y = 36; // espaçamento entre cartas
+	var escala = 0.2;
+
+	// Nomes e listas
+	var categorias = ["Dano", "Tiro", "Tempo", "Recurso"];
+	var listas = [
+	    global.buffsAtivosDano,
+	    global.buffsAtivosTiro,
+	    global.buffsAtivosTempo,
+	    global.buffsAtivosRecurso
+	];
+
+	// Loop por categorias (colunas)
+	for (var col = 0; col < array_length(categorias); col++) {
+	    var lista = listas[col];
+	    var _x = base_x + col * 48; // distância entre colunas
+
+	    // Loop por cartas da lista
+	    for (var i = 0; i < ds_list_size(lista); i++) {
+	        var carta_nome = lista[| i]; // por ex: "fogo", "gelo"
+	        var sprite = ds_map_find_value(global.cartasSprites, carta_nome);
+			show_debug_message(sprite)
+	        if (sprite != -1) {
+	            draw_sprite_ext(
+	                sprite,
+					0,
+	                _x,
+	                base_y + i * espaco_y,
+	                escala, escala, 0,
+	                c_white, 1
+	            );
+	        }
+	    }
+	}
+
+
 }
 
 	

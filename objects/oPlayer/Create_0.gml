@@ -61,11 +61,13 @@ levelAntigo = room_get_name(room)
 
 gc_enable(true);
 
-// receber dano
+// Cartas
 global.buffsAtivosDano = ds_list_create();
 global.buffsAtivosTiro = ds_list_create();
 global.buffsAtivosTempo = ds_list_create();
 global.buffsAtivosRecurso = ds_list_create();
+
+global.cartasSprites = ds_map_create();
 
 alarm[1] = 180 + (rageMax);
 

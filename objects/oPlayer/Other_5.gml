@@ -39,6 +39,7 @@ oDataCarrie.buffsAtivosTiro = global.buffsAtivosTiro;
 oDataCarrie.buffsAtivosTempo = global.buffsAtivosTempo;
 oDataCarrie.buffsAtivosRecurso = global.buffsAtivosRecurso;
 oDataCarrie.dificuldade = global.dificuldade+0.5;
+oDataCarrie.cartasSprites = global.cartasSprites;
 
 
 oDataCarrie.levelAntigo = (room);
