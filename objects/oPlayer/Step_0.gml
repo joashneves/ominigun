@@ -181,7 +181,7 @@ if(vida > 4 ){
 if(debug_mode) {
 	vida = 5;
 	rage = rageMax;
-	//moeda = 10;
+	//moeda = 100;
 }
 
 if (vida <= 0){
@@ -201,6 +201,10 @@ if (vida <= 0){
 	posLista=0;
 	vida = 5
 	player_morto = false;
+	
+	oDataSuperCarrie.mortes_player=oDataSuperCarrie.mortes_player+1;
+	show_debug_message("Mortes : " + string(oDataSuperCarrie.mortes_player));
+	salvaJogo()
 	room_goto(GameOver)
 	}
 	score = 0;

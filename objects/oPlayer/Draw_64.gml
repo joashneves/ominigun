@@ -19,12 +19,13 @@ if(debug_mode){
     var y_base = 64;
     var y_step = 20;
 
-    draw_text(32, y_base + y_step * 0, "Recarga: " + string(recarga));
-    draw_text(32, y_base + y_step * 1, "Recarga Total: " + string(recargaTotal));
-    draw_text(32, y_base + y_step * 2, "Tiros Inimigo: " + string(instance_number(oBalaInimigo)));
-    draw_text(32, y_base + y_step * 3, "Moedas: " + string(moeda));
-    draw_text(32, y_base + y_step * 4, "Level: " + string(global.dificuldade));
-    draw_text(32, y_base + y_step * 5, "Boss Morto: " + string(BossMorto));
+    draw_text(232, y_base + y_step * 0, "Recarga: " + string(recarga));
+    draw_text(232, y_base + y_step * 1, "Recarga Total: " + string(recargaTotal));
+    draw_text(232, y_base + y_step * 2, "Tiros Inimigo: " + string(instance_number(oBalaInimigo)));
+    draw_text(232, y_base + y_step * 3, "Moedas: " + string(moeda));
+    draw_text(232, y_base + y_step * 4, "Level: " + string(global.dificuldade));
+    draw_text(232, y_base + y_step * 5, "Boss Morto: " + string(BossMorto));
+	draw_text(232, y_base + y_step * 6, "Morte: " + string(oDataSuperCarrie.mortes_player));
     draw_text(1052, 64, "Rage: " + string(rage));
     draw_text(12, 480, "Mouse: " + string(global.dir));
 }
@@ -45,7 +46,7 @@ if (!fim_de_jogo && !player_morto) {
 
     // === RAGE (% ao lado da vida) ===
     var rage_percent = clamp((rage / rageMax) * 100, 0, 100);
-    draw_text(vida_base_x + vida * 32 + 10, vida_base_y + 4, string_format(rage_percent, 0, 0) + "% Rage");
+    draw_text(vida_base_x + 5 * 32 + 10, vida_base_y + 4, string_format(rage_percent, 0, 0) + "% Rage");
 
     // === MOEDA (abaixo da vida) ===
     var moeda_x = vida_base_x;

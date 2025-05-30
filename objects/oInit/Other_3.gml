@@ -15,8 +15,9 @@ ini_write_real("audio", "vol_musica", oDataSuperCarrie.vol_musica);
 ini_write_real("audio", "vol_ambiente", oDataSuperCarrie.vol_ambiente);
 
 // PROGRESSO
-//ini_write_real("progresso", "mortes", oDataSuperCarrie.mortes_player);
+ini_write_real("progresso", "mortes", oDataSuperCarrie.mortes_player);
 //ini_write_real("progresso", "niveis", oDataSuperCarrie.niveis_terminado);
 //ini_write_real("progresso", "pontos", oDataSuperCarrie.maximo_pontos);
+ini_write_real("progresso", "run_terminadas", oDataSuperCarrie.run_terminadas);
 
 ini_close();
