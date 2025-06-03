@@ -22,5 +22,5 @@ for (var i = 0; i < total; i++) {
 
     anterior = parte;
 }
-
+    // instance_create_depth(0, 0, 0, oGerenciadorBoss04);
 instance_destroy();

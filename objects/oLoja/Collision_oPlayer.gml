@@ -12,4 +12,5 @@ if(_E && oPlayer.moeda >=  preco){
 	var id_som = 	audio_play_sound(sndComprarItem,5,false)
 var vol_efeito = oDataSuperCarrie.vol_geral * oDataSuperCarrie.vol_ambiente;
 audio_sound_gain(id_som, vol_efeito, 0);
+	oDataSuperCarrie.moedas_usadas+= preco;
 }

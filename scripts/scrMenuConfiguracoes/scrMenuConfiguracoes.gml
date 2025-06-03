@@ -25,6 +25,7 @@ function scrMenuConfiguracoes(index) {
 			break;
 		case 3: // Acessibilidade
 			//global.acessibilidade_ativa = !global.acessibilidade_ativa;
+			if(room == Menu){scrDeleteSave()};
 			game_end()
 			break;
 		case 4: // Voltar

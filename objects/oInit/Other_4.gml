@@ -9,36 +9,14 @@ var_nao_existe(oDataSuperCarrie, "fundos", [sFundoCamera, sCutCene, sMenuBackgro
 var_nao_existe(oDataSuperCarrie, "cursor_sprites", [sMouse, sMouseFinal]);
 var_nao_existe(oDataSuperCarrie, "run_terminadas", 0);
 var_nao_existe(oDataSuperCarrie, "mortes_player", 0);
+var_nao_existe(oDataSuperCarrie, "bosses_mortos00", 0);
+var_nao_existe(oDataSuperCarrie, "bosses_mortos01", 0);
+var_nao_existe(oDataSuperCarrie, "bosses_mortos02", 0);
+var_nao_existe(oDataSuperCarrie, "bosses_mortos03", 0);
+var_nao_existe(oDataSuperCarrie, "moedas_usadas", 0);
 
 if (file_exists("save.sav")) {
-    ini_open("save.sav");
-
-    // CONFIGURAÇÕES
-    oDataSuperCarrie.Fullscreen     = ini_read_real("configs", "fullscreen", true);
-    oDataSuperCarrie.fundo_index    = ini_read_real("configs", "fundo_index", 0);
-    oDataSuperCarrie.TremorTela     = ini_read_real("configs", "tremor_tela", true);
-    oDataSuperCarrie.idioma         = ini_read_string("configs", "idioma", "BR");
-    oDataSuperCarrie.cursor_index   = ini_read_real("configs", "cursor_index", 0);
-   // oDataSuperCarrie.cursor_index   = ini_read_real("configs", "sprite_mouse", sMouse);
-
-    // Reatribui o sprite do cursor com base no índice salvo
-    oDataSuperCarrie.sprite_mouse = oDataSuperCarrie.cursor_sprites[oDataSuperCarrie.cursor_index];
-    cursor_sprite = oDataSuperCarrie.sprite_mouse;
-
-    // VOLUMES
-    oDataSuperCarrie.vol_geral     = ini_read_real("audio", "vol_geral", 0.5);
-    oDataSuperCarrie.vol_tiros     = ini_read_real("audio", "vol_tiros", 1);
-    oDataSuperCarrie.vol_musica    = ini_read_real("audio", "vol_musica", 1);
-    oDataSuperCarrie.vol_ambiente  = ini_read_real("audio", "vol_ambiente", 1);
-
-    // PROGRESSO
-    oDataSuperCarrie.mortes_player     = ini_read_real("progresso", "mortes", 0);
-    oDataSuperCarrie.niveis_terminado  = ini_read_real("progresso", "niveis", 0);
-    oDataSuperCarrie.maximo_pontos     = ini_read_real("progresso", "pontos", 0);
-	
-	oDataSuperCarrie.run_terminadas =  ini_read_real("progresso", "run_terminadas", 0);
-
-    ini_close();
+    scrLoadGame()
 }
 
 
@@ -56,3 +34,6 @@ show_debug_message("Volume Geral: " + string(oDataSuperCarrie.vol_geral));
 show_debug_message("Volume Música: " + string(oDataSuperCarrie.vol_musica));
 show_debug_message("Mortes: " + string(oDataSuperCarrie.mortes_player));
 show_debug_message("Níveis Concluídos: " + string(oDataSuperCarrie.run_terminadas));
+show_debug_message("Moedas: " + string(oDataSuperCarrie.moedas_usadas));
+
+show_debug_message("Boss morto : " + string(oDataSuperCarrie.bosses_mortos00));

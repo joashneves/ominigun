@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-life = 1800;
+life = 1600;
 lifeMax = life;
 vida_trigger = life; // armazena o valor da vida para controle de disparos
 

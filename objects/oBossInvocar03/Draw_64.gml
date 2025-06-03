@@ -1,27 +1,20 @@
 /// @description Insert description here
 // You can write your code in this editor
 if(instance_exists(oBoss04)){
-	
-	var barra_largura = 600;
-	var barra_altura = 12;
+// Posição centralizada da barra no topo
+var barra_x = display_get_gui_width() / 2;
+var barra_y = 6; // 6 pixels abaixo do topo
 
-	// Posição centralizada
-	var barra_x = (display_get_gui_width() - barra_largura) / 2;
-	var barra_y = display_get_gui_height() - barra_altura - 30; // 30 pixels acima do rodapé
+// Proporção da vida (de 0 a 1)
+var proporcao = clamp(global.vida_total_boss / global.vida_maxima_boss , 0, 1);
 
-	// Proporção da vida
-	var proporcao = global.vida_total_boss / global.vida_maxima_boss;
-;
+// Sprite da barra e índice da subimagem (vida cheia = frame 0, vazia = último)
+var sprite = sBossHud;
+var total_frames = sprite_get_number(sprite);
+var frame_index = floor((1 - proporcao) * (total_frames - 1));
 
-	// Fundo da barra
-	draw_set_color(make_color_rgb(40, 40, 40));
-	draw_rectangle(barra_x, barra_y, barra_x + barra_largura, barra_y + barra_altura, false);
 
-	// Barra vermelha (vida)
-	draw_set_color(c_red);
-	draw_rectangle(barra_x, barra_y, barra_x + (barra_largura * proporcao), barra_y + barra_altura, false);
+    draw_set_alpha(1);
+    draw_sprite(sprite, frame_index, barra_x - sprite_get_width(sprite) / 2, barra_y);
 
-	// Contorno branco
-	draw_set_color(c_white);
-	draw_rectangle(barra_x, barra_y, barra_x + barra_largura, barra_y + barra_altura, true);
 }

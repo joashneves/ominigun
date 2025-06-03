@@ -230,6 +230,7 @@
     {"id":{"name":"oFogoBoss","path":"objects/oFogoBoss/oFogoBoss.yy",},},
     {"id":{"name":"oGeraArma","path":"objects/oGeraArma/oGeraArma.yy",},},
     {"id":{"name":"oGeraInimigo","path":"objects/oGeraInimigo/oGeraInimigo.yy",},},
+    {"id":{"name":"oGerenciadorBoss04","path":"objects/oGerenciadorBoss04/oGerenciadorBoss04.yy",},},
     {"id":{"name":"oGerenciadorGameOver","path":"objects/oGerenciadorGameOver/oGerenciadorGameOver.yy",},},
     {"id":{"name":"oGerenciadorJogabilidade","path":"objects/oGerenciadorJogabilidade/oGerenciadorJogabilidade.yy",},},
     {"id":{"name":"oGerenciadorMenu","path":"objects/oGerenciadorMenu/oGerenciadorMenu.yy",},},

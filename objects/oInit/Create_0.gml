@@ -21,3 +21,8 @@ var_nao_existe(oDataSuperCarrie, "vol_musica", 1);
 var_nao_existe(oDataSuperCarrie, "vol_ambiente", 1);
 var_nao_existe(oDataSuperCarrie, "run_terminadas", 0);
 var_nao_existe(oDataSuperCarrie, "mortes_player", 0);
+var_nao_existe(oDataSuperCarrie, "bosses_mortos00", 0);
+var_nao_existe(oDataSuperCarrie, "bosses_mortos01", 0);
+var_nao_existe(oDataSuperCarrie, "bosses_mortos02", 0);
+var_nao_existe(oDataSuperCarrie, "bosses_mortos03", 0);
+var_nao_existe(oDataSuperCarrie, "moedas_usadas", 0);

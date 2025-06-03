@@ -2,6 +2,9 @@ up_press = keyboard_check_pressed(ord("W")) ||keyboard_check_pressed(vk_up) || g
 down_press = keyboard_check_pressed(ord("S"))||keyboard_check_pressed(vk_down) ||  gamepad_button_check_pressed(0, gp_padd);
 enter = keyboard_check_pressed(ord("E"))||keyboard_check_pressed(vk_enter) ||  gamepad_button_check_pressed(0, gp_face1);
 
+cursor_sprite = oDataSuperCarrie.sprite_mouse;
+
+
 if (up_press){
 	index --;
 }else if (down_press){

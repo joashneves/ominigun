@@ -22,7 +22,7 @@ for (var i = 0; i < op_max; i++) {
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_middle);
 	var texto = opcoes[i];
-	show_debug_message(string(opcoes))
+	//show_debug_message(string(opcoes))
 	var pos_y = y1 + (dist * i);
 	// tamanho do texto
 	var string_w = string_width(opcoes[i])

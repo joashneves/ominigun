@@ -18,6 +18,14 @@ ini_write_real("audio", "vol_ambiente", oDataSuperCarrie.vol_ambiente);
 ini_write_real("progresso", "mortes", oDataSuperCarrie.mortes_player);
 ini_write_real("progresso", "niveis", oDataSuperCarrie.niveis_terminado);
 ini_write_real("progresso", "pontos", oDataSuperCarrie.maximo_pontos);
+ini_write_real("progresso", "run_terminadas", oDataSuperCarrie.run_terminadas);
+
+// Estatisticas
+ini_write_real("estatisticas", "bosses_mortos00", oDataSuperCarrie.bosses_mortos00);
+ini_write_real("estatisticas", "bosses_mortos01", oDataSuperCarrie.bosses_mortos01);
+ini_write_real("estatisticas", "bosses_mortos02", oDataSuperCarrie.bosses_mortos02);
+ini_write_real("estatisticas", "bosses_mortos03", oDataSuperCarrie.bosses_mortos03);
+ini_write_real("estatisticas", "moedas_usadas", oDataSuperCarrie.moedas_usadas);
 
 ini_close();
 }
@@ -47,8 +55,27 @@ if (file_exists("save.sav")) {
     oDataSuperCarrie.mortes_player     = ini_read_real("progresso", "mortes", 0);
     oDataSuperCarrie.niveis_terminado  = ini_read_real("progresso", "niveis", 0);
     oDataSuperCarrie.maximo_pontos     = ini_read_real("progresso", "pontos", 0);
-
+	oDataSuperCarrie.run_terminadas =  ini_read_real("progresso", "run_terminadas", 0);
+	
+	// Estatisticas
+	oDataSuperCarrie.bosses_mortos00 =  ini_read_real("estatisticas", "bosses_mortos00", 0);
+	oDataSuperCarrie.bosses_mortos01 =  ini_read_real("estatisticas", "bosses_mortos01", 0);
+	oDataSuperCarrie.bosses_mortos02 =  ini_read_real("estatisticas", "bosses_mortos02", 0);
+	oDataSuperCarrie.bosses_mortos03 =  ini_read_real("estatisticas", "bosses_mortos03", 0);
+	oDataSuperCarrie.moedas_usadas =  ini_read_real("estatisticas", "moedas_usadas", 0);
+						
     ini_close();
 }	
 	
+}
+
+function scrDeleteSave() {
+    var save_path = "save.sav";
+    
+    if (file_exists(save_path)) {
+        file_delete("save.sav");
+        show_debug_message("Arquivo de save apagado com sucesso : " + string(save_path));
+    } else {
+        show_debug_message("Nenhum save encontrado para apagar.");
+    }
 }

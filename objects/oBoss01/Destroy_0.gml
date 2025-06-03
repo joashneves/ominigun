@@ -10,6 +10,6 @@ instance_create_depth(oPlayer.x,oPlayer.y,0,oCuraLife);
 oPlayer.moeda += 50;
 
 }
-
+oDataSuperCarrie.bosses_mortos01 += 1;
 oPlayer.BossMorto = true
 

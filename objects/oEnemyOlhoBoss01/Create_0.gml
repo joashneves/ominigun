@@ -5,6 +5,8 @@ hspd = 0;
 vspd = 0;
 spd = random_range(0.5,1.5);
 
+image_angle = point_direction(x,y,oPlayer.x,oPlayer.y)
+
 range = 180;
 random_valueH = random_range(-3,3)
 random_valueV = random_range(-3,3)

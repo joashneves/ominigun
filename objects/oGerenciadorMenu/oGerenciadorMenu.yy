@@ -10,8 +10,8 @@
   "name":"oGerenciadorMenu",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menu",
-    "path":"folders/Objects/Menu.yy",
+    "name":"Opcoes",
+    "path":"folders/Objects/Misc/Gerenciador/Opcoes.yy",
   },
   "parentObjectId":null,
   "persistent":false,
