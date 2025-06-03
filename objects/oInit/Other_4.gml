@@ -36,4 +36,4 @@ show_debug_message("Mortes: " + string(oDataSuperCarrie.mortes_player));
 show_debug_message("Níveis Concluídos: " + string(oDataSuperCarrie.run_terminadas));
 show_debug_message("Moedas: " + string(oDataSuperCarrie.moedas_usadas));
 
-show_debug_message("Boss morto : " + string(oDataSuperCarrie.bosses_mortos00));
+show_debug_message("Boss morto : " + string(oDataSuperCarrie.bosses_mortos02));

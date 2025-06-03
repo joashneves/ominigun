@@ -11,6 +11,9 @@ if(instance_exists(oBoss04)){
 
 if (bossSpawn and !instance_exists(oBoss04)){
 	oPlayer.BossMorto = true	
+	oPlayer.moeda += 50;
+	oDataSuperCarrie.bosses_mortos02 += 1;
+	instance_destroy()
 }else {
 	oPlayer.BossMorto = false
 }
