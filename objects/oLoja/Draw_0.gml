@@ -13,8 +13,8 @@ if (is_undefined(t)) {
 
 if (place_meeting(x, y, oPlayer)) {
 	// Texto "Press E"
-	draw_text(x - 16, y - 64, t.Press_E);
-
+	//draw_text(x - 16, y - 64, t.Press_E);
+	draw_sprite(sTeclaE,0, x-16,y-64)
 	// Sprite da moeda + preço
 	draw_sprite(sMoeda, 0, x - 16, y - 80); // moeda um pouco acima do "Press E"
 	draw_text(x + 4, y - 94, string("X : " + string(preco))); // valor ao lado da moeda

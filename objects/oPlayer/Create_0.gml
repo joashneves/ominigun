@@ -53,7 +53,8 @@ targetEntrada = oLevelEntrada
 
 // Bussola
 if(!instance_exists(oBussola)) instance_create_depth(x,y,oPlayer.depth-2,oBussola);
-// Bussola
+if(!instance_exists(oControllerParticula)) instance_create_depth(x,y,oPlayer.depth-2,oControllerParticula);
+//Cursor
 if(!instance_exists(oCursor)) {
  cursor = instance_create_depth(x,y,oPlayer.depth-2,oCursor);
 }

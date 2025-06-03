@@ -15,6 +15,7 @@ draw_set_font(fnt_loja);
 
 if(place_meeting(x,y,oPlayer)){
     // Texto "Press E" traduzido
-    draw_text(x - 16, y - 64, t.Press_E);
+    //draw_text(x - 16, y - 64, t.Press_E);
+	draw_sprite(sTeclaE,0, x-16,y-64);
 }
 
